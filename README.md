@@ -32,14 +32,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Commit message rule
 
-feat: (una nueva feature (funcionalidad) del usuario, no será cuando hacemos un build)  
-fix: (solución a un bug surgido en el código, no será cuando hacemos build)  
-docs: (cambios en la documentación)  
-style: (formateo, añadir semicolons, etc; sin cambios en el código de producción)  
-refactor: (refactorizar código de producción, ej. renombar una variable)  
-test: (añadir test que faltan, refactorizar tests; sin cambios en el código de producción)  
-chore: (actualizar tareas grunt, etc; sin cambios en el código de producción)  
+`feat:` (una nueva feature (funcionalidad) del usuario, no será cuando hacemos un build)  
+`fix:` (solución a un bug surgido en el código, no será cuando hacemos build)  
+`docs:` (cambios en la documentación)  
+`style:` (formateo, añadir semicolons, etc; sin cambios en el código de producción)  
+`refactor:` (refactorizar código de producción, ej. renombar una variable)  
+`test:` (añadir test que faltan, refactorizar tests; sin cambios en el código de producción)  
+`chore:` (actualizar tareas grunt, etc; sin cambios en el código de producción)  
 
-https://www.conventionalcommits.org/  
-https://seesparkbox.com/foundry/semantic_commit_messages  
-http://karma-runner.github.io/1.0/dev/git-commit-msg.html  
+[Conventional commits guide](https://www.conventionalcommits.org/)
