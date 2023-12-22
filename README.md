@@ -22,6 +22,24 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## Lint
+
+Run `ng lint` to execute the lint rules defined. Also it will be executed before the commit. 
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Commit message rule
+
+feat: (una nueva feature (funcionalidad) del usuario, no será cuando hacemos un build)
+fix: (solución a un bug surgido en el código, no será cuando hacemos build)
+docs: (cambios en la documentación)
+style: (formateo, añadir semicolons, etc; sin cambios en el código de producción)
+refactor: (refactorizar código de producción, ej. renombar una variable)
+test: (añadir test que faltan, refactorizar tests; sin cambios en el código de producción)
+chore: (actualizar tareas grunt, etc; sin cambios en el código de producción)
+
+https://www.conventionalcommits.org/
+https://seesparkbox.com/foundry/semantic_commit_messages
+http://karma-runner.github.io/1.0/dev/git-commit-msg.html
