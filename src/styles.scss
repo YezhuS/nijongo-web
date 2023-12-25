@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+}
+
+.p-toolbar {
+    border-radius: 0;
+}
+
+.circle-btn button.p-button {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}

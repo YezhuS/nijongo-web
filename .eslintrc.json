@@ -22,16 +22,13 @@
         "semi": ["error", "always"],
         "no-unused-vars": "off",
         "no-undef": "off",
-        // override configuration set by extending "eslint:recommended"
         "no-cond-assign": ["error", "always"]
       }
     },
     {
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:prettier/recommended"],
-      "rules": {
-        
-      }
+      "rules": {}
     },
     {
       "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],

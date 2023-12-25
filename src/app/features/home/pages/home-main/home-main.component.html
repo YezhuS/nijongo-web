@@ -1,1 +1,24 @@
-<p>home-main works!</p>
+<div class="home-layout">
+  <p-button
+    label="Vocabulario"
+    [rounded]="true"
+    class="circle-btn"
+    (click)="goTo(routesEnum.VOCABULARY)"></p-button>
+  <p-button
+    label="Alfabeto"
+    [rounded]="true"
+    severity="secondary"
+    class="circle-btn"
+    (click)="goTo(routesEnum.ALPHABET)"></p-button>
+  <p-button
+    label="Partículas"
+    [rounded]="true"
+    severity="success"
+    class="circle-btn"
+    (click)="goTo(routesEnum.PARTICLE)"></p-button>
+  <p-button
+    label="Otros"
+    [rounded]="true"
+    severity="help"
+    class="circle-btn"></p-button>
+</div>
