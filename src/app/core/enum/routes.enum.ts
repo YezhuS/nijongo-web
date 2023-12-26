@@ -3,4 +3,7 @@ export enum RoutesEnum {
   VOCABULARY = 'vocabulary',
   ALPHABET = 'alphabet',
   PARTICLE = 'particle',
+  KANJI = 'kanji',
+  HIRAGANA = 'hiragana',
+  KATAKANA = 'katakana',
 }

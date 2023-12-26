@@ -8,8 +8,19 @@ body {
     border-radius: 0;
 }
 
-.circle-btn button.p-button {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+// Layout for selection with circles
+.home-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    
+    // Circle style
+    .circle-btn button.p-button {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
 }
