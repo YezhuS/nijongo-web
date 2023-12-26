@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { HiraganaActivityComponent } from './hiragana-activity.component';
+import {HiraganaActivityComponent} from './hiragana-activity.component';
 
 describe('HiraganaActivityComponent', () => {
   let component: HiraganaActivityComponent;
@@ -8,10 +8,9 @@ describe('HiraganaActivityComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HiraganaActivityComponent]
-    })
-    .compileComponents();
-    
+      imports: [HiraganaActivityComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(HiraganaActivityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

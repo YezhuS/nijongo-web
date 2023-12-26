@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { KatakanaActivityComponent } from './katakana-activity.component';
+import {KatakanaActivityComponent} from './katakana-activity.component';
 
 describe('KatakanaActivityComponent', () => {
   let component: KatakanaActivityComponent;
@@ -8,10 +8,9 @@ describe('KatakanaActivityComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [KatakanaActivityComponent]
-    })
-    .compileComponents();
-    
+      imports: [KatakanaActivityComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(KatakanaActivityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

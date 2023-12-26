@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AlphabetHomeComponent } from './alphabet-home.component';
+import {AlphabetHomeComponent} from './alphabet-home.component';
 
 describe('AlphabetHomeComponent', () => {
   let component: AlphabetHomeComponent;
@@ -8,10 +8,9 @@ describe('AlphabetHomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AlphabetHomeComponent]
-    })
-    .compileComponents();
-    
+      imports: [AlphabetHomeComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(AlphabetHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

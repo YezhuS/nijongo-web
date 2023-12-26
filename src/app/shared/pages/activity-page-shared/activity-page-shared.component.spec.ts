@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ActivityPageSharedComponent } from './activity-page-shared.component';
+import {ActivityPageSharedComponent} from './activity-page-shared.component';
 
 describe('ActivityPageSharedComponent', () => {
   let component: ActivityPageSharedComponent;
@@ -8,10 +8,9 @@ describe('ActivityPageSharedComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ActivityPageSharedComponent]
-    })
-    .compileComponents();
-    
+      imports: [ActivityPageSharedComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ActivityPageSharedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
