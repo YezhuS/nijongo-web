@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { SharedFacadeService } from './shared-facade.service';
+import {SharedFacadeService} from './shared-facade.service';
 
 describe('SharedFacadeService', () => {
   let service: SharedFacadeService;
