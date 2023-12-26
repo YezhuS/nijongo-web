@@ -1,14 +1,59 @@
-<div>
-  <button>primer botón</button>
-  <h1>título</h1>
-  <button>segundo botón</button>
-</div>
-<div>
-  <!-- Cuerpo de la activity -->
-  <div>primera linea de opciones</div>
-  <div>segunda linea de opciones</div>
-  <div>botón comenzar y el ojo de solo ver</div>
-</div>
-<div>
-  <button>botón que lleva al resumen</button>
-</div>
+<ng-container *ngIf="!activityStarted; else letter">
+  <div class="activity-layout">
+    <div class="activity-header">
+      <p-button
+        label="{{ activityInput.btnL.label }}"
+        [rounded]="true"
+        severity="secondary"
+        (click)="router.navigate([activityInput.btnL.path])"></p-button>
+      <h1>{{ activityInput.title }}</h1>
+      <p-button
+        label="{{ activityInput.btnR.label }}"
+        [rounded]="true"
+        severity="secondary"
+        (click)="router.navigate([activityInput.btnR.path])"></p-button>
+    </div>
+    <div class="activity-body">
+      <!-- Cuerpo de la activity -->
+      <div>
+        <p-selectButton
+          [options]="complexityOptions"
+          [(ngModel)]="complexityValue"
+          [allowEmpty]="false"
+          optionLabel="label"
+          optionValue="value"></p-selectButton>
+      </div>
+      <div>
+        <p-selectButton
+          [options]="typeOptions"
+          [(ngModel)]="typeValue"
+          [allowEmpty]="false"
+          optionLabel="label"
+          optionValue="value"></p-selectButton>
+      </div>
+      <div>
+        <p-button
+          [label]="startBtnLabel"
+          [rounded]="true"
+          severity="secondary"
+          (click)="startActivity()"></p-button>
+        <p-button
+          icon="pi {{ justLook ? 'pi-eye' : 'pi-eye-slash' }}"
+          [rounded]="true"
+          severity="secondary"
+          (click)="justLook = !justLook"></p-button>
+      </div>
+    </div>
+    <div class="activity-footer">
+      <p-button
+        icon="pi pi-bookmark"
+        [rounded]="true"
+        severity="secondary"
+        (click)="router.navigate([activityInput.resumePath])"></p-button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #letter>
+  <app-letter-activity-shared></app-letter-activity-shared>
+</ng-template>
