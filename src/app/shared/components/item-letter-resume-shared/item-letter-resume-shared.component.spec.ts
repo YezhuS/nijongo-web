@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ItemLetterResumeSharedComponent } from './item-letter-resume-shared.component';
+import {ItemLetterResumeSharedComponent} from './item-letter-resume-shared.component';
 
 describe('ItemLetterResumeSharedComponent', () => {
   let component: ItemLetterResumeSharedComponent;
@@ -8,10 +8,9 @@ describe('ItemLetterResumeSharedComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ItemLetterResumeSharedComponent]
-    })
-    .compileComponents();
-    
+      imports: [ItemLetterResumeSharedComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ItemLetterResumeSharedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

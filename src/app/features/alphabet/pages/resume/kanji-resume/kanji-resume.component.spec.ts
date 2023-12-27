@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { KanjiResumeComponent } from './kanji-resume.component';
+import {KanjiResumeComponent} from './kanji-resume.component';
 
 describe('KanjiResumeComponent', () => {
   let component: KanjiResumeComponent;
@@ -8,10 +8,9 @@ describe('KanjiResumeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [KanjiResumeComponent]
-    })
-    .compileComponents();
-    
+      imports: [KanjiResumeComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(KanjiResumeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
