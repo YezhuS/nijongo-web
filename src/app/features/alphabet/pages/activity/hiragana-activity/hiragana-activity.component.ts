@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ActivityPageSharedComponent} from '../../../../../shared/pages/activity-page-shared/activity-page-shared.component';
 import {ActivityI} from '../../../../../shared/models/activity.model';
-import {FULL_ROUTE} from '../../../../../core/const/routes.constant';
+import {FULL_ROUTE, PATH} from '../../../../../core/const/routes.constant';
 import {AlphabetEnum} from '../../../model/alphabet.model';
 
 @Component({
@@ -22,7 +22,7 @@ export class HiraganaActivityComponent {
       path: FULL_ROUTE.katakana_act,
     },
     title: 'Hiragana',
-    resumePath: '',
+    resumePath: FULL_ROUTE.hiragana_resume,
     type: AlphabetEnum.HIRAGANA,
     letterActPath: '',
   };

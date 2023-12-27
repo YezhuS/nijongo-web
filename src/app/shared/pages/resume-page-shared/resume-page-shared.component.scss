@@ -1,0 +1,8 @@
+.container-resume-letter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .item-letter {
+        width: fit-content;
+    }
+}

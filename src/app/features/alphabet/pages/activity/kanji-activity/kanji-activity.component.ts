@@ -22,7 +22,7 @@ export class KanjiActivityComponent {
       path: FULL_ROUTE.hiragana_act,
     },
     title: 'Kanji',
-    resumePath: '',
+    resumePath: FULL_ROUTE.kanji_resume,
     type: AlphabetEnum.KANJI,
     letterActPath: '',
   };

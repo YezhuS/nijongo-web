@@ -22,7 +22,7 @@ export class KatakanaActivityComponent {
       path: FULL_ROUTE.hiragana_act,
     },
     title: 'Katakana',
-    resumePath: '',
+    resumePath: FULL_ROUTE.katakana_resume,
     type: AlphabetEnum.KATAKANA,
     letterActPath: '',
   };
