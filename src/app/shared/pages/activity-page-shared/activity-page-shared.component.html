@@ -31,7 +31,7 @@
           optionLabel="label"
           optionValue="value"></p-selectButton>
       </div>
-      <div>
+      <div class="btn-start">
         <p-button
           [label]="startBtnLabel"
           [rounded]="true"
@@ -44,7 +44,7 @@
           (click)="justLook = !justLook"></p-button>
       </div>
     </div>
-    <div class="activity-footer">
+    <div class="activity-footer one-btn">
       <p-button
         icon="pi pi-bookmark"
         [rounded]="true"
@@ -55,5 +55,7 @@
 </ng-container>
 
 <ng-template #letter>
-  <app-letter-activity-shared></app-letter-activity-shared>
+  <app-letter-activity-shared
+    (closeActivityEvent)="activityStarted = false"
+    [activityLetterInput]="activityLetterValue"></app-letter-activity-shared>
 </ng-template>

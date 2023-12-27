@@ -1,1 +1,48 @@
-<p>letter-activity-shared works!</p>
+<ng-container>
+  <div class="activity-layout">
+    <div class="activity-header">
+      <p-button
+        icon="pi pi-times"
+        [rounded]="true"
+        severity="secondary"
+        (click)="closeActivityEvent.emit()"></p-button>
+      <div class="btn-r">
+        <p-button
+          icon="pi pi-info-circle"
+          [rounded]="true"
+          severity="secondary"></p-button>
+        <p-button
+          icon="pi {{
+            activityLetterInput.justLook ? 'pi-eye' : 'pi-eye-slash'
+          }}"
+          [rounded]="true"
+          severity="secondary"
+          (click)="
+            activityLetterInput.justLook = !activityLetterInput.justLook
+          "></p-button>
+      </div>
+    </div>
+    <div class="activity-body">
+      <!-- Cuerpo de la activity -->
+      <div>imagen de la letra (muy grande)</div>
+    </div>
+    <div class="activity-footer answer">
+      <div>
+        <div class="input-answer">
+          <input
+            pInputText
+            id="answerInput"
+            [(ngModel)]="answerValue" />
+          <small id="answer-input-help">{{ answerHelpText }}</small>
+        </div>
+      </div>
+      <div>
+        <p-button
+          [label]="nextBtnLabel"
+          [rounded]="true"
+          severity="secondary"
+          (click)="nextLetter()"></p-button>
+      </div>
+    </div>
+  </div>
+</ng-container>

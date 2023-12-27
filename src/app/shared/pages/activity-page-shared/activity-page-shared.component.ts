@@ -1,12 +1,6 @@
-import {
-  Component,
-  Input,
-  OnChanges,
-  SimpleChanges,
-  inject,
-} from '@angular/core';
+import {Component, Input, OnChanges, inject} from '@angular/core';
 import {ButtonModule} from 'primeng/button';
-import {Activity, ActivityI, ActivityLetter} from '../../models/activity.model';
+import {Activity, ActivityLetter} from '../../models/activity.model';
 import {Router} from '@angular/router';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {OptionsI} from '../../../core/model/core.model';
@@ -36,12 +30,12 @@ import {LetterActivitySharedComponent} from '../../components/letter-activity-sh
 })
 export class ActivityPageSharedComponent implements OnChanges {
   protected router = inject(Router);
-  private sharedFacade = inject(SharedFacadeService);
 
   // Activity settings
   @Input() activityInput!: Activity;
   protected startBtnLabel = 'Empezar';
   protected activityStarted = false;
+  protected activityLetterValue = new ActivityLetter();
 
   // Values
   protected justLook = false;
@@ -56,10 +50,7 @@ export class ActivityPageSharedComponent implements OnChanges {
     if (this.activityInput) {
       this.typeOptions = [
         {
-          label:
-            this.activityInput.type === AlphabetEnum.HIRAGANA
-              ? 'Hiragana'
-              : 'Katakana',
+          label: this.activityInput.title,
           value: this.activityInput.type,
         },
         {label: 'Romanji', value: AlphabetEnum.ROMANJI},
@@ -92,9 +83,8 @@ export class ActivityPageSharedComponent implements OnChanges {
       type: this.typeValue,
     };
     // Send object
-    this.sharedFacade.setActivity(valueToSend);
-    // Router to letter activity page
-    // this.router.navigate([this.activityInput.letterActPath]);
+    this.activityLetterValue = valueToSend;
+    // Start letter activity
     this.activityStarted = true;
   }
 }

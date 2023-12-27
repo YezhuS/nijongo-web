@@ -1,0 +1,14 @@
+.input-answer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    #answer-input-help {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.btn-r {
+    display: flex;
+    gap: 1rem;
+}
