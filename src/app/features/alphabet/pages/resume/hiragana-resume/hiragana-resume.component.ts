@@ -1,5 +1,11 @@
 import {Component} from '@angular/core';
 import {ResumePageSharedComponent} from '../../../../../shared/pages/resume-page-shared/resume-page-shared.component';
+import {TabI} from '../../../../../shared/models/tab.model';
+import {LetterI} from '../../../../../shared/models/itemLetter.model';
+import hiraganaBasic from '../../../../../../assets/data/hiragana.json';
+import hiraganaD from '../../../../../../assets/data/hiragana-diacritico.json';
+import hiraganaDiphthong from '../../../../../../assets/data/hiragana-diptongo.json';
+import {FULL_ROUTE} from '../../../../../core/const/routes.constant';
 
 @Component({
   selector: 'app-hiragana-resume',
@@ -8,4 +14,27 @@ import {ResumePageSharedComponent} from '../../../../../shared/pages/resume-page
   templateUrl: './hiragana-resume.component.html',
   styleUrl: './hiragana-resume.component.scss',
 })
-export class HiraganaResumeComponent {}
+export class HiraganaResumeComponent {
+  protected previousPath = FULL_ROUTE.hiragana_act;
+  protected data: TabI<LetterI[]>[];
+
+  constructor() {
+    this.data = [
+      {
+        title: 'Básico',
+        content: hiraganaBasic,
+        itemClass: 'fiveItemsPerRow',
+      },
+      {
+        title: 'Diacrítico',
+        content: hiraganaD,
+        itemClass: 'fiveItemsPerRow',
+      },
+      {
+        title: 'Diptongos',
+        content: hiraganaDiphthong,
+        itemClass: 'threeItemsPerRow',
+      },
+    ];
+  }
+}

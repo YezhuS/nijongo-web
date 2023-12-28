@@ -1,8 +1,19 @@
 .container-resume-letter{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     .item-letter {
         width: fit-content;
     }
+}
+
+.resume-page {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    > .header-nav {
+        display: flex;
+        gap: 0.5rem;
+    }
+    
 }

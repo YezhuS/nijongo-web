@@ -1,7 +1,44 @@
-<div class="container-resume-letter">
-  <ng-container *ngFor="let item of data">
-    <div class="item-letter">
-      <app-item-letter-resume-shared></app-item-letter-resume-shared>
-    </div>
-  </ng-container>
+<div class="resume-page">
+  <div class="header-close">
+    <p-button
+      [size]="'small'"
+      icon="pi pi-times"
+      [rounded]="true"
+      severity="secondary"
+      (click)="router.navigate([previousPath])"></p-button>
+  </div>
+  <div class="header-nav">
+    <p-button
+      [size]="'small'"
+      [rounded]="true"
+      [outlined]="!router.url.includes(paths.hiragana_resume)"
+      (click)="router.navigate([paths.hiragana_resume])"
+      label="ひ"></p-button>
+    <p-button
+      [size]="'small'"
+      [rounded]="true"
+      [outlined]="!router.url.includes(paths.katakana_resume)"
+      (click)="router.navigate([paths.katakana_resume])"
+      label="カ"></p-button>
+    <p-button
+      [size]="'small'"
+      [rounded]="true"
+      [outlined]="!router.url.includes(paths.kanji_resume)"
+      (click)="router.navigate([paths.kanji_resume])"
+      label="漢字"></p-button>
+  </div>
 </div>
+<p-tabView>
+  <p-tabPanel
+    *ngFor="let tab of tabs"
+    [header]="tab.title">
+    <div class="container-resume-letter">
+      <ng-container *ngFor="let item of tab.content">
+        <div class="item-letter {{ tab.itemClass }}">
+          <app-item-letter-resume-shared
+            [item]="item"></app-item-letter-resume-shared>
+        </div>
+      </ng-container>
+    </div>
+  </p-tabPanel>
+</p-tabView>

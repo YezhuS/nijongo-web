@@ -1,5 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
 // Fijamos body y html con altura máxima para adjustarlo a toda la página
 body {
     margin: 0;
@@ -14,6 +12,12 @@ html {
 .p-toolbar {
     border-radius: 0;
 }
+.p-tabview-nav li{
+    width: 100%;
+}
+button.p-button {
+    height: 100%;
+} 
 
 // Layout for selection with circles
 .home-layout {
@@ -62,4 +66,12 @@ html {
             justify-content: flex-start;
         }
     }
+}
+
+// ItemsPerRow
+.fiveItemsPerRow {
+    flex: 0 1 calc(20% - 8px);
+}
+.threeItemsPerRow {
+    flex: 0 1 calc(33% - 8px);
 }

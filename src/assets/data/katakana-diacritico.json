@@ -1,0 +1,28 @@
+[
+    {"value": "ガ", "translation": "ga"},
+    {"value": "ギ", "translation": "gi"},
+    {"value": "グ", "translation": "gu"},
+    {"value": "ゲ", "translation": "ge"},
+    {"value": "ゴ", "translation": "go"},
+    {"value": "ザ", "translation": "za"},
+    {"value": "ジ", "translation": "ji"},
+    {"value": "ズ", "translation": "zu"},
+    {"value": "ゼ", "translation": "ze"},
+    {"value": "ゾ", "translation": "zo"},
+    {"value": "ダ", "translation": "da"},
+    {"value": "ヂ", "translation": "ji"},
+    {"value": "ヅ", "translation": "zu"},
+    {"value": "デ", "translation": "de"},
+    {"value": "ド", "translation": "do"},
+    {"value": "バ", "translation": "ba"},
+    {"value": "ビ", "translation": "bi"},
+    {"value": "ブ", "translation": "bu"},
+    {"value": "ベ", "translation": "be"},
+    {"value": "ボ", "translation": "bo"},
+    {"value": "パ", "translation": "pa"},
+    {"value": "ピ", "translation": "pi"},
+    {"value": "プ", "translation": "pu"},
+    {"value": "ペ", "translation": "pe"},
+    {"value": "ポ", "translation": "po"}
+  ]
+  

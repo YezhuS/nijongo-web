@@ -1,3 +1,14 @@
-<p-card header="X">
-  <p class="m-0">x</p>
-</p-card>
+<div
+  [ngClass]="{'no-shadow': item.value === ''}"
+  class="card-wrapper">
+  <div class="card-title">
+    <p>
+      {{ item.value }}
+    </p>
+  </div>
+  <div class="card-body">
+    <p>
+      {{ item.translation }}
+    </p>
+  </div>
+</div>

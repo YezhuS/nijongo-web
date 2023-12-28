@@ -1,0 +1,24 @@
+[
+    {"value": "キャ", "translation": "kya"},
+    {"value": "キュ", "translation": "kyu"},
+    {"value": "キョ", "translation": "kyo"},
+    {"value": "シャ", "translation": "sha"},
+    {"value": "シュ", "translation": "shu"},
+    {"value": "ショ", "translation": "sho"},
+    {"value": "チャ", "translation": "cha"},
+    {"value": "チュ", "translation": "chu"},
+    {"value": "チョ", "translation": "cho"},
+    {"value": "ニャ", "translation": "nya"},
+    {"value": "ニュ", "translation": "nyu"},
+    {"value": "ニョ", "translation": "nyo"},
+    {"value": "ヒャ", "translation": "hya"},
+    {"value": "ヒュ", "translation": "hyu"},
+    {"value": "ヒョ", "translation": "hyo"},
+    {"value": "ミャ", "translation": "mya"},
+    {"value": "ミュ", "translation": "myu"},
+    {"value": "ミョ", "translation": "myo"},
+    {"value": "リャ", "translation": "rya"},
+    {"value": "リュ", "translation": "ryu"},
+    {"value": "リョ", "translation": "ryo"}
+  ]
+  

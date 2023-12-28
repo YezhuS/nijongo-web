@@ -1,12 +1,12 @@
 import {Component, inject} from '@angular/core';
-import {Router} from '@angular/router';
+import {Router, RouterModule} from '@angular/router';
 import {ButtonModule} from 'primeng/button';
 import {PATH} from '../../../../core/const/routes.constant';
 
 @Component({
   selector: 'app-home-main',
   standalone: true,
-  imports: [ButtonModule],
+  imports: [ButtonModule, RouterModule],
   templateUrl: './home-main.component.html',
   styleUrl: './home-main.component.scss',
 })
