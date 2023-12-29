@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { VocabularyResumeComponent } from './vocabulary-resume.component';
+import {VocabularyResumeComponent} from './vocabulary-resume.component';
 
 describe('VocabularyResumeComponent', () => {
   let component: VocabularyResumeComponent;
@@ -8,10 +8,9 @@ describe('VocabularyResumeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VocabularyResumeComponent]
-    })
-    .compileComponents();
-    
+      imports: [VocabularyResumeComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(VocabularyResumeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

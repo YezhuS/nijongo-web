@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { VocabularyActivityComponent } from './vocabulary-activity.component';
+import {VocabularyActivityComponent} from './vocabulary-activity.component';
 
 describe('VocabularyActivityComponent', () => {
   let component: VocabularyActivityComponent;
@@ -8,10 +8,9 @@ describe('VocabularyActivityComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VocabularyActivityComponent]
-    })
-    .compileComponents();
-    
+      imports: [VocabularyActivityComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(VocabularyActivityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
