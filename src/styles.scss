@@ -44,8 +44,13 @@ button.p-button {
     .activity-header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        &.center {
+            justify-content: center;
+        }
+        &.space-btw {
+            justify-content: space-between;
+        }
     }
     .activity-body {
         display: flex;
@@ -53,6 +58,10 @@ button.p-button {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        .btn-start {
+            display: flex;
+            gap: 1rem;
+        }
     }
     .activity-footer {
         display: flex;

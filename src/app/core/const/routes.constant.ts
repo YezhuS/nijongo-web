@@ -17,4 +17,7 @@ export const FULL_ROUTE = {
   kanji_resume: `${PATH.ALPHABET}/${PATH.KANJI}/${PATH.RESUME}`,
   hiragana_resume: `${PATH.ALPHABET}/${PATH.HIRAGANA}/${PATH.RESUME}`,
   katakana_resume: `${PATH.ALPHABET}/${PATH.KATAKANA}/${PATH.RESUME}`,
+
+  // VOCABULARY
+  vocab_resume: `${PATH.VOCABULARY}/${PATH.RESUME}`,
 };
