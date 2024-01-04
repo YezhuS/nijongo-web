@@ -26,9 +26,4 @@ export class ResumePageSharedComponent {
   protected paths = FULL_ROUTE;
   @Input() tabs: TabI<LetterI[]>[] = [];
   @Input() previousPath: string = '';
-
-  ngOnInit() {
-    console.log(this.router.url);
-    console.log(this.paths);
-  }
 }

@@ -1,0 +1,104 @@
+[
+  {
+    "romaji": "Shumi",
+    "translation": "Aficiones",
+    "kana": "しゅみ",
+    "kanji": "趣味"
+  },
+  {
+    "romaji": "Ongaku",
+    "translation": "Música",
+    "kana": "おんがく",
+    "kanji": "音楽"
+  },
+  {
+    "romaji": "Karaoke",
+    "translation": "Karaoke",
+    "kana": "カラオケ",
+    "kanji": "カラオケ"
+  },
+  {
+    "romaji": "Eiga",
+    "translation": "Película",
+    "kana": "えいが",
+    "kanji": "映画"
+  },
+  {
+    "romaji": "Furamenko",
+    "translation": "Flamenco",
+    "kana": "ふらめんこ",
+    "kanji": "フラメンコ"
+  },
+  {
+    "romaji": "Suiei",
+    "translation": "Natación",
+    "kana": "すいえい",
+    "kanji": "水泳"
+  },
+  {
+    "romaji": "Dokusho",
+    "translation": "Lectura",
+    "kana": "どくしょ",
+    "kanji": "読書"
+  },
+  {
+    "romaji": "Manga",
+    "translation": "Manga",
+    "kana": "まんが",
+    "kanji": "漫画"
+  },
+  {
+    "romaji": "Suugaku",
+    "translation": "Matemáticas",
+    "kana": "すうがく",
+    "kanji": "数学"
+  },
+  {
+    "romaji": "Jitensha",
+    "translation": "Bicicleta",
+    "kana": "じてんしゃ",
+    "kanji": "自転車"
+  },
+  {
+    "romaji": "Sakka-",
+    "translation": "Fútbol",
+    "kana": "さっかー",
+    "kanji": "サッカー"
+  },
+  {
+    "romaji": "Ryokou",
+    "translation": "Viaje",
+    "kana": "りょこう",
+    "kanji": "旅行"
+  },
+  {
+    "romaji": "Kaimono",
+    "translation": "Compra",
+    "kana": "かいもの",
+    "kanji": "買い物"
+  },
+  {
+    "romaji": "Ikebana",
+    "translation": "Arreglo floral",
+    "kana": "いけばな",
+    "kanji": "いけばな"
+  },
+  {
+    "romaji": "Tougyuu",
+    "translation": "Corrida de toros",
+    "kana": "とうぎゅう",
+    "kanji": "闘牛"
+  },
+  {
+    "romaji": "Juudou",
+    "translation": "Judo",
+    "kana": "じゅうどう",
+    "kanji": "柔道"
+  },
+  {
+    "romaji": "Shashin",
+    "translation": "Fotografía",
+    "kana": "しゃしん",
+    "kanji": "写真"
+  }
+]

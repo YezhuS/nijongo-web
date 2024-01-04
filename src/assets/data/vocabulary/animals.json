@@ -1,0 +1,129 @@
+[
+  {
+    "romaji": "Doubutsu",
+    "translation": "Animales",
+    "kana": "どうぶつ",
+    "kanji": "動物"
+  },
+  {
+    "romaji": "Ushi",
+    "translation": "Vaca",
+    "kana": "うし",
+    "kanji": "牛",
+    "more_info": {"other_translations": ["Toro"]}
+  },
+  {
+    "romaji": "Panda",
+    "translation": "Panda",
+    "kana": "ぱんだ",
+    "kanji": null
+  },
+  {
+    "romaji": "Uma",
+    "translation": "Caballo",
+    "kana": "うま",
+    "kanji": "馬"
+  },
+  {
+    "romaji": "Raion",
+    "translation": "León",
+    "kana": "らいおん",
+    "kanji": "獅子"
+  },
+  {
+    "romaji": "Zou",
+    "translation": "Elefante",
+    "kana": "ぞう",
+    "kanji": "象"
+  },
+  {
+    "romaji": "Hitsuji",
+    "translation": "Oveja",
+    "kana": "ひつじ",
+    "kanji": "羊"
+  },
+  {
+    "romaji": "Neko",
+    "translation": "Gato",
+    "kana": "ねこ",
+    "kanji": "猫"
+  },
+  {
+    "romaji": "Inu",
+    "translation": "Perro",
+    "kana": "いぬ",
+    "kanji": "犬"
+  },
+  {
+    "romaji": "Usagi",
+    "translation": "Conejo",
+    "kana": "うさぎ",
+    "kanji": "兎"
+  },
+  {
+    "romaji": "Kitsune",
+    "translation": "Zorro",
+    "kana": "きつね",
+    "kanji": "狐"
+  },
+  {
+    "romaji": "Buta",
+    "translation": "Cerdo",
+    "kana": "ぶた",
+    "kanji": "豚"
+  },
+  {
+    "romaji": "Nezumi",
+    "translation": "Ratón",
+    "kana": "ねずみ",
+    "kanji": "鼠"
+  },
+  {
+    "romaji": "Tori",
+    "translation": "Pájaro",
+    "kana": "とり",
+    "kanji": "鳥"
+  },
+  {
+    "romaji": "Niwatori",
+    "translation": "Gallina",
+    "kana": "にわとり",
+    "kanji": "鶏"
+  },
+  {
+    "romaji": "Shika",
+    "translation": "Ciervo",
+    "kana": "しか",
+    "kanji": "鹿"
+  },
+  {
+    "romaji": "Sakana",
+    "translation": "Pez",
+    "kana": "さかな",
+    "kanji": "魚"
+  },
+  {
+    "romaji": "Kaba",
+    "translation": "Hipopótamo",
+    "kana": "かば",
+    "kanji": "河馬"
+  },
+  {
+    "romaji": "Wani",
+    "translation": "Mono",
+    "kana": "わに",
+    "kanji": "猿"
+  },
+  {
+    "romaji": "Saru",
+    "translation": "Cocodrilo",
+    "kana": "さる",
+    "kanji": "猿"
+  },
+  {
+    "romaji": "Dachou",
+    "translation": "Avestruz",
+    "kana": "だちょう",
+    "kanji": "駝鳥"
+  }
+]

@@ -1,0 +1,39 @@
+<ng-container>
+  <div
+    #wrapper
+    class="dialog-wrapper">
+    <div
+      #header
+      class="dialog-header">
+      <strong>{{ item.value }}</strong>
+      <small>{{ item.translation }}</small>
+    </div>
+    <div
+      #content
+      class="dialog-content">
+      <div #info>
+        <div [hidden]="item.type === type.Romaji">{{ item.word.romaji }}</div>
+        <div [hidden]="item.type === type.Kana">{{ item.word.kana }}</div>
+        <div [hidden]="item.type === type.Kanji">{{ item.word.kanji }}</div>
+      </div>
+      <div
+        #more_info
+        *ngIf="item.word.more_info">
+        <div [hidden]="!item.word.more_info.other_translations">
+          {{ item.word.more_info.other_translations }}
+        </div>
+        <div [hidden]="!item.word.more_info.detail_translation">
+          {{ item.word.more_info.detail_translation }}
+        </div>
+      </div>
+    </div>
+    <div
+      #footer
+      class="dialog-footer">
+      <p-button
+        icon="pi pi-check"
+        severity="help"
+        (click)="closeEvent.emit()"></p-button>
+    </div>
+  </div>
+</ng-container>

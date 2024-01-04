@@ -1,0 +1,352 @@
+[
+  {
+    "romaji": "Hon",
+    "translation": "Libro",
+    "kana": "ほん",
+    "kanji": "本"
+  },
+  {
+    "romaji": "No-to",
+    "translation": "Cuaderno",
+    "kana": "のーと",
+    "kanji": "ノート"
+  },
+  {
+    "romaji": "Jisho",
+    "translation": "Diccionario",
+    "kana": "じしょ",
+    "kanji": "辞書"
+  },
+  {
+    "romaji": "Kami",
+    "translation": "Papel",
+    "kana": "かみ",
+    "kanji": "紙"
+  },
+  {
+    "romaji": "Karenda-",
+    "translation": "Calendario",
+    "kana": "かれんだー",
+    "kanji": "カレンダー"
+  },
+  {
+    "romaji": "Purinto",
+    "translation": "Copia",
+    "kana": "ぷりんと",
+    "kanji": "プリント"
+  },
+  {
+    "romaji": "Zasshi",
+    "translation": "Revista",
+    "kana": "ざっし",
+    "kanji": "雑誌"
+  },
+  {
+    "romaji": "Shinbun",
+    "translation": "Periódico",
+    "kana": "しんぶん",
+    "kanji": "新聞"
+  },
+  {
+    "romaji": "Techou",
+    "translation": "Libreta",
+    "kana": "てちょう",
+    "kanji": "手帳",
+    "more_info": {"other_translations": ["Agenda"]}
+  },
+  {
+    "romaji": "Enpitsu",
+    "translation": "Lápiz",
+    "kana": "えんぴつ",
+    "kanji": "鉛筆"
+  },
+  {
+    "romaji": "Bo-rupen",
+    "translation": "Bolígrafo",
+    "kana": "ぼーるぺん",
+    "kanji": "ボールペン"
+  },
+  {
+    "romaji": "Sha-pen",
+    "translation": "Portaminas",
+    "kana": "しゃーぺん",
+    "kanji": "シャーペン",
+    "more_info": {"other_translations": ["Lapicero"]}
+  },
+  {
+    "romaji": "Keshigomu",
+    "translation": "Goma de borrar",
+    "kana": "けしごむ",
+    "kanji": "消しゴム"
+  },
+  {
+    "romaji": "Kaban",
+    "translation": "Bolso",
+    "kana": "かばん",
+    "kanji": "鞄"
+  },
+  {
+    "romaji": "Saihu",
+    "translation": "Cartera",
+    "kana": "さいふ",
+    "kanji": "財布"
+  },
+  {
+    "romaji": "Kagi",
+    "translation": "Llaves",
+    "kana": "かぎ",
+    "kanji": "鍵"
+  },
+  {
+    "romaji": "Okane",
+    "translation": "Dinero",
+    "kana": "おかね",
+    "kanji": "お金"
+  },
+  {
+    "romaji": "Kasa",
+    "translation": "Paraguas",
+    "kana": "かさ",
+    "kanji": "傘"
+  },
+  {
+    "romaji": "Megane",
+    "translation": "Gafas",
+    "kana": "めがね",
+    "kanji": "眼鏡"
+  },
+  {
+    "romaji": "Tsukue",
+    "translation": "Mesa de escritorio",
+    "kana": "つくえ",
+    "kanji": "机"
+  },
+  {
+    "romaji": "Te-buru",
+    "translation": "Mesa",
+    "kana": "てーぶる",
+    "kanji": "テーブル"
+  },
+  {
+    "romaji": "Isu",
+    "translation": "Silla",
+    "kana": "いす",
+    "kanji": "椅子"
+  },
+  {
+    "romaji": "Konpyu-ta",
+    "translation": "Ordenador",
+    "kana": "こんぴゅーた",
+    "kanji": "コンピュータ"
+  },
+  {
+    "romaji": "No-to Pasokon",
+    "translation": "Portátil",
+    "kana": "のーとぱそこん",
+    "kanji": "ノートパソコン"
+  },
+  {
+    "romaji": "Denwa",
+    "translation": "Teléfono",
+    "kana": "でんわ",
+    "kanji": "電話"
+  },
+  {
+    "romaji": "Sumaho",
+    "translation": "Smartphone",
+    "kana": "すまほ",
+    "kanji": "スマホ"
+  },
+  {
+    "romaji": "Ke-tai",
+    "translation": "Móvil",
+    "kana": "けーたい",
+    "kanji": "携帯"
+  },
+  {
+    "romaji": "Terebi",
+    "translation": "Televisor",
+    "kana": "てれび",
+    "kanji": "テレビ"
+  },
+  {
+    "romaji": "Rajio",
+    "translation": "Radio",
+    "kana": "らじお",
+    "kanji": "ラジオ"
+  },
+  {
+    "romaji": "Kamera",
+    "translation": "Cámara",
+    "kana": "かめら",
+    "kanji": "カメラ"
+  },
+  {
+    "romaji": "Tokei",
+    "translation": "Reloj",
+    "kana": "とけい",
+    "kanji": "時計"
+  },
+  {
+    "romaji": "Kitte",
+    "translation": "Sello",
+    "kana": "きって",
+    "kanji": "切手"
+  },
+  {
+    "romaji": "Boushi",
+    "translation": "Gorra",
+    "kana": "ぼうし",
+    "kanji": "帽子"
+  },
+  {
+    "romaji": "Hoshi",
+    "translation": "Estrella",
+    "kana": "ほし",
+    "kanji": "星"
+  },
+  {
+    "romaji": "Hana",
+    "translation": "Flor",
+    "kana": "はな",
+    "kanji": "花"
+  },
+  {
+    "romaji": "Hashi",
+    "translation": "Palillos",
+    "kana": "はし",
+    "kanji": "箸"
+  },
+  {
+    "romaji": "Fo-ku",
+    "translation": "Tenedor",
+    "kana": "ふぉーく",
+    "kanji": "フォーク"
+  },
+  {
+    "romaji": "Supu-n",
+    "translation": "Cuchara",
+    "kana": "すぷーん",
+    "kanji": "スプーン"
+  },
+  {
+    "romaji": "Naihu",
+    "translation": "Cuchillo de mesa",
+    "kana": "ないふ",
+    "kanji": "ナイフ",
+    "more_info": {"other_translations": ["Cuchillo"]}
+  },
+  {
+    "romaji": "Houchou",
+    "translation": "Cuchillo de cocina",
+    "kana": "ほうちょう",
+    "kanji": "包丁",
+    "more_info": {"other_translations": ["Cuchillo"]}
+  },
+  {
+    "romaji": "Tegami",
+    "translation": "Carta",
+    "kana": "てがみ",
+    "kanji": "手紙"
+  },
+  {
+    "romaji": "Hagaki",
+    "translation": "Postal",
+    "kana": "はがき",
+    "kanji": "葉書"
+  },
+  {
+    "romaji": "E meru",
+    "translation": "Correo electrónico",
+    "kana": "えめる",
+    "kanji": "Eメール"
+  },
+  {
+    "romaji": "Messe-ji",
+    "translation": "Mensaje",
+    "kana": "めっせーじ",
+    "kanji": "メッセージ"
+  },
+  {
+    "romaji": "Ka-do",
+    "translation": "Tarjeta",
+    "kana": "かーど",
+    "kanji": "カード"
+  },
+  {
+    "romaji": "Nimotsu",
+    "translation": "Equipaje",
+    "kana": "にもつ",
+    "kanji": "荷物",
+    "more_info": {"other_translations": ["Paquete"]}
+  },
+  {
+    "romaji": "Huutou",
+    "translation": "Sobre",
+    "kana": "ふうとう",
+    "kanji": "封筒"
+  },
+  {
+    "romaji": "Bunbougu",
+    "translation": "Artículos de papelería",
+    "kana": "ぶんぼうぐ",
+    "kanji": "文房具"
+  },
+  {
+    "romaji": "Hasami",
+    "translation": "Tijeras",
+    "kana": "はさみ",
+    "kanji": "鋏"
+  },
+  {
+    "romaji": "Katta-",
+    "translation": "Cúter",
+    "kana": "かったー",
+    "kanji": "カッター"
+  },
+  {
+    "romaji": "Shashin",
+    "translation": "Fotos",
+    "kana": "しゃしん",
+    "kanji": "写真"
+  },
+  {
+    "romaji": "Repo-to",
+    "translation": "Informe",
+    "kana": "れぽーと",
+    "kanji": "レポート",
+    "more_info": {"other_translations": ["Redacción"]}
+  },
+  {
+    "romaji": "Kippu",
+    "translation": "Billete",
+    "kana": "きっぷ",
+    "kanji": "切符",
+    "more_info": {"other_translations": ["Billete de tren"]}
+  },
+  {
+    "romaji": "Omiyage",
+    "translation": "Regalo",
+    "kana": "おみやげ",
+    "kanji": "お土産",
+    "more_info": {"other_translations": ["Souvenir"]}
+  },
+  {
+    "romaji": "Kutsu",
+    "translation": "Zapatos",
+    "kana": "くつ",
+    "kanji": "靴"
+  },
+  {
+    "romaji": "Fuku",
+    "translation": "Ropa",
+    "kana": "ふく",
+    "kanji": "服"
+  },
+  {
+    "romaji": "Nekutai",
+    "translation": "Corbata",
+    "kana": "ねくたい",
+    "kanji": "ネクタイ"
+  }
+]

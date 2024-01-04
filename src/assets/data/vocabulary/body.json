@@ -1,0 +1,104 @@
+[
+  {
+    "romaji": "Atama",
+    "translation": "Cabeza",
+    "kana": "あたま",
+    "kanji": "頭"
+  },
+  {
+    "romaji": "Kao",
+    "translation": "Cara",
+    "kana": "かお",
+    "kanji": "顔"
+  },
+  {
+    "romaji": "Me",
+    "translation": "Ojo",
+    "kana": "め",
+    "kanji": "目"
+  },
+  {
+    "romaji": "Hana",
+    "translation": "Nariz",
+    "kana": "はな",
+    "kanji": "鼻"
+  },
+  {
+    "romaji": "Mimi",
+    "translation": "Oreja",
+    "kana": "みみ",
+    "kanji": "耳"
+  },
+  {
+    "romaji": "Kuchi",
+    "translation": "Boca",
+    "kana": "くち",
+    "kanji": "口"
+  },
+  {
+    "romaji": "Ha",
+    "translation": "Diente",
+    "kana": "は",
+    "kanji": "歯"
+  },
+  {
+    "romaji": "Karada",
+    "translation": "Cuerpo",
+    "kana": "からだ",
+    "kanji": "体"
+  },
+  {
+    "romaji": "Te",
+    "translation": "Mano",
+    "kana": "て",
+    "kanji": "手"
+  },
+  {
+    "romaji": "Ashi",
+    "translation": "Piernas",
+    "kana": "あし",
+    "kanji": "足"
+  },
+  {
+    "romaji": "Onaka",
+    "translation": "Vientre",
+    "kana": "おなか",
+    "kanji": "お腹"
+  },
+  {
+    "romaji": "Kami",
+    "translation": "Cabello",
+    "kana": "かみ",
+    "kanji": "髪"
+  },
+  {
+    "romaji": "Kubi",
+    "translation": "Cuello",
+    "kana": "くび",
+    "kanji": "首"
+  },
+  {
+    "romaji": "Nodo",
+    "translation": "Garganta",
+    "kana": "のど",
+    "kanji": "喉"
+  },
+  {
+    "romaji": "Ude",
+    "translation": "Brazo",
+    "kana": "うで",
+    "kanji": "腕"
+  },
+  {
+    "romaji": "Yubi",
+    "translation": "Dedo",
+    "kana": "ゆび",
+    "kanji": "指"
+  },
+  {
+    "romaji": "Senaka",
+    "translation": "Espalda",
+    "kana": "せなか",
+    "kanji": "背中"
+  }
+]

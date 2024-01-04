@@ -1,0 +1,110 @@
+[
+  {
+    "romaji": "Kuni",
+    "translation": "País",
+    "kana": "くに",
+    "kanji": "国"
+  },
+  {
+    "romaji": "Nippon, Nihon",
+    "translation": "Japón",
+    "kana": "にっぽん, にほん",
+    "kanji": "日本"
+  },
+  {
+    "romaji": "Supein",
+    "translation": "España",
+    "kana": "すぺいん",
+    "kanji": "スペイン"
+  },
+  {
+    "romaji": "Igirisu",
+    "translation": "Inglaterra",
+    "kana": "いぎりす",
+    "kanji": "イギリス"
+  },
+  {
+    "romaji": "Doitsu",
+    "translation": "Alemania",
+    "kana": "どいつ",
+    "kanji": "ドイツ"
+  },
+  {
+    "romaji": "Furansu",
+    "translation": "Francia",
+    "kana": "ふらんす",
+    "kanji": "フランス"
+  },
+  {
+    "romaji": "Porutogaru",
+    "translation": "Portugal",
+    "kana": "ぽるとがる",
+    "kanji": "ポルトガル"
+  },
+  {
+    "romaji": "Oranda",
+    "translation": "Holanda",
+    "kana": "おらんだ",
+    "kanji": "オランダ"
+  },
+  {
+    "romaji": "Itaria",
+    "translation": "Italia",
+    "kana": "いたりあ",
+    "kanji": "イタリア"
+  },
+  {
+    "romaji": "Toruko",
+    "translation": "Turquía",
+    "kana": "とるこ",
+    "kanji": "トルコ"
+  },
+  {
+    "romaji": "Roshia",
+    "translation": "Rusia",
+    "kana": "ろしあ",
+    "kanji": "ロシア"
+  },
+  {
+    "romaji": "Chuugoku",
+    "translation": "China",
+    "kana": "ちゅうごく",
+    "kanji": "中国"
+  },
+  {
+    "romaji": "Kankoku",
+    "translation": "Corea del sur",
+    "kana": "かんこく",
+    "kanji": "韓国"
+  },
+  {
+    "romaji": "Morokko",
+    "translation": "Marruecos",
+    "kana": "もろっこ",
+    "kanji": "モロッコ"
+  },
+  {
+    "romaji": "Mekishiko",
+    "translation": "México",
+    "kana": "めきしこ",
+    "kanji": "メキシコ"
+  },
+  {
+    "romaji": "Amerika",
+    "translation": "Estados Unidos",
+    "kana": "あめりか",
+    "kanji": "アメリカ"
+  },
+  {
+    "romaji": "Brajiru",
+    "translation": "Brasil",
+    "kana": "ぶらじる",
+    "kanji": "ブラジル"
+  },
+  {
+    "romaji": "Gaikoku",
+    "translation": "Extranjero",
+    "kana": "がいこく",
+    "kanji": "外国"
+  }
+]

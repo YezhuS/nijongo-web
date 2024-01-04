@@ -1,0 +1,32 @@
+[
+  {
+    "romaji": "Kiite kudasai",
+    "translation": "Escucha",
+    "kana": "きいてください",
+    "kanji": "聞いてください"
+  },
+  {
+    "romaji": "Kaite kudasai",
+    "translation": "Escribe",
+    "kana": "かいてください",
+    "kanji": "書いてください"
+  },
+  {
+    "romaji": "Yonde kudasai",
+    "translation": "Lee",
+    "kana": "よんでください",
+    "kanji": "読んでください"
+  },
+  {
+    "romaji": "Itte kudasai",
+    "translation": "Di",
+    "kana": "いってください",
+    "kanji": "言ってください"
+  },
+  {
+    "romaji": "Mite kudasai",
+    "translation": "Mira",
+    "kana": "みてください",
+    "kanji": "見てください"
+  }
+]

@@ -1,14 +1,8 @@
 import {CommonModule} from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-  ViewChild,
-  inject,
-} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
-import {SelectButton, SelectButtonModule} from 'primeng/selectbutton';
+import {SelectButtonModule} from 'primeng/selectbutton';
 import {LetterActivitySharedComponent} from '../../../../shared/components/letter-activity-shared/letter-activity-shared.component';
 import {OptionsI} from '../../../../core/model/core.model';
 import {ActivityLetter} from '../../../../shared/models/activity.model';

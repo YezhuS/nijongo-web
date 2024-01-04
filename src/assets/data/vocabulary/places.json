@@ -1,0 +1,144 @@
+[
+  {
+    "romaji": "Kuukou",
+    "translation": "Aeropuerto",
+    "kana": "くうこう",
+    "kanji": "空港"
+  },
+  {
+    "romaji": "Eki",
+    "translation": "Estación de tren",
+    "kana": "えき",
+    "kanji": "駅"
+  },
+  {
+    "romaji": "Ginkou",
+    "translation": "Banco",
+    "kana": "ぎんこう",
+    "kanji": "銀行"
+  },
+  {
+    "romaji": "Yuubinkyoku",
+    "translation": "Oficina de correos",
+    "kana": "ゆうびんきょく",
+    "kanji": "郵便局"
+  },
+  {
+    "romaji": "Toshokan",
+    "translation": "Biblioteca",
+    "kana": "としょかん",
+    "kanji": "図書館"
+  },
+  {
+    "romaji": "Bijutsukan",
+    "translation": "Museo",
+    "kana": "びじゅつかん",
+    "kanji": "美術館",
+    "more_info": {"other_translations": ["Museo de bellas artes"]}
+  },
+  {
+    "romaji": "Eigakan",
+    "translation": "Cine",
+    "kana": "えいがかん",
+    "kanji": "映画館"
+  },
+  {
+    "romaji": "Yuuenchi",
+    "translation": "Parque de atracciones",
+    "kana": "ゆうえんち",
+    "kanji": "遊園地"
+  },
+  {
+    "romaji": "Daigaku",
+    "translation": "Universidad",
+    "kana": "だいがく",
+    "kanji": "大学"
+  },
+  {
+    "romaji": "Byouin",
+    "translation": "Hospital",
+    "kana": "びょういん",
+    "kanji": "病院"
+  },
+  {
+    "romaji": "Depa-to",
+    "translation": "Grandes almacenes",
+    "kana": "でぱーと",
+    "kanji": "デパート"
+  },
+  {
+    "romaji": "Gakkou",
+    "translation": "Escuela",
+    "kana": "がっこう",
+    "kanji": "学校",
+    "more_info": {"other_translations": ["Colegio"]}
+  },
+  {
+    "romaji": "Mise",
+    "translation": "Tienda",
+    "kana": "みせ",
+    "kanji": "店",
+    "more_info": {"other_translations": ["Comercio"]}
+  },
+  {
+    "romaji": "Konbini",
+    "translation": "Tienda 24h",
+    "kana": "こんびに",
+    "kanji": "コンビニ"
+  },
+  {
+    "romaji": "Benkyou",
+    "translation": "Estudio",
+    "kana": "べんきょう",
+    "kanji": "勉強"
+  },
+  {
+    "romaji": "Resutoran",
+    "translation": "Restaurante",
+    "kana": "れすとらん",
+    "kanji": "レストラン"
+  },
+  {
+    "romaji": "Shokudou",
+    "translation": "Comedor",
+    "kana": "しょくどう",
+    "kanji": "食堂"
+  },
+  {
+    "romaji": "Koukou",
+    "translation": "Instituto",
+    "kana": "こうこう",
+    "kanji": "高校",
+    "more_info": {"other_translations": ["Bachillerato"]}
+  },
+  {
+    "romaji": "Hoikuen",
+    "translation": "Guardería",
+    "kana": "ほいくえん",
+    "kanji": "保育園"
+  },
+  {
+    "romaji": "Youchien",
+    "translation": "Jardín de infancia",
+    "kana": "ようちえん",
+    "kanji": "幼稚園"
+  },
+  {
+    "romaji": "Shougakkou",
+    "translation": "Escuela primaria",
+    "kana": "しょうがっこう",
+    "kanji": "小学校"
+  },
+  {
+    "romaji": "Chuugaku",
+    "translation": "Escuela secundaria",
+    "kana": "ちゅうがく",
+    "kanji": "中学校"
+  },
+  {
+    "romaji": "Semmon gakkou",
+    "translation": "Escuela técnica",
+    "kana": "せんもんがっこう",
+    "kanji": "専門学校"
+  }
+]

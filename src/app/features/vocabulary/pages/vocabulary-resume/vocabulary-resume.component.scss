@@ -1,0 +1,42 @@
+::ng-deep {
+    .p-listbox-list-wrapper {
+        // TODO fijar el resto de la pantalla en un 25vh
+        max-height: none !important;
+    }
+    .p-tabview-panels {
+        padding: 0;
+        .p-listbox {
+            border: none;
+            &.p-focus {
+                border: none;
+                box-shadow: none;
+            }
+        }
+        .p-listbox-list {
+            padding: 0;
+        }
+    }
+    .dialog .p-dialog {
+        background-color: white;
+        max-width: 80vw;
+        padding: 1rem;    }
+}
+
+.header-resume-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-word-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .word-item {
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

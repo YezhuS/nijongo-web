@@ -1,1 +1,68 @@
-<p>vocabulary-resume works!</p>
+<ng-container>
+  <div class="header-resume-container">
+    <p-button
+      [size]="'small'"
+      icon="pi pi-times"
+      [rounded]="true"
+      severity="secondary"
+      (click)="router.navigate([previousPath])"></p-button>
+    <span class="p-float-label">
+      <p-dropdown
+        [options]="vocabularyOptions"
+        [(ngModel)]="selectedValueOption"
+        optionLabel="label"
+        (onChange)="selectOnChange($event.value.value)"></p-dropdown>
+    </span>
+  </div>
+
+  <div class="tabview-container">
+    <p-tabView (activeIndexChange)="tabSelected = $event">
+      <p-tabPanel
+        *ngFor="let tab of tabs"
+        [header]="tab.title">
+        <div class="container-resume-word">
+          <p-listbox
+            [options]="tab.content"
+            [(ngModel)]="selectedListBox"
+            optionLabel="name">
+            <ng-template
+              let-item
+              pTemplate="item">
+              <div class="item-word-container">
+                <div class="word-item">
+                  <span>
+                    {{ item.value }}
+                  </span>
+                  <span> {{ item.translation }} </span>
+                </div>
+                <span class="icon-word">
+                  <p-button
+                    icon="pi pi-plus-circle"
+                    [rounded]="true"
+                    [text]="true"
+                    severity="help"
+                    (click)="openDetail(item)"></p-button>
+                </span>
+              </div>
+            </ng-template>
+          </p-listbox>
+        </div>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+
+  <div #dialog>
+    <p-dialog
+      class="dialog"
+      [(visible)]="visible"
+      [modal]="true"
+      position="center"
+      [maximizable]="true">
+      <ng-template pTemplate="headless">
+        <app-detail-word
+          [item]="itemSelected"
+          (closeEvent)="visible = false"></app-detail-word>
+      </ng-template>
+    </p-dialog>
+  </div>
+</ng-container>

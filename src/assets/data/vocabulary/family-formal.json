@@ -1,0 +1,135 @@
+[
+  {
+    "romaji": "Goryoushin",
+    "translation": "Padres",
+    "kana": "ごりょうしん",
+    "kanji": "ご両親"
+  },
+  {
+    "romaji": "Okaasan",
+    "translation": "Madre",
+    "kana": "おかあさん",
+    "kanji": "お母さん"
+  },
+  {
+    "romaji": "Otousan",
+    "translation": "Padre",
+    "kana": "おとうさん",
+    "kanji": "お父さん"
+  },
+  {
+    "romaji": "Obaasan",
+    "translation": "Abuela",
+    "kana": "おばあさん",
+    "kanji": "お婆さん"
+  },
+  {
+    "romaji": "Ojiisan",
+    "translation": "Abuelo",
+    "kana": "おじいさん",
+    "kanji": "お爺さん"
+  },
+  {
+    "romaji": "Gokyoudai",
+    "translation": "Hermanos",
+    "kana": "ごきょうだい",
+    "kanji": "兄弟姉妹"
+  },
+  {
+    "romaji": "Oniisan",
+    "translation": "Hermano mayor",
+    "kana": "おにいさん",
+    "kanji": "お兄さん"
+  },
+  {
+    "romaji": "Oneesan",
+    "translation": "Hermana mayor",
+    "kana": "おねえさん",
+    "kanji": "お姉さん"
+  },
+  {
+    "romaji": "Otouto san",
+    "translation": "Hermano menor",
+    "kana": "おとうとさん",
+    "kanji": "お弟さん"
+  },
+  {
+    "romaji": "Imouto san",
+    "translation": "Hermana menor",
+    "kana": "いもうとさん",
+    "kanji": "妹さん"
+  },
+  {
+    "romaji": "Gohuuhu",
+    "translation": "Pareja",
+    "kana": "ごふうふ",
+    "kanji": "ご夫婦"
+  },
+  {
+    "romaji": "Okusan",
+    "translation": "Esposa",
+    "kana": "おくさん",
+    "kanji": "奥さん"
+  },
+  {
+    "romaji": "Goshujin",
+    "translation": "Esposo",
+    "kana": "ごしゅじん",
+    "kanji": "ご主人"
+  },
+  {
+    "romaji": "Oko san",
+    "translation": "Hijo",
+    "kana": "おこさん",
+    "kanji": "息子さん",
+    "more_info": {"other_translations": ["Hija", "Hijos"]}
+  },
+  {
+    "romaji": "Musuko san",
+    "translation": "Hijo",
+    "kana": "むすこさん",
+    "kanji": "息子さん"
+  },
+  {
+    "romaji": "Musume san",
+    "translation": "Hija",
+    "kana": "むすめさん",
+    "kanji": "娘さん"
+  },
+  {
+    "romaji": "Ojisan",
+    "translation": "Tío",
+    "kana": "おじさん",
+    "kanji": "叔父さん"
+  },
+  {
+    "romaji": "Obasan",
+    "translation": "Tía",
+    "kana": "おばさん",
+    "kanji": "叔母さん"
+  },
+  {
+    "romaji": "Itoko",
+    "translation": "Primo",
+    "kana": "いとこ",
+    "kanji": "従兄弟・従姉妹"
+  },
+  {
+    "romaji": "Oi",
+    "translation": "Sobrino",
+    "kana": "おい",
+    "kanji": "甥"
+  },
+  {
+    "romaji": "Mei",
+    "translation": "Sobrina",
+    "kana": "めい",
+    "kanji": "姪"
+  },
+  {
+    "romaji": "Mago",
+    "translation": "Nieto",
+    "kana": "まご",
+    "kanji": "孫"
+  }
+]

@@ -1,0 +1,201 @@
+{
+  "ikeiyoushi": [
+    {
+      "romaji": "Ooki",
+      "translation": "Grande",
+      "kana": "おおき",
+      "kanji": "大き",
+      "more_info": {
+        "other_translations": ["Antiguo"],
+        "detail_translation": "En referencia a las cosas"
+      }
+    },
+    {
+      "romaji": "Chiisai",
+      "translation": "Pequeño",
+      "kana": "ちいさい",
+      "kanji": "小さい"
+    },
+    {
+      "romaji": "Atarashii",
+      "translation": "Nuevo",
+      "kana": "あたらしい",
+      "kanji": "新しい"
+    },
+    {
+      "romaji": "Hurui",
+      "translation": "Viejo",
+      "kana": "ふるい",
+      "kanji": "古い",
+      "more_info": {"other_translations": ["Antiguo"]}
+    },
+    {
+      "romaji": "Ii",
+      "translation": "Bueno",
+      "kana": "いい (よい)",
+      "kanji": "良い"
+    },
+    {
+      "romaji": "Warui",
+      "translation": "Malo",
+      "kana": "わるい",
+      "kanji": "悪い"
+    },
+    {
+      "romaji": "Atsui",
+      "translation": "Caliente",
+      "kana": "あつい",
+      "kanji": "暑い",
+      "more_info": {"other_translations": ["Caluroso"]}
+    },
+    {
+      "romaji": "Samui",
+      "translation": "Frío",
+      "kana": "さむい",
+      "kanji": "寒い",
+      "more_info": {
+        "detail_translation": "En referencia al clima"
+      }
+    },
+    {
+      "romaji": "Tsumetai",
+      "translation": "Frío",
+      "kana": "つめたい",
+      "kanji": "冷たい",
+      "more_info": {
+        "detail_translation": "En referencia al tacto"
+      }
+    },
+    {
+      "romaji": "Takai",
+      "translation": "Caro",
+      "kana": "たかい",
+      "kanji": "高い",
+      "more_info": {"other_translations": ["Alto"]}
+    },
+    {
+      "romaji": "Yasui",
+      "translation": "Barato",
+      "kana": "やすい",
+      "kanji": "安い"
+    },
+    {
+      "romaji": "Hikui",
+      "translation": "Bajo",
+      "kana": "ひくい",
+      "kanji": "低い"
+    },
+    {
+      "romaji": "Muzukashii",
+      "translation": "Difícil",
+      "kana": "むずかしい",
+      "kanji": "難しい"
+    },
+    {
+      "romaji": "Yasashii",
+      "translation": "Fácil",
+      "kana": "やさしい",
+      "kanji": "易しい"
+    },
+    {
+      "romaji": "Isogashii",
+      "translation": "Estar ocupado",
+      "kana": "いそがしい",
+      "kanji": "忙しい"
+    },
+    {
+      "romaji": "Tanoshii",
+      "translation": "Divertido",
+      "kana": "たのしい",
+      "kanji": "楽しい",
+      "more_info": {
+        "detail_translation": "Pasarlo bien"
+      }
+    },
+    {
+      "romaji": "Omoshiroi",
+      "translation": "Gracioso",
+      "kana": "おもしろい",
+      "kanji": "面白い",
+      "more_info": {"other_translations": ["Curioso", "Interesante"]}
+    }
+  ],
+  "nakeiyoushi": [
+    {
+      "romaji": "Genki",
+      "translation": "Sano",
+      "kana": "げんき",
+      "kanji": "元気",
+      "more_info": {
+        "detail_translation": "Con animo, estar bien"
+      }
+    },
+    {
+      "romaji": "Kirei",
+      "translation": "Hermoso",
+      "kana": "きれい",
+      "kanji": "綺麗",
+      "more_info": {"other_translations": ["Limpio"]}
+    },
+    {
+      "romaji": "Shinsetsu",
+      "translation": "Amable",
+      "kana": "しんせつ",
+      "kanji": "親切"
+    },
+    {
+      "romaji": "Shizuka",
+      "translation": "Tranquilo",
+      "kana": "しずか",
+      "kanji": "静か",
+      "more_info": {"other_translations": ["Silencioso"]}
+    },
+    {
+      "romaji": "Yuumei",
+      "translation": "Famoso",
+      "kana": "ゆうめい",
+      "kanji": "有名"
+    },
+    {
+      "romaji": "Hima",
+      "translation": "Estar libre",
+      "kana": "ひま",
+      "kanji": "暇"
+    },
+    {
+      "romaji": "Benri",
+      "translation": "Util",
+      "kana": "べんり",
+      "kanji": "便利",
+      "more_info": {"other_translations": ["Práctico"]}
+    },
+    {
+      "romaji": "Hansamu",
+      "translation": "Guapo",
+      "kana": "ハンサム",
+      "kanji": null,
+      "more_info": {
+        "detail_translation": "Se refiere a la persona"
+      }
+    },
+    {
+      "romaji": "Suteki",
+      "translation": "Maravilloso",
+      "kana": "すてき",
+      "kanji": null,
+      "more_info": {
+        "detail_translation": "Se refiere a las personas o las cosas"
+      }
+    },
+    {
+      "romaji": "Nigiyaka",
+      "translation": "Animado",
+      "kana": "にぎやか",
+      "kanji": "賑やか",
+      "more_info": {
+        "other_translations": ["Alegre"],
+        "detail_translation": "Cantidad de gente, sonido y voces"
+      }
+    }
+  ]
+}

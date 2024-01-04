@@ -1,0 +1,50 @@
+[
+  {
+    "romaji": "Youbi",
+    "translation": "Día de la semana",
+    "kana": "ようび",
+    "kanji": "曜日"
+  },
+  {
+    "romaji": "Getsuyoubi",
+    "translation": "Lunes",
+    "kana": "げつようび",
+    "kanji": "月曜日"
+  },
+  {
+    "romaji": "Kayoubi",
+    "translation": "Martes",
+    "kana": "かようび",
+    "kanji": "火曜日"
+  },
+  {
+    "romaji": "Suiyoubi",
+    "translation": "Miércoles",
+    "kana": "すいようび",
+    "kanji": "水曜日"
+  },
+  {
+    "romaji": "Mokuyoubi",
+    "translation": "Jueves",
+    "kana": "もくようび",
+    "kanji": "木曜日"
+  },
+  {
+    "romaji": "Kinyoubi",
+    "translation": "Viernes",
+    "kana": "きんようび",
+    "kanji": "金曜日"
+  },
+  {
+    "romaji": "Doyoubi",
+    "translation": "Sábado",
+    "kana": "どようび",
+    "kanji": "土曜日"
+  },
+  {
+    "romaji": "Nichiyoubi",
+    "translation": "Domingo",
+    "kana": "にちようび",
+    "kanji": "日曜日"
+  }
+]
