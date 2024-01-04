@@ -6,13 +6,14 @@
       [rounded]="true"
       severity="secondary"
       (click)="router.navigate([previousPath])"></p-button>
-    <span class="p-float-label">
-      <p-dropdown
-        [options]="vocabularyOptions"
-        [(ngModel)]="selectedValueOption"
-        optionLabel="label"
-        (onChange)="selectOnChange($event.value.value)"></p-dropdown>
-    </span>
+    <p-dropdown
+      class="resume-dropdown"
+      [options]="vocabularyOptions"
+      [(ngModel)]="selectedValueOption"
+      optionLabel="label"
+      [filter]="true"
+      filterBy="label"
+      (onChange)="selectOnChange($event.value.value)"></p-dropdown>
   </div>
 
   <div class="tabview-container">

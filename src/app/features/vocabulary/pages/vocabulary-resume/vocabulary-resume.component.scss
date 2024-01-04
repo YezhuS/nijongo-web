@@ -19,13 +19,20 @@
     .dialog .p-dialog {
         background-color: white;
         max-width: 80vw;
-        padding: 1rem;    }
+        padding: 1rem;
+    }
+    .p-overlay {
+        right: 0;
+    } .p-inputwrapper {
+        width: 100%;
+    }
 }
 
 .header-resume-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
 }
 
 .item-word-container {
@@ -33,10 +40,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .word-item {
+    > .word-item {
         width: inherit;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 1rem;
+        > span {
+            text-align: end;
+        }
     }
 }

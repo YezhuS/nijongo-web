@@ -8,12 +8,12 @@ import {OptionsI} from '../../../../core/model/core.model';
 import {ActivityLetter} from '../../../../shared/models/activity.model';
 import {Router} from '@angular/router';
 import {FULL_ROUTE} from '../../../../core/const/routes.constant';
-import {VocabularyEnum} from '../../model/vocabulary.model';
 import {
   OptionsVocabularyActivity,
   OptionsVocabularyType,
 } from '../../constants/options.constant';
 import {MultiSelectModule} from 'primeng/multiselect';
+import {WordTypeEnum} from '../../model/word.model';
 
 @Component({
   selector: 'app-vocabulary-activity',
@@ -60,9 +60,9 @@ export class VocabularyActivityComponent {
 
   protected questionOptionChange(value: number): void {
     const options: OptionsI[] = [
-      {label: 'Katakana/Hiragana', value: VocabularyEnum.KA_HI},
-      {label: 'Kanji', value: VocabularyEnum.KANJI},
-      {label: 'Romanji', value: VocabularyEnum.ROMANJI},
+      {label: 'Kana', value: WordTypeEnum.Kana},
+      {label: 'Kanji', value: WordTypeEnum.Kanji},
+      {label: 'Romaji', value: WordTypeEnum.Romaji},
     ];
     options[value].disable = true;
     this.answerOptions = options;

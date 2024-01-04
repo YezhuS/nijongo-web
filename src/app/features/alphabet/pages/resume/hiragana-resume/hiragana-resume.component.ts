@@ -2,9 +2,9 @@ import {Component} from '@angular/core';
 import {ResumePageSharedComponent} from '../../../../../shared/pages/resume-page-shared/resume-page-shared.component';
 import {TabI} from '../../../../../shared/models/tab.model';
 import {LetterI} from '../../../../../shared/models/itemLetter.model';
-import hiraganaBasic from '../../../../../../assets/data/hiragana.json';
-import hiraganaD from '../../../../../../assets/data/hiragana-diacritico.json';
-import hiraganaDiphthong from '../../../../../../assets/data/hiragana-diptongo.json';
+import hiraganaBasic from '../../../../../../assets/data/alphabet/hiragana.json';
+import hiraganaD from '../../../../../../assets/data/alphabet/hiragana-diacritico.json';
+import hiraganaDiphthong from '../../../../../../assets/data/alphabet/hiragana-diptongo.json';
 import {FULL_ROUTE} from '../../../../../core/const/routes.constant';
 
 @Component({

@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
 import {TabI} from '../../../../../shared/models/tab.model';
 import {LetterI} from '../../../../../shared/models/itemLetter.model';
-import katakanaBasic from '../../../../../../assets/data/katakana.json';
-import katakanaD from '../../../../../../assets/data/katakana-diacritico.json';
-import katakanaDiphthong from '../../../../../../assets/data/katakana-diptongo.json';
+import katakanaBasic from '../../../../../../assets/data/alphabet/katakana.json';
+import katakanaD from '../../../../../../assets/data/alphabet/katakana-diacritico.json';
+import katakanaDiphthong from '../../../../../../assets/data/alphabet/katakana-diptongo.json';
 import {ResumePageSharedComponent} from '../../../../../shared/pages/resume-page-shared/resume-page-shared.component';
 import {FULL_ROUTE} from '../../../../../core/const/routes.constant';
 
