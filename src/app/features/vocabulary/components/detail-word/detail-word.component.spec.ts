@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DetailWordComponent } from './detail-word.component';
+import {DetailWordComponent} from './detail-word.component';
 
 describe('DetailWordComponent', () => {
   let component: DetailWordComponent;
@@ -8,10 +8,9 @@ describe('DetailWordComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DetailWordComponent]
-    })
-    .compileComponents();
-    
+      imports: [DetailWordComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(DetailWordComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
