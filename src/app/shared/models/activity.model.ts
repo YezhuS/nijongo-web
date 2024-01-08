@@ -12,27 +12,6 @@ interface ActivityBtnI {
   path: string;
 }
 
-export interface ActivityLetterI {
-  justLook: boolean;
-  complexity: string;
-  type: string;
-}
-
-export class ActivityLetter implements ActivityLetterI {
-  justLook: boolean = false;
-  complexity!: string;
-  type!: string;
-
-  constructor(input?: ActivityLetterI) {
-    if (input) Object.assign(input);
-    else {
-      this.justLook = false;
-      this.complexity = '';
-      this.type = '';
-    }
-  }
-}
-
 export class Activity implements ActivityI {
   btnR!: ActivityBtnI;
   btnL!: ActivityBtnI;
@@ -57,4 +36,27 @@ export class Activity implements ActivityI {
       this.type = '';
     }
   }
+}
+
+export interface ActivityLayoutI {
+  justLook: boolean;
+  type: ActivityLayoutEnum;
+}
+
+export class ActivityLayout implements ActivityLayoutI {
+  justLook!: boolean;
+  type!: ActivityLayoutEnum;
+
+  constructor(input?: ActivityLayoutI) {
+    if (input) Object.assign(input);
+    else {
+      this.justLook = false;
+      this.type = ActivityLayoutEnum.InputAnswer;
+    }
+  }
+}
+
+export enum ActivityLayoutEnum {
+  InputAnswer,
+  ChooseAnswer, // Future implementation
 }

@@ -1,13 +1,4 @@
-import {Injectable, inject} from '@angular/core';
-import {SharedStateService} from '../state/shared-state.service';
-import {ActivityLetter} from '../../models/activity.model';
+import {Injectable} from '@angular/core';
 
 @Injectable()
-export class SharedFacadeService {
-  private state = inject(SharedStateService);
-
-  activity$ = this.state.getActivity$();
-  setActivity(value: ActivityLetter) {
-    this.state.setActivity(value);
-  }
-}
+export class SharedFacadeService {}

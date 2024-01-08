@@ -23,11 +23,17 @@ import transport from '../../../../assets/data/vocabulary/transport.json';
 import familyFormal from '../../../../assets/data/vocabulary/family-formal.json';
 import familyInformal from '../../../../assets/data/vocabulary/family-informal.json';
 import {WordTypeEnum} from '../model/word.model';
+import {TranslationFlow} from '../model/translation.model';
 
-export const OptionsVocabularyActivity: OptionsI[] = [
+export const OptionsVocabularyActivityType: OptionsI[] = [
   {label: 'Kana', value: WordTypeEnum.Kana},
   {label: 'Kanji', value: WordTypeEnum.Kanji},
   {label: 'Romaji', value: WordTypeEnum.Romaji},
+];
+
+export const OptionsVocabularyActivityTranslation: OptionsI[] = [
+  {label: 'JP -> ES', value: TranslationFlow.JP_ES},
+  {label: 'ES -> JP', value: TranslationFlow.ES_JP},
 ];
 
 export const OptionsVocabularyType: OptionsI[] = [

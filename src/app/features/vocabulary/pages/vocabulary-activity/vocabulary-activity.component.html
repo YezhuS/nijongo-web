@@ -17,20 +17,17 @@
       </div>
       <div>
         <p-selectButton
-          [options]="questionOptions"
-          [(ngModel)]="questionValue"
+          [options]="firstConditionOptions"
+          [(ngModel)]="firstConditionValue"
           [allowEmpty]="false"
           optionLabel="label"
-          optionValue="value"
-          (onOptionClick)="
-            questionOptionChange($event.index!)
-          "></p-selectButton>
+          optionValue="value"></p-selectButton>
       </div>
       <div>
         <p-selectButton
           #answerSelectButton
-          [options]="answerOptions"
-          [(ngModel)]="answerValue"
+          [options]="secondConditionOptions"
+          [(ngModel)]="secondConditionValue"
           [allowEmpty]="false"
           optionLabel="label"
           optionValue="value"
@@ -62,5 +59,6 @@
 <ng-template #letter>
   <app-letter-activity-shared
     (closeActivityEvent)="activityStarted = false"
-    [activityLetterInput]="activityLetterValue"></app-letter-activity-shared>
+    [activityLayoutInput]="activityLayoutValue"
+    [answerQuestionInput]="answerQuestionValue"></app-letter-activity-shared>
 </ng-template>

@@ -13,22 +13,24 @@
           severity="secondary"></p-button>
         <p-button
           icon="pi {{
-            activityLetterInput.justLook ? 'pi-eye' : 'pi-eye-slash'
+            activityLayoutInput.justLook ? 'pi-eye' : 'pi-eye-slash'
           }}"
           [rounded]="true"
           severity="secondary"
           (click)="
-            activityLetterInput.justLook = !activityLetterInput.justLook
+            activityLayoutInput.justLook = !activityLayoutInput.justLook
           "></p-button>
       </div>
     </div>
     <div class="activity-body">
       <!-- Cuerpo de la activity -->
-      <div>imagen de la letra (muy grande)</div>
+      <div>{{ questionValue }}</div>
     </div>
     <div class="activity-footer answer">
       <div>
-        <div class="input-answer">
+        <div
+          *ngIf="!activityLayoutInput.justLook"
+          class="input-answer">
           <input
             pInputText
             id="answerInput"
@@ -41,8 +43,10 @@
           [label]="nextBtnLabel"
           [rounded]="true"
           severity="secondary"
-          (click)="nextLetter()"></p-button>
+          (click)="validateAnswer()"></p-button>
       </div>
     </div>
   </div>
 </ng-container>
+<!-- Toast -->
+<p-toast class="toast"></p-toast>
