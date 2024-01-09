@@ -3,6 +3,7 @@ import {ActivityPageSharedComponent} from '../../../../../shared/pages/activity-
 import {ActivityI} from '../../../../../shared/models/activity.model';
 import {FULL_ROUTE} from '../../../../../core/const/routes.constant';
 import {AlphabetEnum} from '../../../model/alphabet.model';
+import {OptionsAlphabetKanji} from '../../../constants/options.constant';
 
 @Component({
   selector: 'app-kanji-activity',
@@ -24,6 +25,6 @@ export class KanjiActivityComponent {
     title: 'Kanji',
     resumePath: FULL_ROUTE.kanji_resume,
     type: AlphabetEnum.KANJI,
-    letterActPath: '',
+    options: OptionsAlphabetKanji,
   };
 }

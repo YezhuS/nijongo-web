@@ -3,6 +3,7 @@ import {ActivityPageSharedComponent} from '../../../../../shared/pages/activity-
 import {ActivityI} from '../../../../../shared/models/activity.model';
 import {FULL_ROUTE} from '../../../../../core/const/routes.constant';
 import {AlphabetEnum} from '../../../model/alphabet.model';
+import {OptionsAlphabetKatakana} from '../../../constants/options.constant';
 
 @Component({
   selector: 'app-katakana-activity',
@@ -24,6 +25,6 @@ export class KatakanaActivityComponent {
     title: 'Katakana',
     resumePath: FULL_ROUTE.katakana_resume,
     type: AlphabetEnum.KATAKANA,
-    letterActPath: '',
+    options: OptionsAlphabetKatakana,
   };
 }

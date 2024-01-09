@@ -1,10 +1,12 @@
+import {OptionsI} from '../../core/model/core.model';
+
 export interface ActivityI {
   btnR: ActivityBtnI;
   btnL: ActivityBtnI;
   title: string;
   resumePath: string;
-  letterActPath: string;
   type: string;
+  options: OptionsI[];
 }
 
 interface ActivityBtnI {
@@ -17,8 +19,8 @@ export class Activity implements ActivityI {
   btnL!: ActivityBtnI;
   title!: string;
   resumePath!: string;
-  letterActPath!: string;
   type!: string;
+  options!: OptionsI[];
 
   constructor(input?: ActivityI) {
     if (input) Object.assign(input);
@@ -34,6 +36,7 @@ export class Activity implements ActivityI {
       this.title = '';
       this.resumePath = '';
       this.type = '';
+      this.options = [];
     }
   }
 }

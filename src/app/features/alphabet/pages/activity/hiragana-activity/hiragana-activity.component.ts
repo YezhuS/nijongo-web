@@ -3,6 +3,7 @@ import {ActivityPageSharedComponent} from '../../../../../shared/pages/activity-
 import {ActivityI} from '../../../../../shared/models/activity.model';
 import {FULL_ROUTE, PATH} from '../../../../../core/const/routes.constant';
 import {AlphabetEnum} from '../../../model/alphabet.model';
+import {OptionsAlphabetHiragana} from '../../../constants/options.constant';
 
 @Component({
   selector: 'app-hiragana-activity',
@@ -24,6 +25,6 @@ export class HiraganaActivityComponent {
     title: 'Hiragana',
     resumePath: FULL_ROUTE.hiragana_resume,
     type: AlphabetEnum.HIRAGANA,
-    letterActPath: '',
+    options: OptionsAlphabetHiragana,
   };
 }

@@ -5,15 +5,13 @@ import {Router} from '@angular/router';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {OptionsI} from '../../../core/model/core.model';
 import {FormsModule} from '@angular/forms';
-import {
-  AlphabetEnum,
-  ComplexityAlphabetEnum,
-} from '../../../features/alphabet/model/alphabet.model';
+import {AlphabetEnum} from '../../../features/alphabet/model/alphabet.model';
 import {CommonModule} from '@angular/common';
 import {SharedFacadeService} from '../../services/facade/shared-facade.service';
 import {SharedStateService} from '../../services/state/shared-state.service';
 import {LetterActivitySharedComponent} from '../../components/letter-activity-shared/letter-activity-shared.component';
 import {AnswerQuestionI} from '../../models/answerQuestion.model';
+import {LetterI} from '../../models/itemLetter.model';
 
 @Component({
   selector: 'app-activity-page-shared',
@@ -63,20 +61,7 @@ export class ActivityPageSharedComponent implements OnChanges {
       ];
       this.typeValue = this.typeOptions[0].value;
 
-      this.complexityOptions = [
-        {
-          label: 'Básico',
-          value: ComplexityAlphabetEnum.BASIC,
-        },
-        {
-          label: 'Complejo',
-          value: ComplexityAlphabetEnum.COMPLEX,
-        },
-        {
-          label: 'Todo',
-          value: ComplexityAlphabetEnum.ALL,
-        },
-      ];
+      this.complexityOptions = this.activityInput.options;
       this.complexityValue = this.complexityOptions[0].value;
     }
   }
@@ -101,25 +86,24 @@ export class ActivityPageSharedComponent implements OnChanges {
   }
 
   private createAnswerQuestionModel(): void {
-    // this.activityInput.
-    // // Build value to send
-    // const answerQuestionsList = this.typeValues.map((option) => {
-    //   const valuesOption: WordI[] = option.value;
-    //   return valuesOption.map((value) => {
-    //     const answerQuestionValue: AnswerQuestionI = {
-    //       question:
-    //         this.secondConditionValue === TranslationFlow.JP_ES
-    //           ? this.chooseJPTranslation(value)
-    //           : this.chooseESTranslation(value)[0],
-    //       answer:
-    //         this.secondConditionValue === TranslationFlow.JP_ES
-    //           ? this.chooseESTranslation(value)
-    //           : [this.chooseJPTranslation(value)],
-    //       info: value,
-    //     };
-    //     return answerQuestionValue;
-    //   });
-    // });
-    // this.answerQuestionValue = answerQuestionsList.flat();
+    // Build value to send
+    const answerQuestionsList = this.complexityOptions.map((option) => {
+      const valuesOption: LetterI[] = option.value;
+      return valuesOption.map((value) => {
+        const answerQuestionValue: AnswerQuestionI = {
+          question:
+            this.typeValue === AlphabetEnum.ROMANJI
+              ? value.translation
+              : value.value,
+          answer:
+            this.typeValue === AlphabetEnum.ROMANJI
+              ? [value.value]
+              : [value.translation],
+          info: value,
+        };
+        return answerQuestionValue;
+      });
+    });
+    this.answerQuestionValue = answerQuestionsList.flat();
   }
 }
