@@ -41,3 +41,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `chore:` (actualizar tareas grunt, etc; sin cambios en el código de producción)  
 
 [Conventional commits guide](https://www.conventionalcommits.org/)
+
+## Tomorrow features
+
+`Kanji activity page` 
+Añadir los kanjis estudiados por el momento (tanto en ejercicio como en resumen)  
+Introducir un modo de ejercicio donde te den 10 kanjis diferentes y debes adivinar cual te preguntan (Código: se añadiría primero el correcto, se añaden 9 más aleatorios y se barajan)  
+
+`letter shared component`  
+Añadir toda la información de la letra/palabra para mostrar con el botón i
+Añadir el total?
+
+`Partículas`  
+  
+`Pasar a aplicación móvil`  
