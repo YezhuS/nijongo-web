@@ -17,6 +17,11 @@ import {ActivityLayout} from '../../../../shared/models/activity.model';
 import {AnswerQuestionI} from '../../../../shared/models/answerQuestion.model';
 import {WordI, WordTypeEnum} from '../../model/word.model';
 import {TranslationFlow} from '../../model/translation.model';
+import {ToastModule} from 'primeng/toast';
+import {MessageService} from 'primeng/api';
+import {MessageStateService} from '../../../../core/service/state/message-state.service';
+import {MessageFacadeService} from '../../../../core/service/facade/message-facade.service';
+import {SeverityMessageEnum} from '../../../../core/enum/message.enum';
 
 @Component({
   selector: 'app-vocabulary-activity',
@@ -28,12 +33,15 @@ import {TranslationFlow} from '../../model/translation.model';
     CommonModule,
     LetterActivitySharedComponent,
     MultiSelectModule,
+    ToastModule,
   ],
+  providers: [MessageService, MessageStateService, MessageFacadeService],
   templateUrl: './vocabulary-activity.component.html',
   styleUrl: './vocabulary-activity.component.scss',
 })
 export class VocabularyActivityComponent {
   protected router = inject(Router);
+  private messageFacadeService = inject(MessageFacadeService);
 
   protected startBtnLabel = 'Empezar';
   protected activityStarted = false;
@@ -61,23 +69,15 @@ export class VocabularyActivityComponent {
     this.secondConditionValue = this.secondConditionOptions[0].value;
   }
 
-  protected questionOptionChange(value: number): void {
-    // const options: OptionsI[] = [
-    //   {label: 'Kana', value: WordTypeEnum.Kana},
-    //   {label: 'Kanji', value: WordTypeEnum.Kanji},
-    //   {label: 'Romaji', value: WordTypeEnum.Romaji},
-    // ];
-    // options[value].disable = true;
-    // this.secondConditionOptions = options;
-    // if (this.answerValue === this.secondConditionOptions[value].value)
-    //   this.answerValue = '';
-  }
-
   protected startActivity(): void {
     this.createAnswerQuestionModel();
     // check if any was selected
     if (this.answerQuestionValue.length < 1) {
-      console.log('Selecciona algun tipo');
+      this.messageFacadeService.showToast({
+        severity: SeverityMessageEnum.warn,
+        summary: 'Cuidado',
+        detail: 'Debes seleccionar algún tipo',
+      });
       return;
     }
     // Create object to send

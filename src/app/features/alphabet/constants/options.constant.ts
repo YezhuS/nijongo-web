@@ -6,22 +6,10 @@ import katakanaBasic from '../../../../assets/data/alphabet/katakana.json';
 import katakanaD from '../../../../assets/data/alphabet/katakana-diacritico.json';
 import katakanaDiphthong from '../../../../assets/data/alphabet/katakana-diptongo.json';
 
-// export const OptionsVocabularyActivityType: OptionsI[] = [
-//   {label: 'Kana', value: WordTypeEnum.Kana},
-//   {label: 'Kanji', value: WordTypeEnum.Kanji},
-//   {label: 'Romaji', value: WordTypeEnum.Romaji},
-// ];
-
-// export const OptionsVocabularyActivityTranslation: OptionsI[] = [
-//   {label: 'JP -> ES', value: TranslationFlow.JP_ES},
-//   {label: 'ES -> JP', value: TranslationFlow.ES_JP},
-// ];
-
-/* TODO no enviar los huevos en blanco (quizás con un filter) */
 export const OptionsAlphabetHiragana: OptionsI[] = [
   {
     label: 'Básico',
-    value: hiraganaBasic.concat(hiraganaD),
+    value: hiraganaBasic.concat(hiraganaD).filter((x) => x.value !== ''), // Avoid empty values for activity
   },
   {
     label: 'Complejo',
@@ -29,15 +17,16 @@ export const OptionsAlphabetHiragana: OptionsI[] = [
   },
   {
     label: 'Todo',
-    value: hiraganaBasic.concat(hiraganaD, hiraganaDiphthong),
+    value: hiraganaBasic
+      .concat(hiraganaD, hiraganaDiphthong)
+      .filter((x) => x.value !== ''), // Avoid empty values for activity
   },
 ];
 
-/* TODO no enviar los huevos en blanco (quizás con un filter) */
 export const OptionsAlphabetKatakana: OptionsI[] = [
   {
     label: 'Básico',
-    value: katakanaBasic.concat(katakanaD),
+    value: katakanaBasic.concat(katakanaD).filter((x) => x.value !== ''), // Avoid empty values for activity
   },
   {
     label: 'Complejo',
@@ -45,7 +34,9 @@ export const OptionsAlphabetKatakana: OptionsI[] = [
   },
   {
     label: 'Todo',
-    value: katakanaBasic.concat(katakanaD, katakanaDiphthong),
+    value: katakanaBasic
+      .concat(katakanaD, katakanaDiphthong)
+      .filter((x) => x.value !== ''), // Avoid empty values for activity
   },
 ];
 

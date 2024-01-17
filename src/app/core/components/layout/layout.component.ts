@@ -14,8 +14,8 @@ import {ItemsNavigation, ItemsOption} from '../../const/menuItems.constant';
   styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {
-  itemsNavigation: MenuItem[] | undefined;
-  itemsOptions: MenuItem[] | undefined;
+  protected itemsNavigation: MenuItem[] | undefined;
+  protected itemsOptions: MenuItem[] | undefined;
 
   constructor() {
     this.itemsNavigation = ItemsNavigation;

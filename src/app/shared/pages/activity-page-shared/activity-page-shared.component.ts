@@ -28,10 +28,6 @@ import {LetterI} from '../../models/itemLetter.model';
   styleUrl: './activity-page-shared.component.scss',
 })
 export class ActivityPageSharedComponent implements OnChanges {
-  /**
-   * Habría que pasar las opciones de cada tipo con los valores dentro
-   * y así poder selecionarlo en el createAnswerQuestionModel */
-
   protected router = inject(Router);
 
   // Activity settings
@@ -44,7 +40,7 @@ export class ActivityPageSharedComponent implements OnChanges {
   // Values
   protected justLook = false;
   protected typeValue = '';
-  protected complexityValue = '';
+  protected complexityValue: LetterI[] = [];
 
   // Options
   protected typeOptions: OptionsI[] = [];
@@ -87,23 +83,19 @@ export class ActivityPageSharedComponent implements OnChanges {
 
   private createAnswerQuestionModel(): void {
     // Build value to send
-    const answerQuestionsList = this.complexityOptions.map((option) => {
-      const valuesOption: LetterI[] = option.value;
-      return valuesOption.map((value) => {
-        const answerQuestionValue: AnswerQuestionI = {
-          question:
-            this.typeValue === AlphabetEnum.ROMANJI
-              ? value.translation
-              : value.value,
-          answer:
-            this.typeValue === AlphabetEnum.ROMANJI
-              ? [value.value]
-              : [value.translation],
-          info: value,
-        };
-        return answerQuestionValue;
-      });
+    this.answerQuestionValue = this.complexityValue.map((value) => {
+      const answerQuestionValue: AnswerQuestionI = {
+        question:
+          this.typeValue === AlphabetEnum.ROMANJI
+            ? value.translation
+            : value.value,
+        answer:
+          this.typeValue === AlphabetEnum.ROMANJI
+            ? [value.value]
+            : [value.translation],
+        info: value,
+      };
+      return answerQuestionValue;
     });
-    this.answerQuestionValue = answerQuestionsList.flat();
   }
 }

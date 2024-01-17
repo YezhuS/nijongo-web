@@ -15,6 +15,14 @@ import {AnswerQuestionI} from '../../models/answerQuestion.model';
 import {ActivityLayout} from '../../models/activity.model';
 import {ToastModule} from 'primeng/toast';
 import {MessageService} from 'primeng/api';
+import {MessageFacadeService} from '../../../core/service/facade/message-facade.service';
+import {
+  LifeMessageEnum,
+  SeverityMessageEnum,
+} from '../../../core/enum/message.enum';
+import {MessageStateService} from '../../../core/service/state/message-state.service';
+import {shuffle} from '../../../core/utils/lists.utils';
+import {removeAccents} from '../../../core/utils/strings.utils';
 
 @Component({
   selector: 'app-letter-activity-shared',
@@ -26,27 +34,13 @@ import {MessageService} from 'primeng/api';
     CommonModule,
     ToastModule,
   ],
-  providers: [MessageService],
+  providers: [MessageService, MessageStateService, MessageFacadeService],
   templateUrl: './letter-activity-shared.component.html',
   styleUrl: './letter-activity-shared.component.scss',
 })
 export class LetterActivitySharedComponent implements OnChanges {
-  /** La idea es:
-   *
-   * Desde el padre se envíe las letras o palabras que se van a mostrar como pregunta
-   * y su respuesta (o respuestas)
-   */
-
-  /**
-   *
-   *
-   * Aumentar el tamaño de la pregunta
-   *
-   * Mostrar algún mensaje de que se ha terminado el listado o volver a empezar
-   */
-
   protected router = inject(Router);
-  private messageService = inject(MessageService);
+  private messageFacadeService = inject(MessageFacadeService);
 
   @Input() answerQuestionInput: AnswerQuestionI[] = [];
   @Input() activityLayoutInput = new ActivityLayout();
@@ -63,46 +57,22 @@ export class LetterActivitySharedComponent implements OnChanges {
   private questionNumber = 0;
 
   ngOnChanges(): void {
-    this.answerQuestionInput = this.shuffle(this.answerQuestionInput);
+    this.answerQuestionInput = shuffle(this.answerQuestionInput);
     this.setValues();
 
     console.log(this.answerQuestionInput);
     console.log(this.activityLayoutInput);
   }
 
-  // TODO mover a utils
-  private shuffle(array: Array<any>): Array<any> {
-    return array.sort(() => Math.random() - 0.5);
-  }
-
-  // TODO mover a utils
-  private removeAccents(value: string): string {
-    return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  }
-
-  private showToast(
-    severity: 'success' | 'error' | 'warn' | 'info',
-    summary: string,
-    detail: string,
-    life?: 'short' | 'long'
-  ) {
-    const toastLife = life === 'short' ? 1000 : 5000;
-    this.messageService.add({severity, summary, detail, life: toastLife});
-  }
-
   protected validateAnswer(): void {
-    // Se comprueba si la respuesta es igual a la pregunta
-    // Si son iguales (con lowercase y trim) se pasa a la siguiente
     if (this.activityLayoutInput.justLook) this.nextQuestion();
     else this.checkAnswer() ? this.showCorrect() : this.showMistake();
   }
 
   private checkAnswer(): boolean {
     const value = this.answers
-      .map((x) => this.removeAccents(x.toLocaleLowerCase().trim()))
-      .includes(
-        this.removeAccents(this.answerValue.toLocaleLowerCase().trim())
-      );
+      .map((x) => removeAccents(x.toLocaleLowerCase().trim()))
+      .includes(removeAccents(this.answerValue.toLocaleLowerCase().trim()));
     return value;
   }
 
@@ -111,18 +81,32 @@ export class LetterActivitySharedComponent implements OnChanges {
 
     // Show end of list
     if (this.questionNumber > this.answerQuestionInput.length - 1) {
-      this.showToast('warn', 'Fin de la lista', 'Llegaste al final');
+      this.messageFacadeService.showToast({
+        severity: SeverityMessageEnum.warn,
+        summary: 'Fin de la lista',
+        detail: 'Llegaste al final',
+      });
       return;
     }
     this.setValues();
   }
 
   private showMistake(): void {
-    this.showToast('error', 'Respuesta incorrecta', '', 'short');
+    this.messageFacadeService.showToast({
+      severity: SeverityMessageEnum.error,
+      summary: 'Respuesta incorrecta',
+      detail: '',
+      life: LifeMessageEnum.short,
+    });
   }
 
   private showCorrect(): void {
-    this.showToast('success', 'Respuesta correcta', '', 'short');
+    this.messageFacadeService.showToast({
+      severity: SeverityMessageEnum.success,
+      summary: 'Respuesta correcta',
+      detail: '',
+      life: LifeMessageEnum.short,
+    });
     this.nextQuestion();
   }
 
