@@ -56,3 +56,6 @@ Añadir el total?
   
 `Pasar a aplicación móvil`  
 [Angular -> PWA](https://mugan86.medium.com/crear-una-pwa-sencilla-con-angular-8-884eacded0ce)  
+
+## Capacitor  
+[Guide](https://betterprogramming.pub/how-to-convert-your-angular-application-to-a-native-mobile-app-android-and-ios-c212b38976df)  
