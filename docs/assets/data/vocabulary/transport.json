@@ -1,0 +1,75 @@
+[
+  {
+    "romaji": "Kuruma",
+    "translation": "Coche",
+    "kana": "くるま",
+    "kanji": "車"
+  },
+  {
+    "romaji": "Jidousha",
+    "translation": "Automóvil",
+    "kana": "じどうしゃ",
+    "kanji": "自動車"
+  },
+  {
+    "romaji": "Basu",
+    "translation": "Bus",
+    "kana": "ばす",
+    "kanji": "バス"
+  },
+  {
+    "romaji": "Takushi",
+    "translation": "Taxi",
+    "kana": "たくし",
+    "kanji": "タクシー"
+  },
+  {
+    "romaji": "O-tobai",
+    "translation": "Motocicleta",
+    "kana": "おーとばい",
+    "kanji": "オートバイ"
+  },
+  {
+    "romaji": "Jitensha",
+    "translation": "Bicicleta",
+    "kana": "じてんしゃ",
+    "kanji": "自転車"
+  },
+  {
+    "romaji": "Densha",
+    "translation": "Tren",
+    "kana": "でんしゃ",
+    "kanji": "電車"
+  },
+  {
+    "romaji": "Chikatetsu",
+    "translation": "Metro",
+    "kana": "ちかてつ",
+    "kanji": "地下鉄"
+  },
+  {
+    "romaji": "Shinkansen",
+    "translation": "Tren bala",
+    "kana": "しんかんせん",
+    "kanji": "新幹線"
+  },
+  {
+    "romaji": "Hune",
+    "translation": "Barco",
+    "kana": "ふね",
+    "kanji": "船"
+  },
+  {
+    "romaji": "Hikouki",
+    "translation": "Avión",
+    "kana": "ひこうき",
+    "kanji": "飛行機"
+  },
+  {
+    "romaji": "Aruite",
+    "translation": "A pie",
+    "kana": "あるいて",
+    "kanji": "歩いて",
+    "more_info": {"other_translations": ["Andando"]}
+  }
+]

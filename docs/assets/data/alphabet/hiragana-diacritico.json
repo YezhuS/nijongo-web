@@ -1,0 +1,28 @@
+[
+    {"value": "が", "translation": "ga"},
+    {"value": "ぎ", "translation": "gi"},
+    {"value": "ぐ", "translation": "gu"},
+    {"value": "げ", "translation": "ge"},
+    {"value": "ご", "translation": "go"},
+    {"value": "ざ", "translation": "za"},
+    {"value": "じ", "translation": "ji"},
+    {"value": "ず", "translation": "zu"},
+    {"value": "ぜ", "translation": "ze"},
+    {"value": "ぞ", "translation": "zo"},
+    {"value": "だ", "translation": "da"},
+    {"value": "ぢ", "translation": "ji"},
+    {"value": "づ", "translation": "zu"},
+    {"value": "で", "translation": "de"},
+    {"value": "ど", "translation": "do"},
+    {"value": "ば", "translation": "ba"},
+    {"value": "び", "translation": "bi"},
+    {"value": "ぶ", "translation": "bu"},
+    {"value": "べ", "translation": "be"},
+    {"value": "ぼ", "translation": "bo"},
+    {"value": "ぱ", "translation": "pa"},
+    {"value": "ぴ", "translation": "pi"},
+    {"value": "ぷ", "translation": "pu"},
+    {"value": "ぺ", "translation": "pe"},
+    {"value": "ぽ", "translation": "po"}
+]
+  

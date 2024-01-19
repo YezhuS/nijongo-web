@@ -1,0 +1,74 @@
+[
+  {
+    "romaji": "Iro",
+    "translation": "Colores",
+    "kana": "いろ",
+    "kanji": "色"
+  },
+  {
+    "romaji": "Aka",
+    "translation": "Rojo",
+    "kana": "あか",
+    "kanji": "赤"
+  },
+  {
+    "romaji": "Shiro",
+    "translation": "Blanco",
+    "kana": "しろ",
+    "kanji": "白"
+  },
+  {
+    "romaji": "Ao",
+    "translation": "Azul",
+    "kana": "あお",
+    "kanji": "青"
+  },
+  {
+    "romaji": "Kuro",
+    "translation": "Negro",
+    "kana": "くろ",
+    "kanji": "黒"
+  },
+  {
+    "romaji": "Midori",
+    "translation": "Verde",
+    "kana": "みどり",
+    "kanji": "緑"
+  },
+  {
+    "romaji": "Murasaki",
+    "translation": "Morado",
+    "kana": "むらさき",
+    "kanji": "紫"
+  },
+  {
+    "romaji": "Mizuiro",
+    "translation": "Azul claro",
+    "kana": "みずいろ",
+    "kanji": "水色"
+  },
+  {
+    "romaji": "Kiiro",
+    "translation": "Dorado",
+    "kana": "きいろ",
+    "kanji": "黄色"
+  },
+  {
+    "romaji": "Giniro",
+    "translation": "Plateado",
+    "kana": "ぎんいろ",
+    "kanji": "銀色"
+  },
+  {
+    "romaji": "Pinku",
+    "translation": "Rosa",
+    "kana": "ぴんく",
+    "kanji": "ピンク"
+  },
+  {
+    "romaji": "Orenji",
+    "translation": "Naranja",
+    "kana": "おれんじ",
+    "kanji": "オレンジ"
+  }
+]

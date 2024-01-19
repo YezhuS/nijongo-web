@@ -1,0 +1,68 @@
+[
+  {
+    "romaji": "Nomimono",
+    "translation": "Bebida",
+    "kana": "のみもの",
+    "kanji": "飲み物"
+  },
+  {
+    "romaji": "Mizu",
+    "translation": "Agua",
+    "kana": "みず",
+    "kanji": "水"
+  },
+  {
+    "romaji": "Ko-hi-",
+    "translation": "Café",
+    "kana": "こーひー",
+    "kanji": "コーヒー"
+  },
+  {
+    "romaji": "Ju-su",
+    "translation": "Zumo",
+    "kana": "じゅーす",
+    "kanji": "ジュース"
+  },
+  {
+    "romaji": "Su-pu",
+    "translation": "Sopa",
+    "kana": "すーぷ",
+    "kanji": "スープ"
+  },
+  {
+    "romaji": "Bi-ru",
+    "translation": "Cerveza",
+    "kana": "びーる",
+    "kanji": "ビール"
+  },
+  {
+    "romaji": "O cha",
+    "translation": "Té",
+    "kana": "おちゃ",
+    "kanji": "お茶"
+  },
+  {
+    "romaji": "O sake",
+    "translation": "Bebida alcohólica",
+    "kana": "おさけ",
+    "kanji": "お酒"
+  },
+  {
+    "romaji": "Koucha",
+    "translation": "Té inglés",
+    "kana": "こうちゃ",
+    "kanji": "紅茶"
+  },
+  {
+    "romaji": "Gyuunyuu",
+    "translation": "Leche",
+    "kana": "ぎゅうにゅう",
+    "kanji": "牛乳"
+  },
+  {
+    "romaji": "Wain",
+    "translation": "Vino",
+    "kana": "わいん",
+    "kanji": "ワイン"
+  }
+]

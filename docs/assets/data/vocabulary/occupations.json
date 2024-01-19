@@ -1,0 +1,105 @@
+[
+  {
+    "romaji": "Shokujou",
+    "translation": "Ocupaciones",
+    "kana": "しょくじょう",
+    "kanji": "職業"
+  },
+  {
+    "romaji": "Gakusei",
+    "translation": "Estudiante",
+    "kana": "がくせい",
+    "kanji": "学生"
+  },
+  {
+    "romaji": "Chuugakusei",
+    "translation": "Estudiante de secundaria",
+    "kana": "ちゅうがくせい",
+    "kanji": "中学生"
+  },
+  {
+    "romaji": "Koukousei",
+    "translation": "Estudiante de bachillerato",
+    "kana": "こうこうせい",
+    "kanji": "高校生"
+  },
+  {
+    "romaji": "Daigakusei",
+    "translation": "Universitario",
+    "kana": "だいがくせい",
+    "kanji": "大学生"
+  },
+  {
+    "romaji": "Kyoushi",
+    "translation": "Profesor",
+    "kana": "きょうし",
+    "kanji": "教師"
+  },
+  {
+    "romaji": "Kaishain",
+    "translation": "Empleado de una empresa",
+    "kana": "かいしゃいん",
+    "kanji": "会社員"
+  },
+  {
+    "romaji": "Ginkouin",
+    "translation": "Empleado de banco",
+    "kana": "ぎんこういん",
+    "kanji": "銀行員"
+  },
+  {
+    "romaji": "Isha",
+    "translation": "Médico",
+    "kana": "いしゃ",
+    "kanji": "医者"
+  },
+  {
+    "romaji": "Kangoshi",
+    "translation": "Enfermero",
+    "kana": "かんごし",
+    "kanji": "看護師"
+  },
+  {
+    "romaji": "Keikan",
+    "translation": "Policía",
+    "kana": "けいかん",
+    "kanji": "警官"
+  },
+  {
+    "romaji": "Gaka",
+    "translation": "Pintor",
+    "kana": "がか",
+    "kanji": "画家"
+  },
+  {
+    "romaji": "Moderu",
+    "translation": "Modelo",
+    "kana": "もでる",
+    "kanji": "モデル"
+  },
+  {
+    "romaji": "Shuhu",
+    "translation": "Ama de casa",
+    "kana": "しゅふ",
+    "kanji": "主婦"
+  },
+  {
+    "romaji": "Shigoto",
+    "translation": "Trabajo",
+    "kana": "しごと",
+    "kanji": "仕事",
+    "more_info": {"other_translations": ["Profesión"]}
+  },
+  {
+    "romaji": "Annaigakari",
+    "translation": "Persona encargada de la información",
+    "kana": "あんないがかり",
+    "kanji": "案内係"
+  },
+  {
+    "romaji": "Tenin",
+    "translation": "Dependiente",
+    "kana": "てんいん",
+    "kanji": "店員"
+  }
+]

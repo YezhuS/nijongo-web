@@ -1,0 +1,66 @@
+[
+  {
+    "romaji": "Hito",
+    "translation": "Persona",
+    "kana": "ひと",
+    "kanji": "人",
+    "more_info": {"other_translations": ["Gente"]}
+  },
+  {
+    "romaji": "Tomodachi",
+    "translation": "Amigo",
+    "kana": "ともだち",
+    "kanji": "友達",
+    "more_info": {"other_translations": ["Amigos"]}
+  },
+  {
+    "romaji": "Kare",
+    "translation": "Novio",
+    "kana": "かれ",
+    "kanji": "彼"
+  },
+  {
+    "romaji": "Kanojo",
+    "translation": "Novia",
+    "kana": "かのじょ",
+    "kanji": "彼女"
+  },
+  {
+    "romaji": "Koibito",
+    "translation": "Novio",
+    "kana": "こいびと",
+    "kanji": "恋人",
+    "more_info": {"other_translations": ["Novia"]}
+  },
+  {
+    "romaji": "Kazoku",
+    "translation": "Familia",
+    "kana": "かぞく",
+    "kanji": "家族"
+  },
+  {
+    "romaji": "Otoko",
+    "translation": "Hombre",
+    "kana": "おとこ",
+    "kanji": "男"
+  },
+  {
+    "romaji": "Onna",
+    "translation": "Mujer",
+    "kana": "おんな",
+    "kanji": "女"
+  },
+  {
+    "romaji": "Hitori de",
+    "translation": "Solo",
+    "kana": "ひとり で",
+    "kanji": "一人で",
+    "more_info": {"other_translations": ["Sola"]}
+  },
+  {
+    "romaji": "Minasan",
+    "translation": "Todos",
+    "kana": "みなさん",
+    "kanji": "皆さん"
+  }
+]

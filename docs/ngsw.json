@@ -1,0 +1,151 @@
+{
+  "configVersion": 1,
+  "timestamp": 1705689744461,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/111.c540eb1bef1e6ffb.js",
+        "/167.7b2d96382fc760d0.js",
+        "/314.e8f6745d7cfa282c.js",
+        "/395.3e9d8c256bed925b.js",
+        "/742.bd956bb258561550.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.5200a7f6559b8403.js",
+        "/manifest.webmanifest",
+        "/polyfills.6874488aa68a9513.js",
+        "/runtime.c8507a12b40e41fc.js",
+        "/styles.60a15e5ece8d730e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/data/alphabet/hiragana-diacritico.json",
+        "/assets/data/alphabet/hiragana-diptongo.json",
+        "/assets/data/alphabet/hiragana.json",
+        "/assets/data/alphabet/katakana-diacritico.json",
+        "/assets/data/alphabet/katakana-diptongo.json",
+        "/assets/data/alphabet/katakana.json",
+        "/assets/data/vocabulary/adjectives.json",
+        "/assets/data/vocabulary/animals.json",
+        "/assets/data/vocabulary/body.json",
+        "/assets/data/vocabulary/colors.json",
+        "/assets/data/vocabulary/country.json",
+        "/assets/data/vocabulary/day-number.json",
+        "/assets/data/vocabulary/day-week.json",
+        "/assets/data/vocabulary/drink.json",
+        "/assets/data/vocabulary/family-formal.json",
+        "/assets/data/vocabulary/family-informal.json",
+        "/assets/data/vocabulary/food.json",
+        "/assets/data/vocabulary/hobby.json",
+        "/assets/data/vocabulary/house.json",
+        "/assets/data/vocabulary/index.json",
+        "/assets/data/vocabulary/numbers.json",
+        "/assets/data/vocabulary/objects.json",
+        "/assets/data/vocabulary/occupations.json",
+        "/assets/data/vocabulary/orders.json",
+        "/assets/data/vocabulary/people.json",
+        "/assets/data/vocabulary/places.json",
+        "/assets/data/vocabulary/taste.json",
+        "/assets/data/vocabulary/time.json",
+        "/assets/data/vocabulary/transport.json",
+        "/assets/data/vocabulary/verbs.json",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/111.c540eb1bef1e6ffb.js": "23e040606b4b74c96102aa54dadea5db915a6721",
+    "/167.7b2d96382fc760d0.js": "55313d254f9e1b3685323f93905741aa860f2534",
+    "/314.e8f6745d7cfa282c.js": "81bbcd519aec5b5ffab63e72a13ebcada71abe9d",
+    "/395.3e9d8c256bed925b.js": "86b55450b94ba5c7024ee4c2ea37154616bea09c",
+    "/742.bd956bb258561550.js": "c2ff385fdab5b1c5f81d385b0103917ecd679468",
+    "/assets/data/alphabet/hiragana-diacritico.json": "4945c9ef9b774de2a8a9aa4a9172c8517187fee3",
+    "/assets/data/alphabet/hiragana-diptongo.json": "554abeebb5a307834132ab0f1b49a2552a51bf93",
+    "/assets/data/alphabet/hiragana.json": "d1cc6b7fb33235e60ed9fdac91253fedfbfd8be2",
+    "/assets/data/alphabet/katakana-diacritico.json": "2b3edad1975e27b51f48d60666493e962517cb78",
+    "/assets/data/alphabet/katakana-diptongo.json": "9a99d7f6273d56549cb8783543e2aeb44e8196e7",
+    "/assets/data/alphabet/katakana.json": "14b32132cacdaa7bedc3f876e89b63ab4a9aaa9d",
+    "/assets/data/vocabulary/adjectives.json": "9bd57e5f7ea720f58299550ac2ea34c888f82322",
+    "/assets/data/vocabulary/animals.json": "8fc99c4a15cde33209102a81509a9aee9b531940",
+    "/assets/data/vocabulary/body.json": "982ca824a6a4d9faedada167720a36522f86b83f",
+    "/assets/data/vocabulary/colors.json": "064786d3240e6267b38d924088e885576f960f7d",
+    "/assets/data/vocabulary/country.json": "2145b2ff9779b0b7d903d4b532d2299f36e18c39",
+    "/assets/data/vocabulary/day-number.json": "5d159c6d4722b76990c6e8638b1c93fc8301ede7",
+    "/assets/data/vocabulary/day-week.json": "3ab7e50e0c733cb6788538ba3e0c41399f13ef7d",
+    "/assets/data/vocabulary/drink.json": "8cfa18a8e0b9788953e95c8fe9cf0e2b350a6e52",
+    "/assets/data/vocabulary/family-formal.json": "9c4caad103d72c1f14af886d7279aed15e40dcfd",
+    "/assets/data/vocabulary/family-informal.json": "0334dc55fb983b264495674cb51d18b34b3c46dc",
+    "/assets/data/vocabulary/food.json": "c0103d18e44113364871b0990c03d3807332aa44",
+    "/assets/data/vocabulary/hobby.json": "68157bad9acca5bfc24ce1c8a4b507698f0bbf53",
+    "/assets/data/vocabulary/house.json": "e1b91a8b8decc9f4ba6a5337a067152aa905b60b",
+    "/assets/data/vocabulary/index.json": "03b60d7ab21a90b2627dfb1b0d49227977a018e7",
+    "/assets/data/vocabulary/numbers.json": "7bd4f3b0e9e000bcf7b80518e1a7480a29714840",
+    "/assets/data/vocabulary/objects.json": "000ed883aa645f2b0fc05dbfd53f09f94bb66f1d",
+    "/assets/data/vocabulary/occupations.json": "3ce56fa9c3edc35072e62aa6c2a2a8ed5101e467",
+    "/assets/data/vocabulary/orders.json": "35e10bdf98ba93817209bf6f179fe5702f60bd22",
+    "/assets/data/vocabulary/people.json": "5a94407ed9292463c154c3ac4bdfa93e26095eb9",
+    "/assets/data/vocabulary/places.json": "f98f8e210922a56c47308ec9c2da7be9ec80bc6b",
+    "/assets/data/vocabulary/taste.json": "1ae0a1a4510c07aaee0d8a973743df82e70f7976",
+    "/assets/data/vocabulary/time.json": "3ab369005343bab104b53ede7af5af464ce037af",
+    "/assets/data/vocabulary/transport.json": "da8663cdd3f19a63996f78ae03196b6e0e2bda88",
+    "/assets/data/vocabulary/verbs.json": "d7bd504682bee6f3a862b13e6004ac39187eae88",
+    "/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/index.html": "96404861ff69a2d1b83cf0b14af5bcaa36beea13",
+    "/main.5200a7f6559b8403.js": "255417097b9895d9045368b7690c9c53e0bfe7e1",
+    "/manifest.webmanifest": "314fe4eee239a17f4d166405ea1585c75bab6b34",
+    "/polyfills.6874488aa68a9513.js": "8a74c07039e45f5e7f8f240ac015db66f58fb1d9",
+    "/runtime.c8507a12b40e41fc.js": "a62516db71e57942184b431e858cf0fde6a8a0b7",
+    "/styles.60a15e5ece8d730e.css": "a1661e228212e43b95becdc645abaf39e6006ae3"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

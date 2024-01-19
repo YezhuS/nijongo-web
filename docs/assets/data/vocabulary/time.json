@@ -1,0 +1,256 @@
+[
+  {
+    "romaji": "Toki, kotoba",
+    "translation": "Tiempo",
+    "kana": "とき、ことば",
+    "kanji": "時、言葉"
+  },
+  {
+    "romaji": "Kako",
+    "translation": "Pasado",
+    "kana": "かこ",
+    "kanji": "過去"
+  },
+  {
+    "romaji": "Ima",
+    "translation": "Presente",
+    "kana": "いま",
+    "kanji": "今",
+    "more_info": {"other_translations": ["Ahora"]}
+  },
+  {
+    "romaji": "Mirai",
+    "translation": "Futuro",
+    "kana": "みらい",
+    "kanji": "未来"
+  },
+  {
+    "romaji": "Hi",
+    "translation": "Día",
+    "kana": "ひ",
+    "kanji": "日"
+  },
+  {
+    "romaji": "Ototoi",
+    "translation": "Anteayer",
+    "kana": "おととい",
+    "kanji": "一昨日"
+  },
+  {
+    "romaji": "Kinou",
+    "translation": "Ayer",
+    "kana": "きのう",
+    "kanji": "昨日"
+  },
+  {
+    "romaji": "Kyou",
+    "translation": "Hoy",
+    "kana": "きょう",
+    "kanji": "今日"
+  },
+  {
+    "romaji": "Ashita",
+    "translation": "Mañana",
+    "kana": "あした",
+    "kanji": "明日"
+  },
+  {
+    "romaji": "Asatte",
+    "translation": "Pasado mañana",
+    "kana": "あさって",
+    "kanji": "明後日"
+  },
+  {
+    "romaji": "Mainichi",
+    "translation": "Cada día",
+    "kana": "まいにち",
+    "kanji": "毎日",
+    "more_info": {"other_translations": ["Todos los días"]}
+  },
+  {
+    "romaji": "Shuu",
+    "translation": "Semana",
+    "kana": "しゅう",
+    "kanji": "週"
+  },
+  {
+    "romaji": "Senshuu",
+    "translation": "Semana pasada",
+    "kana": "せんしゅう",
+    "kanji": "先週"
+  },
+  {
+    "romaji": "Sensenshuu",
+    "translation": "Hace dos semanas",
+    "kana": "せんせんしゅう",
+    "kanji": "先々週"
+  },
+  {
+    "romaji": "Konshuu",
+    "translation": "Esta semana",
+    "kana": "こんしゅう",
+    "kanji": "今週"
+  },
+  {
+    "romaji": "Raishuu",
+    "translation": "La semana que viene",
+    "kana": "らいしゅう",
+    "kanji": "来週"
+  },
+  {
+    "romaji": "Saraishuu",
+    "translation": "Dentro de dos semanas",
+    "kana": "さらいしゅう",
+    "kanji": "さらいしゅう"
+  },
+  {
+    "romaji": "Maishuu",
+    "translation": "Todas las semanas",
+    "kana": "まいしゅう",
+    "kanji": "毎週",
+    "more_info": {"other_translations": ["Cada semana"]}
+  },
+  {
+    "romaji": "Tsuki",
+    "translation": "Mes",
+    "kana": "つき",
+    "kanji": "月"
+  },
+  {
+    "romaji": "Sensengetsu",
+    "translation": "Hace dos meses",
+    "kana": "せんせんげつ",
+    "kanji": "先々月"
+  },
+  {
+    "romaji": "SenGetsu",
+    "translation": "El mes pasado",
+    "kana": "せんげつ",
+    "kanji": "先月"
+  },
+  {
+    "romaji": "Kongetsu",
+    "translation": "Este mes",
+    "kana": "こんげつ",
+    "kanji": "今月"
+  },
+  {
+    "romaji": "Raigetsu",
+    "translation": "El mes que viene",
+    "kana": "らいげつ",
+    "kanji": "来月"
+  },
+  {
+    "romaji": "Saraigetsu",
+    "translation": "Dentro de dos meses",
+    "kana": "さらいげつ",
+    "kanji": "さらいげつ"
+  },
+  {
+    "romaji": "Maitsuki",
+    "translation": "Todos los meses",
+    "kana": "まいつき",
+    "kanji": "毎月",
+    "more_info": {"other_translations": ["Cada mes"]}
+  },
+  {
+    "romaji": "Toshi",
+    "translation": "Año",
+    "kana": "とし",
+    "kanji": "年"
+  },
+  {
+    "romaji": "Ototoshi",
+    "translation": "Hace dos años",
+    "kana": "おととし",
+    "kanji": "一昨年"
+  },
+  {
+    "romaji": "Kyonen",
+    "translation": "El año pasado",
+    "kana": "きょねん",
+    "kanji": "去年"
+  },
+  {
+    "romaji": "Kotoshi",
+    "translation": "Este año",
+    "kana": "ことし",
+    "kanji": "今年"
+  },
+  {
+    "romaji": "Rainen",
+    "translation": "El año que viene",
+    "kana": "らいねん",
+    "kanji": "来年"
+  },
+  {
+    "romaji": "Sarainen",
+    "translation": "Dentro de dos años",
+    "kana": "さらいねん",
+    "kanji": "さらいねん"
+  },
+  {
+    "romaji": "Maitoshi",
+    "translation": "Todos los años",
+    "kana": "まいとし",
+    "kanji": "毎年",
+    "more_info": {"other_translations": ["Cada año"]}
+  },
+  {
+    "romaji": "Asa",
+    "translation": "Por la mañana",
+    "kana": "あさ",
+    "kanji": "朝"
+  },
+  {
+    "romaji": "Hiru",
+    "translation": "Por la tarde",
+    "kana": "ひる",
+    "kanji": "昼"
+  },
+  {
+    "romaji": "Yoru",
+    "translation": "Por la noche",
+    "kana": "よる",
+    "kanji": "夜"
+  },
+  {
+    "romaji": "Kesa",
+    "translation": "Esta mañana",
+    "kana": "けさ",
+    "kanji": "今朝"
+  },
+  {
+    "romaji": "Konban",
+    "translation": "Esta noche",
+    "kana": "こんばん",
+    "kanji": "今晩"
+  },
+  {
+    "romaji": "Maiasa",
+    "translation": "Todas las mañanas",
+    "kana": "まいあさ",
+    "kanji": "毎朝",
+    "more_info": {"other_translations": ["Cada mañana"]}
+  },
+  {
+    "romaji": "Maiban",
+    "translation": "Todas las noches",
+    "kana": "まいばん",
+    "kanji": "毎晩",
+    "more_info": {"other_translations": ["Cada noche"]}
+  },
+  {
+    "romaji": "Itsumo",
+    "translation": "Siempre",
+    "kana": "いつも",
+    "kanji": "いつも"
+  },
+  {
+    "romaji": "Yuube",
+    "translation": "Anoche",
+    "kana": "ゆうべ",
+    "kanji": "夕べ",
+    "more_info": {"other_translations": ["Ayer por la noche"]}
+  }
+]

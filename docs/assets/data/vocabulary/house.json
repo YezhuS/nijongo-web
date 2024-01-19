@@ -1,0 +1,101 @@
+[
+  {
+    "romaji": "Ie, Uchi",
+    "translation": "Casa",
+    "kana": "いえ、うち",
+    "kanji": "家"
+  },
+  {
+    "romaji": "Heya",
+    "translation": "Habitación",
+    "kana": "へや",
+    "kanji": "部屋"
+  },
+  {
+    "romaji": "Daidokoro",
+    "translation": "Cocina",
+    "kana": "だいどころ",
+    "kanji": "台所"
+  },
+  {
+    "romaji": "Shokudou",
+    "translation": "Comedor",
+    "kana": "しょくどう",
+    "kanji": "食堂"
+  },
+  {
+    "romaji": "Toire",
+    "translation": "Aseo",
+    "kana": "といれ",
+    "kanji": "トイレ",
+    "more_info": {"other_translations": ["Servicio"]}
+  },
+  {
+    "romaji": "Genkan",
+    "translation": "Vestíbulo",
+    "kana": "げんかん",
+    "kanji": "玄関",
+    "more_info": {"other_translations": ["Recibidor"]}
+  },
+  {
+    "romaji": "Rouka",
+    "translation": "Pasillo",
+    "kana": "ろうか",
+    "kanji": "廊下"
+  },
+  {
+    "romaji": "Kaidan",
+    "translation": "Escaleras",
+    "kana": "かいだん",
+    "kanji": "階段"
+  },
+  {
+    "romaji": "Uketsuke",
+    "translation": "Recepción",
+    "kana": "うけつけ",
+    "kanji": "受付"
+  },
+  {
+    "romaji": "Erebe-ta-",
+    "translation": "Ascensor",
+    "kana": "えれべーたー",
+    "kanji": "エレベーター"
+  },
+  {
+    "romaji": "Shawa-",
+    "translation": "Ducha",
+    "kana": "しゃわー",
+    "kanji": "シャワー"
+  },
+  {
+    "romaji": "Huro",
+    "translation": "Baño",
+    "kana": "ふろ",
+    "kanji": "風呂",
+    "more_info": {"other_translations": ["Bañera"]}
+  },
+  {
+    "romaji": "Niwa",
+    "translation": "Jardín",
+    "kana": "にわ",
+    "kanji": "庭"
+  },
+  {
+    "romaji": "Apa-to",
+    "translation": "Apartamento",
+    "kana": "あぱーと",
+    "kanji": "アパート"
+  },
+  {
+    "romaji": "Ima",
+    "translation": "Sala de estar",
+    "kana": "いま",
+    "kanji": "居間"
+  },
+  {
+    "romaji": "Shinshitsu",
+    "translation": "Dormitorio",
+    "kana": "しんしつ",
+    "kanji": "寝室"
+  }
+]

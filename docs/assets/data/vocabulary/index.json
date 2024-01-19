@@ -1,0 +1,12 @@
+{
+  "family": {
+    "formal": "Cuando hablas con ellos",
+    "informal": "Cuando hablas de ellos a otra persona"
+  },
+  "numbers": "Se cuenta cada 10.000",
+  "day-number": "Resto de números = Número + nichi",
+  "country": [
+    "Kuni + jin = Gentilicio de ese país (Nihon jin)",
+    "Kuni + go = Habla de ese país (Nihon go). Exepto EIGO(inglés)"
+  ]
+}

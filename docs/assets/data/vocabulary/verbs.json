@@ -1,0 +1,259 @@
+[
+  {
+    "romaji": "Ikimasu",
+    "translation": "Ir",
+    "kana": "いきます",
+    "kanji": "行きます"
+  },
+  {
+    "romaji": "Kimasu",
+    "translation": "Venir",
+    "kana": "きます",
+    "kanji": "来ます"
+  },
+  {
+    "romaji": "Kaerimasu",
+    "translation": "Volver",
+    "kana": "かえります",
+    "kanji": "帰ります",
+    "more_info": {
+      "other_translations": ["Regresar", "Ir a casa"]
+    }
+  },
+  {
+    "romaji": "Okimasu",
+    "translation": "Levantarse",
+    "kana": "おきます",
+    "kanji": "起きます"
+  },
+  {
+    "romaji": "Hatarakimasu",
+    "translation": "Trabajar",
+    "kana": "はたらきます",
+    "kanji": "働きます"
+  },
+  {
+    "romaji": "Benkyoushimasu",
+    "translation": "Estudiar",
+    "kana": "べんきょうします",
+    "kanji": "勉強します"
+  },
+  {
+    "romaji": "Nemasu",
+    "translation": "Acostarse",
+    "kana": "ねます",
+    "kanji": "寝ます",
+    "more_info": {
+      "other_translations": ["Dormir"]
+    }
+  },
+  {
+    "romaji": "Tabemasu",
+    "translation": "Comer",
+    "kana": "たべます",
+    "kanji": "食べます"
+  },
+  {
+    "romaji": "Sanposhimasu",
+    "translation": "Pasear",
+    "kana": "さんぽします",
+    "kanji": "散歩します"
+  },
+  {
+    "romaji": "Owarimasu",
+    "translation": "Acabar",
+    "kana": "おわります",
+    "kanji": "終わります",
+    "more_info": {
+      "other_translations": ["Terminar"]
+    }
+  },
+  {
+    "romaji": "Yasumimasu",
+    "translation": "Descansar",
+    "kana": "やすみます",
+    "kanji": "休みます",
+    "more_info": {
+      "other_translations": ["Ausentarse"]
+    }
+  },
+  {
+    "romaji": "Nomimasu",
+    "translation": "Beber",
+    "kana": "のみます",
+    "kanji": "飲みます"
+  },
+  {
+    "romaji": "Suimasu",
+    "translation": "Fumar",
+    "kana": "すいます",
+    "kanji": "吸います",
+    "more_info": {
+      "other_translations": ["Aspirar"]
+    }
+  },
+  {
+    "romaji": "Mimasu",
+    "translation": "Ver",
+    "kana": "みます",
+    "kanji": "見ます",
+    "more_info": {
+      "other_translations": ["Mirar"]
+    }
+  },
+  {
+    "romaji": "Kikimasu",
+    "translation": "Escuchar",
+    "kana": "ききます",
+    "kanji": "聞きます",
+    "more_info": {
+      "other_translations": ["Oír"]
+    }
+  },
+  {
+    "romaji": "Yomimasu",
+    "translation": "Leer",
+    "kana": "よみます",
+    "kanji": "読みます"
+  },
+  {
+    "romaji": "Kakimasu",
+    "translation": "Escribir",
+    "kana": "かきます",
+    "kanji": "書きます",
+    "more_info": {
+      "other_translations": ["Dibujar", "Pintar"]
+    }
+  },
+  {
+    "romaji": "Kaimasu",
+    "translation": "Comprar",
+    "kana": "かいます",
+    "kanji": "買います"
+  },
+  {
+    "romaji": "Torimasu",
+    "translation": "Sacar fotos",
+    "kana": "とります",
+    "kanji": "取ります",
+    "more_info": {
+      "other_translations": ["Grabar videos"]
+    }
+  },
+  {
+    "romaji": "Shimasu",
+    "translation": "Hacer",
+    "kana": "します",
+    "kanji": "します"
+  },
+  {
+    "romaji": "Aimasu",
+    "translation": "Ver a",
+    "kana": "あいます",
+    "kanji": "会います",
+    "more_info": {
+      "other_translations": ["Encontrarse con"]
+    }
+  },
+  {
+    "romaji": "Imasu",
+    "translation": "Haber",
+    "kana": "います",
+    "kanji": "います",
+    "more_info": {
+      "detail_translation": "Lugar dónde está"
+    }
+  },
+  {
+    "romaji": "Atsuidesu",
+    "translation": "Calentar",
+    "kana": "あついです",
+    "kanji": "暑いです"
+  },
+  {
+    "romaji": "Tsumetai",
+    "translation": "Enfriar",
+    "kana": "つめたいです",
+    "kanji": "冷たいです"
+  },
+  {
+    "romaji": "Agemasu",
+    "translation": "Regalar",
+    "kana": "あげます",
+    "kanji": "上げます",
+    "more_info": {
+      "other_translations": ["Dar"]
+    }
+  },
+  {
+    "romaji": "Moraimasu",
+    "translation": "Recibir",
+    "kana": "もらいます",
+    "kanji": "もらいます"
+  },
+  {
+    "romaji": "Okurimasu",
+    "translation": "Enviar",
+    "kana": "おくります",
+    "kanji": "送ります"
+  },
+  {
+    "romaji": "Kashimasu",
+    "translation": "Prestar",
+    "kana": "かします",
+    "kanji": "貸します",
+    "more_info": {
+      "other_translations": ["Alquilar"],
+      "detail_translation": "Alquila el dueño"
+    }
+  },
+  {
+    "romaji": "Karimasu",
+    "translation": "Pedir prestado",
+    "kana": "かります",
+    "kanji": "借ります",
+    "more_info": {
+      "other_translations": ["Alquilar"],
+      "detail_translation": "Alquila el inquilino"
+    }
+  },
+  {
+    "romaji": "Oshiemasu",
+    "translation": "Enseñar",
+    "kana": "おしえます",
+    "kanji": "教えます"
+  },
+  {
+    "romaji": "Naraimasu",
+    "translation": "Aprender",
+    "kana": "ならいます",
+    "kanji": "習います"
+  },
+  {
+    "romaji": "Kakemasu",
+    "translation": "Hacer una llamada",
+    "kana": "かけます",
+    "kanji": "掛けます",
+    "more_info": {
+      "detail_translation": "(Denwa o) Lo acompañamos con el objeto de llamada"
+    }
+  },
+  {
+    "romaji": "Kirimasu",
+    "translation": "Cortar",
+    "kana": "きります",
+    "kanji": "切ります"
+  },
+  {
+    "romaji": "Wakarimasu",
+    "translation": "Entender",
+    "kana": "わかります",
+    "kanji": "分かります"
+  },
+  {
+    "romaji": "Wasuremasu",
+    "translation": "Olvidar",
+    "kana": "わすれます",
+    "kanji": "忘れます"
+  }
+]

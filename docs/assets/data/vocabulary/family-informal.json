@@ -1,0 +1,100 @@
+[
+  {
+    "romaji": "Ryoushin",
+    "translation": "Padres",
+    "kana": "りょうしん",
+    "kanji": "両親"
+  },
+  {
+    "romaji": "Haha",
+    "translation": "Madre",
+    "kana": "はは",
+    "kanji": "母"
+  },
+  {
+    "romaji": "Chichi",
+    "translation": "Padre",
+    "kana": "ちち",
+    "kanji": "父"
+  },
+  {
+    "romaji": "Sobo",
+    "translation": "Abuela",
+    "kana": "そぼ",
+    "kanji": "祖母",
+    "more_info": {"other_word": ["Baba"]}
+  },
+  {
+    "romaji": "Soho",
+    "translation": "Abuelo",
+    "kana": "そほ",
+    "kanji": "祖父",
+    "more_info": {"other_word": ["Jiji"]}
+  },
+  {
+    "romaji": "Kyoudai",
+    "translation": "Hermanos",
+    "kana": "きょうだい",
+    "kanji": "兄弟姉妹"
+  },
+  {
+    "romaji": "Ani",
+    "translation": "Hermano mayor",
+    "kana": "あに",
+    "kanji": "兄"
+  },
+  {
+    "romaji": "Ane",
+    "translation": "Hermana mayor",
+    "kana": "あね",
+    "kanji": "姉"
+  },
+  {
+    "romaji": "Otouto",
+    "translation": "Hermano menor",
+    "kana": "おとうと",
+    "kanji": "弟"
+  },
+  {
+    "romaji": "Imouto",
+    "translation": "Hermana menor",
+    "kana": "いもうと",
+    "kanji": "妹"
+  },
+  {
+    "romaji": "Huuhu",
+    "translation": "Pareja",
+    "kana": "ふうふ",
+    "kanji": "夫婦"
+  },
+  {
+    "romaji": "Tsuma",
+    "translation": "Esposa",
+    "kana": "つま",
+    "kanji": "妻"
+  },
+  {
+    "romaji": "Otto",
+    "translation": "Esposo",
+    "kana": "おっと",
+    "kanji": "夫"
+  },
+  {
+    "romaji": "Kodomo",
+    "translation": "Hijo",
+    "kana": "こども",
+    "kanji": "子供"
+  },
+  {
+    "romaji": "Musuko",
+    "translation": "Hijo",
+    "kana": "むすこ",
+    "kanji": "息子"
+  },
+  {
+    "romaji": "Musume",
+    "translation": "Hija",
+    "kana": "むすめ",
+    "kanji": "娘"
+  }
+]

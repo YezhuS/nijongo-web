@@ -1,0 +1,116 @@
+[
+  {
+    "romaji": "Bangou",
+    "translation": "Numeros",
+    "kana": "ばんごう",
+    "kanji": "番号"
+  },
+  {
+    "romaji": "1",
+    "translation": "Ichi",
+    "kana": "いち",
+    "kanji": "一"
+  },
+  {
+    "romaji": "2",
+    "translation": "Ni",
+    "kana": "に",
+    "kanji": "二"
+  },
+  {
+    "romaji": "3",
+    "translation": "San",
+    "kana": "さん",
+    "kanji": "三"
+  },
+  {
+    "romaji": "4",
+    "translation": "Yon/Shi",
+    "kana": "よん/し",
+    "kanji": "四"
+  },
+  {
+    "romaji": "5",
+    "translation": "Go",
+    "kana": "ご",
+    "kanji": "五"
+  },
+  {
+    "romaji": "6",
+    "translation": "Roku",
+    "kana": "ろく",
+    "kanji": "六"
+  },
+  {
+    "romaji": "7",
+    "translation": "Nana/Shichi",
+    "kana": "なな/しち",
+    "kanji": "七"
+  },
+  {
+    "romaji": "8",
+    "translation": "Hachi",
+    "kana": "はち",
+    "kanji": "八"
+  },
+  {
+    "romaji": "9",
+    "translation": "Kyuu/Ku",
+    "kana": "きゅう/く",
+    "kanji": "九"
+  },
+  {
+    "romaji": "10",
+    "translation": "Juu",
+    "kana": "じゅう",
+    "kanji": "十"
+  },
+  {
+    "romaji": "100",
+    "translation": "Hyaku",
+    "kana": "ひゃく",
+    "kanji": "百"
+  },
+  {
+    "romaji": "1000",
+    "translation": "Sen",
+    "kana": "せん",
+    "kanji": "千"
+  },
+  {
+    "romaji": "10000",
+    "translation": "Ichi man",
+    "kana": "いちまん",
+    "kanji": "一万"
+  },
+  {
+    "romaji": "300",
+    "translation": "San Byaku",
+    "kana": "さんびゃく",
+    "kanji": "三百"
+  },
+  {
+    "romaji": "600",
+    "translation": "Roppyaku",
+    "kana": "ろっぴゃく",
+    "kanji": "六百"
+  },
+  {
+    "romaji": "800",
+    "translation": "Happyaku",
+    "kana": "はっぴゃく",
+    "kanji": "八百"
+  },
+  {
+    "romaji": "3000",
+    "translation": "San zen",
+    "kana": "さんぜん",
+    "kanji": "三千"
+  },
+  {
+    "romaji": "8000",
+    "translation": "Hassen",
+    "kana": "はっせん",
+    "kanji": "八千"
+  }
+]

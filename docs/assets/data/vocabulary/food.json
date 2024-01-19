@@ -1,0 +1,118 @@
+[
+  {
+    "romaji": "Yasai",
+    "translation": "Verdura",
+    "kana": "やさい",
+    "kanji": "野菜"
+  },
+  {
+    "romaji": "Kyuuri",
+    "translation": "Pepino",
+    "kana": "きゅうり",
+    "kanji": "胡瓜"
+  },
+  {
+    "romaji": "Tomato",
+    "translation": "Tomate",
+    "kana": "トマト",
+    "kanji": "トマト"
+  },
+  {
+    "romaji": "Nasu",
+    "translation": "Berenjena",
+    "kana": "なす",
+    "kanji": "茄子"
+  },
+  {
+    "romaji": "Hourensou",
+    "translation": "Espinaca",
+    "kana": "ほうれんそう",
+    "kanji": "ほうれん草"
+  },
+  {
+    "romaji": "Jagaimo",
+    "translation": "Patatas",
+    "kana": "じゃがいも",
+    "kanji": "じゃが芋"
+  },
+  {
+    "romaji": "Tomanegi",
+    "translation": "Cebolla",
+    "kana": "とまねぎ",
+    "kanji": "玉ねぎ"
+  },
+  {
+    "romaji": "Ninjin",
+    "translation": "Zanahoria",
+    "kana": "にんじん",
+    "kanji": "人参"
+  },
+  {
+    "romaji": "Retasu",
+    "translation": "Lechuga",
+    "kana": "れたす",
+    "kanji": "レタス"
+  },
+  {
+    "romaji": "Ke-ki",
+    "translation": "Tarta",
+    "kana": "けーき",
+    "kanji": "ケーキ"
+  },
+  {
+    "romaji": "Gohan",
+    "translation": "Arroz",
+    "kana": "ごはん",
+    "kanji": "ご飯",
+    "more_info": {"other_translations": ["Arroz cocido", "Comida general"]}
+  },
+  {
+    "romaji": "Asa gohan",
+    "translation": "Desayuno",
+    "kana": "あさごはん",
+    "kanji": "朝ごはん"
+  },
+  {
+    "romaji": "Hiru gohan",
+    "translation": "Almuerzo",
+    "kana": "ひるごはん",
+    "kanji": "昼ごはん"
+  },
+  {
+    "romaji": "Yoru gohan",
+    "translation": "Cena",
+    "kana": "よるごはん",
+    "kanji": "夜ごはん",
+    "more_info": {"other_translations": ["Ban gohan"]}
+  },
+  {
+    "romaji": "Pan",
+    "translation": "Pan",
+    "kana": "ぱん",
+    "kanji": "パン"
+  },
+  {
+    "romaji": "To-suto",
+    "translation": "Tostada",
+    "kana": "トースト",
+    "kanji": "トースト"
+  },
+  {
+    "romaji": "Tamago",
+    "translation": "Huevo",
+    "kana": "たまご",
+    "kanji": "卵"
+  },
+  {
+    "romaji": "Niku",
+    "translation": "Carne",
+    "kana": "にく",
+    "kanji": "肉"
+  },
+  {
+    "romaji": "Sakana",
+    "translation": "Pescado",
+    "kana": "さかな",
+    "kanji": "魚"
+  }
+]

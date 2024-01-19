@@ -1,0 +1,50 @@
+[
+  {
+    "romaji": "Amai",
+    "translation": "Dulce",
+    "kana": "あまい",
+    "kanji": "甘い"
+  },
+  {
+    "romaji": "Karai",
+    "translation": "Picante",
+    "kana": "からい",
+    "kanji": "辛い"
+  },
+  {
+    "romaji": "Nigai",
+    "translation": "Amargo",
+    "kana": "にがい",
+    "kanji": "苦い"
+  },
+  {
+    "romaji": "Suppai",
+    "translation": "Ácido",
+    "kana": "すっぱい",
+    "kanji": "酸っぱい"
+  },
+  {
+    "romaji": "Shiokarai",
+    "translation": "Salado",
+    "kana": "しおからい",
+    "kanji": "塩辛い"
+  },
+  {
+    "romaji": "Oishii",
+    "translation": "Bueno",
+    "kana": "おいしい",
+    "kanji": "美味しい",
+    "more_info": {
+      "detail_translation": "Con referencia al gusto"
+    }
+  },
+  {
+    "romaji": "Mazui",
+    "translation": "Malo",
+    "kana": "まずい",
+    "kanji": "不味い",
+    "more_info": {
+      "detail_translation": "Con referencia al gusto"
+    }
+  }
+]
