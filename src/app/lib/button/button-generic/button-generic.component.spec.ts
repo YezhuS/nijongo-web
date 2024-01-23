@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ButtonGenericComponent } from './button-generic.component';
+import {ButtonGenericComponent} from './button-generic.component';
 
 describe('ButtonGenericComponent', () => {
   let component: ButtonGenericComponent;
@@ -8,10 +8,9 @@ describe('ButtonGenericComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonGenericComponent]
-    })
-    .compileComponents();
-    
+      imports: [ButtonGenericComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ButtonGenericComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
