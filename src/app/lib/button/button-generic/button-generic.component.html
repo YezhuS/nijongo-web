@@ -1,0 +1,6 @@
+<button
+  class="button-generic"
+  [ngClass]="{'circle-btn': type === 'circle', rounded: type === 'rounded'}">
+  {{ label }}
+  <i class="icon {{ iconType }}"></i>
+</button>

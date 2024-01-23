@@ -1,29 +1,18 @@
 <ng-container>
   <div class="container">
-    <p-toolbar>
-      <div class="p-toolbar-group-start">
-        <p-menu
-          #menuNavigation
-          [model]="itemsNavigation"
-          [popup]="true"></p-menu>
-        <button
-          pButton
-          type="button"
-          (click)="menuNavigation.toggle($event)"
-          icon="pi pi-bars"></button>
+    <div class="toolbar">
+      <div>
+        <app-button-dropdown
+          iconType="pi pi-bars"
+          [options]="itemsNavigation"></app-button-dropdown>
       </div>
       <div>
-        <p-menu
-          #menuOptions
-          [model]="itemsOptions"
-          [popup]="true"></p-menu>
-        <button
-          pButton
-          type="button"
-          (click)="menuOptions.toggle($event)"
-          icon="pi pi-user"></button>
+        <app-button-dropdown
+          position="right"
+          iconType="pi pi-user"
+          [options]="itemsOptions"></app-button-dropdown>
       </div>
-    </p-toolbar>
+    </div>
 
     <div class="main-content">
       <router-outlet></router-outlet>

@@ -1,7 +1,8 @@
 import {MenuItem} from 'primeng/api';
 import {PATH} from './routes.constant';
+import {MenuItemOptions} from '../../lib/model/menuItem.interface';
 
-export const ItemsOption: MenuItem[] = [
+export const ItemsOption: MenuItemOptions[] = [
   {
     label: 'Cuenta',
     routerLink: '',
@@ -16,22 +17,17 @@ export const ItemsOption: MenuItem[] = [
   },
 ];
 
-export const ItemsNavigation: MenuItem[] = [
+export const ItemsNavigation: MenuItemOptions[] = [
   {
-    label: 'Secciones',
-    items: [
-      {
-        label: 'Alfabeto',
-        routerLink: PATH.ALPHABET,
-      },
-      {
-        label: 'Vocabulario',
-        routerLink: PATH.VOCABULARY,
-      },
-      {
-        label: 'Partículas',
-        routerLink: PATH.PARTICLE,
-      },
-    ],
+    label: 'Alfabeto',
+    routerLink: PATH.ALPHABET,
+  },
+  {
+    label: 'Vocabulario',
+    routerLink: PATH.VOCABULARY,
+  },
+  {
+    label: 'Partículas',
+    routerLink: PATH.PARTICLE,
   },
 ];

@@ -1,0 +1,36 @@
+.button-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .button-dropdown {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    z-index: 999;
+    &.right {
+        right: 0;
+    }
+    &.left {
+        left: 0;
+    }
+  }
+  
+  .dropdown-menu li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    &:hover {
+        background-color: #ccc;
+    }
+  }
+  

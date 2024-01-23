@@ -1,0 +1,19 @@
+<div class="button-dropdown-wrapper">
+  <app-button-generic
+    [label]="label"
+    [iconType]="iconType"
+    (click)="toggleDropdown()"
+    (blur)="toggleDropdown()">
+  </app-button-generic>
+  <ul
+    *ngIf="isDropdownOpen"
+    class="dropdown-menu"
+    [ngClass]="{right: position === 'right', left: position === 'left'}">
+    <li
+      *ngFor="let option of options"
+      (click)="handleOptionClick('Opción ' + option)"
+      [routerLink]="option.routerLink">
+      {{ option.label }}
+    </li>
+  </ul>
+</div>

@@ -60,5 +60,10 @@ Añadir el total?
 ## Capacitor  
 [Guide](https://betterprogramming.pub/how-to-convert-your-angular-application-to-a-native-mobile-app-android-and-ios-c212b38976df)  
 
+`Pasos`
+npm run prod - Generar aplicación en la carpeta de producción  
+npx cap sync - Sincronizar cada cambio  
+npx cap open android - Abrir Android Studio  
+
 ## URL Pública  
 Añadir URL publica

@@ -1,24 +1,17 @@
 <div class="home-layout">
-  <p-button
+  <app-button-generic
     label="Vocabulario"
-    [rounded]="true"
-    class="circle-btn"
-    (click)="router.navigate([path.VOCABULARY])"></p-button>
-  <p-button
+    type="circle"
+    (click)="router.navigate([path.VOCABULARY])">
+  </app-button-generic>
+
+  <app-button-generic
     label="Alfabeto"
-    [rounded]="true"
-    severity="secondary"
-    class="circle-btn"
-    (click)="router.navigate([path.ALPHABET])"></p-button>
-  <p-button
+    type="circle"
+    (click)="router.navigate([path.ALPHABET])"></app-button-generic>
+
+  <app-button-generic
     label="Partículas"
-    [rounded]="true"
-    severity="success"
-    class="circle-btn"
-    (click)="router.navigate([path.PARTICLE])"></p-button>
-  <p-button
-    label="Otros"
-    [rounded]="true"
-    severity="help"
-    class="circle-btn"></p-button>
+    type="circle"
+    (click)="router.navigate([path.PARTICLE])"></app-button-generic>
 </div>

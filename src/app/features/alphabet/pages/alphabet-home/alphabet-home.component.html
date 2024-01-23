@@ -1,19 +1,14 @@
 <div class="home-layout">
-  <p-button
+  <app-button-generic
     label="Hiragana"
-    [rounded]="true"
-    class="circle-btn"
-    (click)="router.navigate([path.hiragana_act])"></p-button>
-  <p-button
+    type="circle"
+    (click)="router.navigate([path.hiragana_act])"></app-button-generic>
+  <app-button-generic
     label="Katakana"
-    [rounded]="true"
-    severity="secondary"
-    class="circle-btn"
-    (click)="router.navigate([path.katakana_act])"></p-button>
-  <p-button
+    type="circle"
+    (click)="router.navigate([path.katakana_act])"></app-button-generic>
+  <app-button-generic
     label="Kanji"
-    [rounded]="true"
-    severity="success"
-    class="circle-btn"
-    (click)="router.navigate([path.kanji_act])"></p-button>
+    type="circle"
+    (click)="router.navigate([path.kanji_act])"></app-button-generic>
 </div>
