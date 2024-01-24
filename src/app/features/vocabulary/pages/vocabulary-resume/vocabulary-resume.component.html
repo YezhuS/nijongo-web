@@ -1,11 +1,9 @@
 <ng-container>
   <div class="header-resume-container">
-    <p-button
-      [size]="'small'"
-      icon="pi pi-times"
-      [rounded]="true"
-      severity="secondary"
-      (click)="router.navigate([previousPath])"></p-button>
+    <app-button-generic
+      iconType="pi pi-times"
+      shape="rounded"
+      (click)="router.navigate([previousPath])"></app-button-generic>
     <p-dropdown
       class="resume-dropdown"
       [options]="vocabularyOptions"
@@ -37,12 +35,11 @@
                   <span> {{ item.translation }} </span>
                 </div>
                 <span class="icon-word">
-                  <p-button
-                    icon="pi pi-plus-circle"
-                    [rounded]="true"
-                    [text]="true"
-                    severity="help"
-                    (click)="openDetail(item)"></p-button>
+                  <app-button-generic
+                    iconType="pi pi-plus-circle"
+                    shape="rounded"
+                    background="transparent"
+                    (click)="openDetail(item)"></app-button-generic>
                 </span>
               </div>
             </ng-template>

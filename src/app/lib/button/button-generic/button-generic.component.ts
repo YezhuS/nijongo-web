@@ -10,6 +10,15 @@ import {Component, Input} from '@angular/core';
 })
 export class ButtonGenericComponent {
   @Input() label = '';
-  @Input() type: 'circle' | 'rounded' | null = null;
+  @Input() shape?: 'circle' | 'rounded';
+  @Input() background?: 'outline' | 'transparent';
+  @Input() size?: 'big' | 'small';
   @Input() iconType = '';
+  protected classButton = '';
+
+  ngOnInit(): void {
+    this.classButton = ` ${this.shape ?? ''} ${this.background ?? ''} ${
+      this.size ?? ''
+    }`;
+  }
 }

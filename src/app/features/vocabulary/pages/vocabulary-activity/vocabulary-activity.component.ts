@@ -22,6 +22,7 @@ import {MessageService} from 'primeng/api';
 import {MessageStateService} from '../../../../core/service/state/message-state.service';
 import {MessageFacadeService} from '../../../../core/service/facade/message-facade.service';
 import {SeverityMessageEnum} from '../../../../core/enum/message.enum';
+import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
 
 @Component({
   selector: 'app-vocabulary-activity',
@@ -34,6 +35,7 @@ import {SeverityMessageEnum} from '../../../../core/enum/message.enum';
     LetterActivitySharedComponent,
     MultiSelectModule,
     ToastModule,
+    ButtonGenericComponent,
   ],
   providers: [MessageService, MessageStateService, MessageFacadeService],
   templateUrl: './vocabulary-activity.component.html',

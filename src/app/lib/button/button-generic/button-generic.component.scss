@@ -7,14 +7,33 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 1rem;
+
+    &.circle {
+        border-radius: 50%;
+        &.big{
+            height: 150px;
+            width: 150px;
+        }
+    }
+    &.rounded {
+        border-radius: 2rem;
+    }
+    &.outline {
+        background-color: transparent;
+        border: 1px solid #3B82F6;
+        color: #3B82F6;
+    }
+    &.transparent {
+        background-color: transparent;
+        color: #3B82F6;
+    }
+    &.small {
+        padding: 0.5rem 0.75rem;
+    }
 }
 
-.circle-btn {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-}
-
-.rounded {
-    border-radius: 2rem;
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

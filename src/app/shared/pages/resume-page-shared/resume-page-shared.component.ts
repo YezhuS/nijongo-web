@@ -7,6 +7,8 @@ import {LetterI} from '../../models/itemLetter.model';
 import {ButtonModule} from 'primeng/button';
 import {Router} from '@angular/router';
 import {FULL_ROUTE} from '../../../core/const/routes.constant';
+import {ButtonGenericComponent} from '../../../lib/button/button-generic/button-generic.component';
+import {RoutesEnum} from '../../../core/enum/routes.enum';
 
 @Component({
   selector: 'app-resume-page-shared',
@@ -16,14 +18,25 @@ import {FULL_ROUTE} from '../../../core/const/routes.constant';
     ItemLetterResumeSharedComponent,
     TabViewModule,
     ButtonModule,
+    ButtonGenericComponent,
   ],
   templateUrl: './resume-page-shared.component.html',
   styleUrl: './resume-page-shared.component.scss',
 })
 export class ResumePageSharedComponent {
   protected router = inject(Router);
-
   protected paths = FULL_ROUTE;
+  protected itemSelected = RoutesEnum.HIRAGANA;
+  protected routesEnum = RoutesEnum;
   @Input() tabs: TabI<LetterI[]>[] = [];
   @Input() previousPath: string = '';
+
+  ngOnChanges(): void {
+    if (this.router.url.includes(RoutesEnum.HIRAGANA))
+      this.itemSelected = RoutesEnum.HIRAGANA;
+    if (this.router.url.includes(RoutesEnum.KATAKANA))
+      this.itemSelected = RoutesEnum.KATAKANA;
+    if (this.router.url.includes(RoutesEnum.KANJI))
+      this.itemSelected = RoutesEnum.KANJI;
+  }
 }

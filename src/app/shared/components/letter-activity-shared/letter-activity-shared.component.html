@@ -1,25 +1,22 @@
 <ng-container>
   <div class="activity-layout">
     <div class="activity-header space-btw">
-      <p-button
-        icon="pi pi-times"
-        [rounded]="true"
-        severity="secondary"
-        (click)="closeActivityEvent.emit()"></p-button>
+      <app-button-generic
+        iconType="pi pi-times"
+        shape="rounded"
+        (click)="closeActivityEvent.emit()"></app-button-generic>
       <div class="btn-r">
-        <p-button
-          icon="pi pi-info-circle"
-          [rounded]="true"
-          severity="secondary"></p-button>
-        <p-button
-          icon="pi {{
+        <app-button-generic
+          iconType="pi pi-info-circle"
+          shape="rounded"></app-button-generic>
+        <app-button-generic
+          iconType="pi {{
             activityLayoutInput.justLook ? 'pi-eye' : 'pi-eye-slash'
           }}"
-          [rounded]="true"
-          severity="secondary"
+          shape="rounded"
           (click)="
             activityLayoutInput.justLook = !activityLayoutInput.justLook
-          "></p-button>
+          "></app-button-generic>
       </div>
     </div>
     <div class="activity-body">
@@ -39,11 +36,10 @@
         </div>
       </div>
       <div>
-        <p-button
+        <app-button-generic
           [label]="nextBtnLabel"
-          [rounded]="true"
-          severity="secondary"
-          (click)="validateAnswer()"></p-button>
+          shape="rounded"
+          (click)="validateAnswer()"></app-button-generic>
       </div>
     </div>
   </div>

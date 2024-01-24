@@ -1,17 +1,19 @@
 <ng-container *ngIf="!activityStarted; else letter">
   <div class="activity-layout">
     <div class="activity-header space-btw">
-      <p-button
+      <app-button-generic
         label="{{ activityInput.btnL.label }}"
-        [rounded]="true"
-        severity="secondary"
-        (click)="router.navigate([activityInput.btnL.path])"></p-button>
+        shape="rounded"
+        (click)="
+          router.navigate([activityInput.btnL.path])
+        "></app-button-generic>
       <h1>{{ activityInput.title }}</h1>
-      <p-button
+      <app-button-generic
         label="{{ activityInput.btnR.label }}"
-        [rounded]="true"
-        severity="secondary"
-        (click)="router.navigate([activityInput.btnR.path])"></p-button>
+        shape="rounded"
+        (click)="
+          router.navigate([activityInput.btnR.path])
+        "></app-button-generic>
     </div>
     <div class="activity-body">
       <!-- Cuerpo de la activity -->
@@ -32,24 +34,23 @@
           optionValue="value"></p-selectButton>
       </div>
       <div class="btn-start">
-        <p-button
+        <app-button-generic
           [label]="startBtnLabel"
-          [rounded]="true"
-          severity="secondary"
-          (click)="startActivity()"></p-button>
-        <p-button
-          icon="pi {{ justLook ? 'pi-eye' : 'pi-eye-slash' }}"
-          [rounded]="true"
-          severity="secondary"
-          (click)="justLook = !justLook"></p-button>
+          shape="rounded"
+          (click)="startActivity()"></app-button-generic>
+        <app-button-generic
+          iconType="pi {{ justLook ? 'pi-eye' : 'pi-eye-slash' }}"
+          shape="rounded"
+          (click)="justLook = !justLook"></app-button-generic>
       </div>
     </div>
     <div class="activity-footer one-btn">
-      <p-button
-        icon="pi pi-bookmark"
-        [rounded]="true"
-        severity="secondary"
-        (click)="router.navigate([activityInput.resumePath])"></p-button>
+      <app-button-generic
+        iconType="pi pi-bookmark"
+        shape="rounded"
+        (click)="
+          router.navigate([activityInput.resumePath])
+        "></app-button-generic>
     </div>
   </div>
 </ng-container>

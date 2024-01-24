@@ -11,7 +11,7 @@
     [ngClass]="{right: position === 'right', left: position === 'left'}">
     <li
       *ngFor="let option of options"
-      (click)="handleOptionClick('Opción ' + option)"
+      (click)="handleOptionClick(option)"
       [routerLink]="option.routerLink">
       {{ option.label }}
     </li>

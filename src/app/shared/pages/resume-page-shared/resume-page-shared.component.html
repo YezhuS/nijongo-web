@@ -1,31 +1,33 @@
 <div class="resume-page">
   <div class="header-close">
-    <p-button
-      [size]="'small'"
-      icon="pi pi-times"
-      [rounded]="true"
-      severity="secondary"
-      (click)="router.navigate([previousPath])"></p-button>
+    <app-button-generic
+      iconType="pi pi-times"
+      shape="rounded"
+      (click)="router.navigate([previousPath])"></app-button-generic>
   </div>
   <div class="header-nav">
-    <p-button
-      [size]="'small'"
-      [rounded]="true"
-      [outlined]="!router.url.includes(paths.hiragana_resume)"
+    <app-button-generic
+      shape="rounded"
+      [background]="
+        itemSelected !== routesEnum.HIRAGANA ? 'outline' : undefined
+      "
+      size="small"
       (click)="router.navigate([paths.hiragana_resume])"
-      label="ひ"></p-button>
-    <p-button
-      [size]="'small'"
-      [rounded]="true"
-      [outlined]="!router.url.includes(paths.katakana_resume)"
+      label="ひ"></app-button-generic>
+    <app-button-generic
+      shape="rounded"
+      [background]="
+        itemSelected !== routesEnum.KATAKANA ? 'outline' : undefined
+      "
+      size="small"
       (click)="router.navigate([paths.katakana_resume])"
-      label="カ"></p-button>
-    <p-button
-      [size]="'small'"
-      [rounded]="true"
-      [outlined]="!router.url.includes(paths.kanji_resume)"
+      label="カ"></app-button-generic>
+    <app-button-generic
+      shape="rounded"
+      [background]="itemSelected !== routesEnum.KANJI ? 'outline' : undefined"
+      size="small"
       (click)="router.navigate([paths.kanji_resume])"
-      label="漢字"></p-button>
+      label="漢字"></app-button-generic>
   </div>
 </div>
 <p-tabView>

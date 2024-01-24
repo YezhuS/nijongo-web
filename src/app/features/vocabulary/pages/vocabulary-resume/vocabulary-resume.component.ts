@@ -17,6 +17,7 @@ import {
 } from '../../model/word.model';
 import {DialogModule} from 'primeng/dialog';
 import {DetailWordComponent} from '../../components/detail-word/detail-word.component';
+import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
 
 @Component({
   selector: 'app-vocabulary-resume',
@@ -31,6 +32,7 @@ import {DetailWordComponent} from '../../components/detail-word/detail-word.comp
     ListboxModule,
     DialogModule,
     DetailWordComponent,
+    ButtonGenericComponent,
   ],
   templateUrl: './vocabulary-resume.component.html',
   styleUrl: './vocabulary-resume.component.scss',

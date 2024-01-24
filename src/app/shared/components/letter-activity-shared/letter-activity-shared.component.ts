@@ -23,6 +23,7 @@ import {
 import {MessageStateService} from '../../../core/service/state/message-state.service';
 import {shuffle} from '../../../core/utils/lists.utils';
 import {removeAccents} from '../../../core/utils/strings.utils';
+import {ButtonGenericComponent} from '../../../lib/button/button-generic/button-generic.component';
 
 @Component({
   selector: 'app-letter-activity-shared',
@@ -33,6 +34,7 @@ import {removeAccents} from '../../../core/utils/strings.utils';
     FormsModule,
     CommonModule,
     ToastModule,
+    ButtonGenericComponent,
   ],
   providers: [MessageService, MessageStateService, MessageFacadeService],
   templateUrl: './letter-activity-shared.component.html',

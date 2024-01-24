@@ -1,5 +1,12 @@
 import {CommonModule} from '@angular/common';
-import {Component, ElementRef, HostListener, Input} from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  HostListener,
+  Input,
+  Output,
+} from '@angular/core';
 import {ButtonGenericComponent} from '../button-generic/button-generic.component';
 import {MenuItemOptions} from '../../model/menuItem.interface';
 import {RouterModule} from '@angular/router';
@@ -16,6 +23,7 @@ export class ButtonDropdownComponent {
   @Input() iconType = '';
   @Input() options: MenuItemOptions[] = [];
   @Input() position: 'right' | 'left' = 'left';
+  @Output() outputValue = new EventEmitter<MenuItemOptions>();
   protected isDropdownOpen = false;
 
   constructor(private elementRef: ElementRef) {}
@@ -23,8 +31,8 @@ export class ButtonDropdownComponent {
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
   }
-  handleOptionClick(arg0: string) {
-    console.log(arg0);
+  handleOptionClick(arg0: MenuItemOptions) {
+    this.outputValue.emit(arg0);
     this.toggleDropdown();
   }
 

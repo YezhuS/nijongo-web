@@ -34,24 +34,21 @@
           optionDisabled="disable"></p-selectButton>
       </div>
       <div class="btn-start">
-        <p-button
+        <app-button-generic
           [label]="startBtnLabel"
-          [rounded]="true"
-          severity="secondary"
-          (click)="startActivity()"></p-button>
-        <p-button
-          icon="pi {{ justLook ? 'pi-eye' : 'pi-eye-slash' }}"
-          [rounded]="true"
-          severity="secondary"
-          (click)="justLook = !justLook"></p-button>
+          shape="rounded"
+          (click)="startActivity()"></app-button-generic>
+        <app-button-generic
+          iconType="pi {{ justLook ? 'pi-eye' : 'pi-eye-slash' }}"
+          shape="rounded"
+          (click)="justLook = !justLook"></app-button-generic>
       </div>
     </div>
     <div class="activity-footer one-btn">
-      <p-button
-        icon="pi pi-bookmark"
-        [rounded]="true"
-        severity="secondary"
-        (click)="router.navigate([resumePath])"></p-button>
+      <app-button-generic
+        iconType="pi pi-bookmark"
+        shape="rounded"
+        (click)="router.navigate([resumePath])"></app-button-generic>
     </div>
   </div>
 </ng-container>

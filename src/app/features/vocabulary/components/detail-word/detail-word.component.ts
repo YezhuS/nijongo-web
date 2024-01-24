@@ -1,16 +1,12 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {
-  WordI,
-  WordTranslationValue,
-  WordTypeEnum,
-} from '../../model/word.model';
+import {WordTranslationValue, WordTypeEnum} from '../../model/word.model';
 import {CommonModule} from '@angular/common';
-import {ButtonModule} from 'primeng/button';
+import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
 
 @Component({
   selector: 'app-detail-word',
   standalone: true,
-  imports: [CommonModule, ButtonModule],
+  imports: [CommonModule, ButtonGenericComponent],
   templateUrl: './detail-word.component.html',
   styleUrl: './detail-word.component.scss',
 })
