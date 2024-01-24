@@ -15,24 +15,12 @@
           display="chip"
           [showClear]="true"></p-multiSelect>
       </div>
-      <div>
-        <p-selectButton
-          [options]="firstConditionOptions"
-          [(ngModel)]="firstConditionValue"
-          [allowEmpty]="false"
-          optionLabel="label"
-          optionValue="value"></p-selectButton>
-      </div>
-      <div>
-        <p-selectButton
-          #answerSelectButton
-          [options]="secondConditionOptions"
-          [(ngModel)]="secondConditionValue"
-          [allowEmpty]="false"
-          optionLabel="label"
-          optionValue="value"
-          optionDisabled="disable"></p-selectButton>
-      </div>
+      <app-button-select
+        [options]="firstConditionOptions"
+        (valueOutput)="firstConditionValue = $event.value"></app-button-select>
+      <app-button-select
+        [options]="secondConditionOptions"
+        (valueOutput)="secondConditionValue = $event.value"></app-button-select>
       <div class="btn-start">
         <app-button-generic
           [label]="startBtnLabel"

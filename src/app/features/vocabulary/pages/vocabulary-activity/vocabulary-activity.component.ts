@@ -23,6 +23,7 @@ import {MessageStateService} from '../../../../core/service/state/message-state.
 import {MessageFacadeService} from '../../../../core/service/facade/message-facade.service';
 import {SeverityMessageEnum} from '../../../../core/enum/message.enum';
 import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
+import {ButtonSelectComponent} from '../../../../lib/button/button-select/button-select.component';
 
 @Component({
   selector: 'app-vocabulary-activity',
@@ -36,6 +37,7 @@ import {ButtonGenericComponent} from '../../../../lib/button/button-generic/butt
     MultiSelectModule,
     ToastModule,
     ButtonGenericComponent,
+    ButtonSelectComponent,
   ],
   providers: [MessageService, MessageStateService, MessageFacadeService],
   templateUrl: './vocabulary-activity.component.html',

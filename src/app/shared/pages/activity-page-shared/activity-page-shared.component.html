@@ -17,22 +17,12 @@
     </div>
     <div class="activity-body">
       <!-- Cuerpo de la activity -->
-      <div>
-        <p-selectButton
-          [options]="complexityOptions"
-          [(ngModel)]="complexityValue"
-          [allowEmpty]="false"
-          optionLabel="label"
-          optionValue="value"></p-selectButton>
-      </div>
-      <div>
-        <p-selectButton
-          [options]="typeOptions"
-          [(ngModel)]="typeValue"
-          [allowEmpty]="false"
-          optionLabel="label"
-          optionValue="value"></p-selectButton>
-      </div>
+      <app-button-select
+        [options]="complexityOptions"
+        (valueOutput)="complexityValue = $event.value"></app-button-select>
+      <app-button-select
+        [options]="typeOptions"
+        (valueOutput)="typeValue = $event.value"></app-button-select>
       <div class="btn-start">
         <app-button-generic
           [label]="startBtnLabel"

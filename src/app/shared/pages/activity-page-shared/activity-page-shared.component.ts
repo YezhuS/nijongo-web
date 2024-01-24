@@ -13,6 +13,7 @@ import {LetterActivitySharedComponent} from '../../components/letter-activity-sh
 import {AnswerQuestionI} from '../../models/answerQuestion.model';
 import {LetterI} from '../../models/itemLetter.model';
 import {ButtonGenericComponent} from '../../../lib/button/button-generic/button-generic.component';
+import {ButtonSelectComponent} from '../../../lib/button/button-select/button-select.component';
 
 @Component({
   selector: 'app-activity-page-shared',
@@ -24,6 +25,7 @@ import {ButtonGenericComponent} from '../../../lib/button/button-generic/button-
     CommonModule,
     LetterActivitySharedComponent,
     ButtonGenericComponent,
+    ButtonSelectComponent,
   ],
   providers: [SharedFacadeService, SharedStateService],
   templateUrl: './activity-page-shared.component.html',

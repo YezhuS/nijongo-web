@@ -1,0 +1,35 @@
+.button-select-wrapper {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.item-base {
+    border: 1px solid #3B82F6;
+    border-right: none;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.item-base:last-child {
+    border-right: 1px solid #3B82F6;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.item-base:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.selected {
+    color: #ffffff;
+    background-color: #3B82F6;
+}
+.not-selected {
+    color: #3B82F6;
+}

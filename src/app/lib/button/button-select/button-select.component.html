@@ -1,0 +1,9 @@
+<div class="button-select-wrapper {{ orientation }}">
+  <span
+    *ngFor="let item of options; index as i"
+    (click)="selectItem(i)"
+    class="item-base"
+    [ngClass]="selectedItem !== i ? 'not-selected' : 'selected'"
+    >{{ item.label }}</span
+  >
+</div>
