@@ -1,0 +1,32 @@
+.input {
+    display: flex;
+    padding: 0.625rem 1rem;
+    align-items: center;
+    border-radius: 0.25rem;
+    border: 1px solid var(--light-grey-blue);
+    width: 100%;
+
+    &::placeholder {
+        color: var(--dark-grey-blue);
+    }
+
+    &:disabled {
+        background: var(--greyscale-100);
+    }
+
+    &.input-error {
+        border: 2px solid var(--error-500);
+        &::placeholder {
+            color: var(--error-500);
+        }
+    }
+
+    &.icon-right {
+        border-right: none;
+        border-radius: 0.25rem 0 0 0.25rem;
+    }      
+    
+    &:focus-visible {
+        border: none;
+    }
+}

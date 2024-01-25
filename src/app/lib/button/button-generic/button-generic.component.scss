@@ -3,7 +3,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
-    background-color: #3B82F6;
+    background-color: var(--primary);
     color: #ffffff;
     font-weight: 700;
     font-size: 1rem;
@@ -20,12 +20,12 @@
     }
     &.outline {
         background-color: transparent;
-        border: 1px solid #3B82F6;
-        color: #3B82F6;
+        border: 1px solid var(--primary);
+        color: var(--primary);
     }
     &.transparent {
         background-color: transparent;
-        color: #3B82F6;
+        color: var(--primary);
     }
     &.small {
         padding: 0.5rem 0.75rem;

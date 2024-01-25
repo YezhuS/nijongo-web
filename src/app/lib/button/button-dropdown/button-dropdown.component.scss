@@ -15,7 +15,7 @@
     position: absolute;
     top: 100%;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--box-shadow);
     border-radius: 0.25rem;
     z-index: 999;
     &.right {
@@ -30,7 +30,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     &:hover {
-        background-color: #ccc;
+        background-color: var(--light-blue);
     }
   }
   

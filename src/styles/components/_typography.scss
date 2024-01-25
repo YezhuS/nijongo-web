@@ -1,0 +1,26 @@
+.typo {
+    color: var(--typo-primary);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    &.title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+    }
+    &.subtitle {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    &.bold {
+        font-weight: 700;
+    }
+    &.underline {
+        text-decoration-line: underline;
+    }
+    &.underline-bold {
+        font-weight: 700;
+        text-decoration-line: underline;
+    }
+}

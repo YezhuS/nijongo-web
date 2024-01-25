@@ -1,0 +1,122 @@
+// BRAND COLORS
+$dark-blue: #08326e;
+$secondary-blue: #0099cc;
+$primary-blue: #3B82F6;
+$medium-blue: #005CA9;
+$green: #006b56;
+$dark-blue: #49708f;
+$dark-grey-blue: #6c757d;
+$light-grey-blue: #ced4da;
+$primary-blue-fill: '%2308326e';
+$red: #ff808b;
+$light-blue: #c1e4ff;
+$lighter-blue: #f1f9ff;
+
+$black-shadow: rgba(0, 0, 0, 0.1);
+
+// GREYSCALE
+$greyscale-900: #464646;
+$greyscale-100: #f5f5f5;
+$greyscale-000: #ffffff;
+$greyscale-000-fill: '%23ffffff';
+
+// OTHERS
+$error: #ff0000;
+$error-500: #dc3545;
+$error-900: #842029;
+$overley-bg: rgba(0, 0, 0, 0.5);
+
+$secondary: #974DDE;
+$success: #26BC5E;
+$default-gray-050: #F7F8F9;
+$default-gray-100: #F3F4F6;
+$default-gray-200: #D5DAE1;
+$default-gray-300: #D1D5DB;
+$gray-400: #8896AB;
+$gray-500: #556987;
+$dark-gray-900: #1C232D;
+
+// LABELS
+$accentuation-info-900: #055160;
+$accentuation-info-500: #0dcaf0;
+$accentuation-info-200: #b6effb;
+$accentuation-info-100: #cff4fc;
+$accentuation-error-100: #f8d7da;
+$accentuation-error-200: #f5c2c7;
+$accentuation-success-100: #d1e7dd;
+$accentuation-success-200: #badbcc;
+$accentuation-success-500: #198754;
+$accentuation-success-900: #0f5132;
+
+// ALERTS
+$accentuation-success-100: #d1e7dd;
+$accentuation-success-200: #badbcc;
+$accentuation-success-900: #0f5132;
+$accentuation-warning-100: #fff3cd;
+$accentuation-warning-200: #ffecb5;
+$accentuation-warning-500: #ffc107;
+$accentuation-warning-900: #664d03;
+
+// CSS VARAIBLES EXPORT
+:root {
+    --primary: #{$primary-blue};
+    --primary-light: #{$light-blue};
+    --secondary: #{$secondary-blue};
+    --medium: #{$medium-blue};
+    --primary-dark: #{$dark-blue};
+
+    --box-shadow: #{$dark-blue};
+
+    --typo-primary: #{$greyscale-900};
+
+    --primary-blue: #{$primary-blue};
+    --red: #{$red};
+    --light-blue: #{$light-blue};
+    --lighter-blue: #{$lighter-blue};
+    --greyscale-900: #{$greyscale-900};
+    --greyscale-100: #{$greyscale-100};
+    --greyscale-000: #{$greyscale-000};
+
+    --primary-blue: #{$primary-blue};
+    --secondary-blue: #{$secondary-blue};
+    --green: #{$green};
+    --dark-blue: #{$dark-blue};
+    --light-blue: #{$light-blue};
+    --dark-grey-blue: #{$dark-grey-blue};
+    --light-grey-blue: #{$light-grey-blue};
+    --greyscale-900: #{$greyscale-900};
+    --greyscale-100: #{$greyscale-100};
+    --greyscale-000: #{$greyscale-000};
+
+    // OTHER
+    --error: #{$error};
+    --error-500: #{$error-500};
+    --error-900: #{$error-900};
+
+    // LABELS
+    --accentuation-info-500: #{$accentuation-info-500};
+    --accentuation-info-200: #{$accentuation-info-200};
+    --accentuation-info-100: #{$accentuation-info-100};
+    --accentuation-error-100: #{$accentuation-error-100};
+    --accentuation-error-200: #{$accentuation-error-200};
+
+    // ALERTS
+    --accentuation-success-100: #{$accentuation-success-100};
+    --accentuation-success-200: #{$accentuation-success-200};
+    --accentuation-success-500: #{$accentuation-success-500};
+    --accentuation-success-900: #{$accentuation-success-900};
+    --accentuation-warning-100: #{$accentuation-warning-100};
+    --accentuation-warning-200: #{$accentuation-warning-200};
+    --accentuation-warning-500: #{$accentuation-warning-500};
+    --accentuation-warning-900: #{$accentuation-warning-900};
+
+    --secondary-violet: #{$secondary};
+    --success: #{$success};
+    --default-gray-050: #{$default-gray-050};
+    --default-gray-100: #{$default-gray-100};
+    --default-gray-200: #{$default-gray-200};
+    --default-gray-300: #{$default-gray-300};
+    --gray-400: #{$gray-400};
+    --gray-500: #{$gray-500};
+    --dark-gray-900: #{$dark-gray-900};
+}
