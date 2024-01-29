@@ -1,15 +1,11 @@
 .tabsComponent {
         color: var(--primary);
         display: flex;
-        // border-bottom: 2px double var(--primary);
         border-bottom-style: double;
         &.horizontal {
             flex-direction: row;
-            // border-radius: 0.25rem;
-            // background: var(--ecos-greyscale-100, #F5F5F5);
             > .item {
                 cursor: pointer;
-                // border-radius: 0.25rem;
                 border-top-right-radius: 0.25rem;
                 border-top-left-radius: 0.25rem;
                 padding: 0.625rem 1rem;
