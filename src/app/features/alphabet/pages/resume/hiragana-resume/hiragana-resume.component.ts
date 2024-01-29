@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {ResumePageSharedComponent} from '../../../../../shared/pages/resume-page-shared/resume-page-shared.component';
-import {TabI} from '../../../../../shared/models/tab.model';
+import {TabI} from '../../../../../lib/model/tab.model';
 import {LetterI} from '../../../../../shared/models/itemLetter.model';
 import hiraganaBasic from '../../../../../../assets/data/alphabet/hiragana.json';
 import hiraganaD from '../../../../../../assets/data/alphabet/hiragana-diacritico.json';

@@ -1,0 +1,20 @@
+<div
+  class="tabsComponent"
+  [class]="classTab">
+  <div
+    *ngFor="let tab of tabs"
+    class="item"
+    [ngClass]="{
+      'bg-active': activeTab === tab.title,
+      hidden: tab.disabled
+    }"
+    (click)="selectTab(tab)">
+    <span
+      [ngClass]="{
+        'font-active': activeTab === tab.title
+      }"
+      [class]="classItem"
+      >{{ tab.title }}
+    </span>
+  </div>
+</div>

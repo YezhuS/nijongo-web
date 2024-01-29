@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {ResumePageSharedComponent} from '../../../../../shared/pages/resume-page-shared/resume-page-shared.component';
-import {TabI} from '../../../../../shared/models/tab.model';
+import {TabI} from '../../../../../lib/model/tab.model';
 import {LetterI} from '../../../../../shared/models/itemLetter.model';
 import {FULL_ROUTE} from '../../../../../core/const/routes.constant';
 
@@ -16,6 +16,11 @@ export class KanjiResumeComponent {
   protected data: TabI<LetterI[]>[];
 
   constructor() {
-    this.data = [];
+    this.data = [
+      {
+        title: '',
+        content: [],
+      },
+    ];
   }
 }

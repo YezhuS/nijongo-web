@@ -1,0 +1,51 @@
+.tabsComponent {
+        color: var(--primary);
+        display: flex;
+        // border-bottom: 2px double var(--primary);
+        border-bottom-style: double;
+        &.horizontal {
+            flex-direction: row;
+            // border-radius: 0.25rem;
+            // background: var(--ecos-greyscale-100, #F5F5F5);
+            > .item {
+                cursor: pointer;
+                // border-radius: 0.25rem;
+                border-top-right-radius: 0.25rem;
+                border-top-left-radius: 0.25rem;
+                padding: 0.625rem 1rem;
+                width: 100%;
+                &.bg-active {
+                    background: var(--primary);
+                }
+                > span.font-active {
+                    color: var(--ecos-greyscale-000, #FFF);
+                }
+            }
+        }
+        &.vertical {
+            flex-direction: column;
+            border-radius: 0.1875rem;
+            border: 1px solid var(--ecos-brand-light-grey-blue, #CED4DA);
+            > .item {
+                display: flex;
+                padding: 1rem;
+                justify-content: space-between;
+                align-items: center;
+                align-self: stretch;
+                &:not(.item:last-child) {
+                    border-bottom: 1px solid var(--ecos-brand-light-grey-blue, #CED4DA);
+                }
+                &.bg-active {
+                    background: var(--ecos-brand-light-blue, #D9EDF7);
+                }
+                > span.font-active {
+                    font-weight: 700 !important;
+                }
+                > span.arg {
+                    color: var(--ecos-accentuation-success-success-500, #198754);
+                }
+            }
+        }
+    }
+
+

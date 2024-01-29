@@ -2,7 +2,7 @@ import {CommonModule} from '@angular/common';
 import {Component, inject} from '@angular/core';
 import {ButtonModule} from 'primeng/button';
 import {TabViewModule} from 'primeng/tabview';
-import {TabI} from '../../../../shared/models/tab.model';
+import {TabI} from '../../../../lib/model/tab.model';
 import {DropdownModule} from 'primeng/dropdown';
 import {FormsModule} from '@angular/forms';
 import {OptionsI} from '../../../../core/model/core.model';
@@ -18,10 +18,13 @@ import {
 import {DialogModule} from 'primeng/dialog';
 import {DetailWordComponent} from '../../components/detail-word/detail-word.component';
 import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
+import {TabComponent} from '../../../../lib/tab/tab.component';
 
 @Component({
   selector: 'app-vocabulary-resume',
   standalone: true,
+  templateUrl: './vocabulary-resume.component.html',
+  styleUrl: './vocabulary-resume.component.scss',
   imports: [
     CommonModule,
     TabViewModule,
@@ -33,9 +36,8 @@ import {ButtonGenericComponent} from '../../../../lib/button/button-generic/butt
     DialogModule,
     DetailWordComponent,
     ButtonGenericComponent,
+    TabComponent,
   ],
-  templateUrl: './vocabulary-resume.component.html',
-  styleUrl: './vocabulary-resume.component.scss',
 })
 export class VocabularyResumeComponent {
   protected router = inject(Router);
@@ -54,7 +56,10 @@ export class VocabularyResumeComponent {
   protected itemSelected!: WordTranslationValue;
 
   // Tab
-  protected tabSelected = 0;
+  protected tabSelected: TabI<WordTranslationValue[]> = {
+    title: '',
+    content: [],
+  };
 
   constructor() {
     /** Cada tipo vendrá con romanji, kanji, kata/hi y traducción
@@ -90,6 +95,10 @@ export class VocabularyResumeComponent {
     this.selectOnChange(this.selectedValueOption.value);
   }
 
+  ngOnInit(): void {
+    this.tabSelected = this.tabs[0];
+  }
+
   protected selectOnChange(value: WordI[]): void {
     this.tabs[WordTypeEnum.Romaji].content = value.map((x) => {
       return {value: x.romaji, translation: x.translation, word: x};
@@ -103,7 +112,10 @@ export class VocabularyResumeComponent {
   }
 
   protected openDetail(value: WordTranslationValue): void {
-    this.itemSelected = {...value, type: this.tabSelected};
+    this.itemSelected = {
+      ...value,
+      type: this.tabs.findIndex((x) => x.title === this.tabSelected.title),
+    };
     this.visible = true;
   }
 }

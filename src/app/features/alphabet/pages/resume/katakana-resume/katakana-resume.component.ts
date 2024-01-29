@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {TabI} from '../../../../../shared/models/tab.model';
+import {TabI} from '../../../../../lib/model/tab.model';
 import {LetterI} from '../../../../../shared/models/itemLetter.model';
 import katakanaBasic from '../../../../../../assets/data/alphabet/katakana.json';
 import katakanaD from '../../../../../../assets/data/alphabet/katakana-diacritico.json';

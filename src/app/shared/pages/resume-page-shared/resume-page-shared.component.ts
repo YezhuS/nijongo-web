@@ -2,13 +2,14 @@ import {CommonModule} from '@angular/common';
 import {Component, Input, inject} from '@angular/core';
 import {ItemLetterResumeSharedComponent} from '../../components/item-letter-resume-shared/item-letter-resume-shared.component';
 import {TabViewModule} from 'primeng/tabview';
-import {TabI} from '../../models/tab.model';
+import {TabI} from '../../../lib/model/tab.model';
 import {LetterI} from '../../models/itemLetter.model';
 import {ButtonModule} from 'primeng/button';
 import {Router} from '@angular/router';
 import {FULL_ROUTE} from '../../../core/const/routes.constant';
 import {ButtonGenericComponent} from '../../../lib/button/button-generic/button-generic.component';
 import {RoutesEnum} from '../../../core/enum/routes.enum';
+import {TabComponent} from '../../../lib/tab/tab.component';
 
 @Component({
   selector: 'app-resume-page-shared',
@@ -19,6 +20,7 @@ import {RoutesEnum} from '../../../core/enum/routes.enum';
     TabViewModule,
     ButtonModule,
     ButtonGenericComponent,
+    TabComponent,
   ],
   templateUrl: './resume-page-shared.component.html',
   styleUrl: './resume-page-shared.component.scss',
@@ -31,6 +33,15 @@ export class ResumePageSharedComponent {
   @Input() tabs: TabI<LetterI[]>[] = [];
   @Input() previousPath: string = '';
 
+  protected tabSelected: TabI<LetterI[]> = {
+    title: '',
+    content: [],
+  };
+
+  ngOnInit(): void {
+    this.tabSelected = this.tabs[0];
+  }
+
   ngOnChanges(): void {
     if (this.router.url.includes(RoutesEnum.HIRAGANA))
       this.itemSelected = RoutesEnum.HIRAGANA;
@@ -38,5 +49,9 @@ export class ResumePageSharedComponent {
       this.itemSelected = RoutesEnum.KATAKANA;
     if (this.router.url.includes(RoutesEnum.KANJI))
       this.itemSelected = RoutesEnum.KANJI;
+  }
+
+  protected selectTab(value: TabI<LetterI[]>): void {
+    this.tabSelected = value;
   }
 }

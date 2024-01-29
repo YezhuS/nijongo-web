@@ -30,17 +30,26 @@
       label="漢字"></app-button-generic>
   </div>
 </div>
-<p-tabView>
-  <p-tabPanel
-    *ngFor="let tab of tabs"
-    [header]="tab.title">
-    <div class="container-resume-letter">
-      <ng-container *ngFor="let item of tab.content">
-        <div class="item-letter {{ tab.itemClass }}">
-          <app-item-letter-resume-shared
-            [item]="item"></app-item-letter-resume-shared>
-        </div>
-      </ng-container>
-    </div>
-  </p-tabPanel>
-</p-tabView>
+<div class="panel-tab">
+  <app-tab
+    [tabs]="tabs"
+    [activeTab]="tabSelected.title"
+    (selectedTab)="selectTab($event)"></app-tab>
+  <!-- <app-list
+    [list]="tabSelected.content"
+    [itemClass]="tabSelected.itemClass">
+    <ng-template let-item>
+      <app-item-letter-resume-shared
+        class="item-list"
+        [item]="item"></app-item-letter-resume-shared>
+    </ng-template>
+  </app-list> -->
+  <div class="container-resume-letter">
+    <ng-container *ngFor="let item of tabSelected.content">
+      <div class="item-letter {{ tabSelected.itemClass }}">
+        <app-item-letter-resume-shared
+          [item]="item"></app-item-letter-resume-shared>
+      </div>
+    </ng-container>
+  </div>
+</div>

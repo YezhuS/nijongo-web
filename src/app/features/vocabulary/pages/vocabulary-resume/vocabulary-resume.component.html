@@ -14,39 +14,30 @@
       (onChange)="selectOnChange($event.value.value)"></p-dropdown>
   </div>
 
-  <div class="tabview-container">
-    <p-tabView (activeIndexChange)="tabSelected = $event">
-      <p-tabPanel
-        *ngFor="let tab of tabs"
-        [header]="tab.title">
-        <div class="container-resume-word">
-          <p-listbox
-            [options]="tab.content"
-            [(ngModel)]="selectedListBox"
-            optionLabel="name">
-            <ng-template
-              let-item
-              pTemplate="item">
-              <div class="item-word-container">
-                <div class="word-item">
-                  <span>
-                    {{ item.value }}
-                  </span>
-                  <span> {{ item.translation }} </span>
-                </div>
-                <span class="icon-word">
-                  <app-button-generic
-                    iconType="pi pi-plus-circle"
-                    shape="rounded"
-                    background="transparent"
-                    (click)="openDetail(item)"></app-button-generic>
-                </span>
-              </div>
-            </ng-template>
-          </p-listbox>
+  <div class="panel-tab">
+    <app-tab
+      [tabs]="tabs"
+      [activeTab]="tabSelected.title"
+      (selectedTab)="tabSelected = $event"></app-tab>
+    <div class="container-resume-word">
+      <ng-container *ngFor="let item of tabSelected.content">
+        <div class="item-word-container">
+          <div class="word-item">
+            <span>
+              {{ item.value }}
+            </span>
+            <span> {{ item.translation }} </span>
+          </div>
+          <span class="icon-word">
+            <app-button-generic
+              iconType="pi pi-plus-circle"
+              shape="rounded"
+              background="transparent"
+              (click)="openDetail(item)"></app-button-generic>
+          </span>
         </div>
-      </p-tabPanel>
-    </p-tabView>
+      </ng-container>
+    </div>
   </div>
 
   <div #dialog>
