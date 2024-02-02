@@ -15,12 +15,10 @@ import {
   WordTranslationValue,
   WordTypeEnum,
 } from '../../model/word.model';
-// import {DialogModule} from 'primeng/dialog';
 import {DetailWordComponent} from '../../components/detail-word/detail-word.component';
 import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
 import {TabComponent} from '../../../../lib/tab/tab.component';
-import {ModalComponent} from '../../../../lib/modal/modal.component';
-import {Dialog, DialogModule} from '@angular/cdk/dialog';
+import {DialogModule} from '@angular/cdk/dialog';
 import {
   MAT_DIALOG_DEFAULT_OPTIONS,
   MatDialog,
@@ -46,7 +44,6 @@ import {Observable, map, of, startWith} from 'rxjs';
     DetailWordComponent,
     ButtonGenericComponent,
     TabComponent,
-    ModalComponent,
     MatDialogModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
