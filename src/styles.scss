@@ -1,4 +1,6 @@
+
 @import './styles/styles';
+@import "~@angular/cdk/overlay-prebuilt.css";
 
 // Fijamos body y html con altura máxima para adjustarlo a toda la página
 body {
@@ -76,3 +78,36 @@ html {
 .threeItemsPerRow {
     flex: 0 1 calc(33% - 8px);
 }
+
+// Modal - Dialog
+// .cdk-overlay-container {
+//     pointer-events: none;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     position: fixed;
+//     z-index: 1000;
+//     .cdk-overlay-dark-backdrop {
+//         opacity: 1;
+//         background-color: rgba(0,0,0,.32);
+//     }
+//     .cdk-overlay-backdrop {
+//         position: absolute;
+//         inset: 0;
+//         z-index: 1000;
+//         pointer-events: auto;
+//         -webkit-tap-highlight-color: transparent;
+//         transition: opacity .4s cubic-bezier(.25,.8,.25,1);
+//     }
+//     .cdk-global-overlay-wrapper {
+//     display: flex;
+//     position: absolute;
+//     z-index: 1000;
+//     pointer-events: none;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     }
+// }

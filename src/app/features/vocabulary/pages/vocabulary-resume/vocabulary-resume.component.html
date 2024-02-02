@@ -4,14 +4,24 @@
       iconType="pi pi-times"
       shape="rounded"
       (click)="router.navigate([previousPath])"></app-button-generic>
-    <p-dropdown
-      class="resume-dropdown"
-      [options]="vocabularyOptions"
-      [(ngModel)]="selectedValueOption"
-      optionLabel="label"
-      [filter]="true"
-      filterBy="label"
-      (onChange)="selectOnChange($event.value.value)"></p-dropdown>
+    <div class="autocomplete">
+      <input
+        type="text"
+        placeholder="Pick one"
+        [formControl]="control"
+        [matAutocomplete]="auto" />
+      <mat-autocomplete
+        #auto="matAutocomplete"
+        [displayWith]="displayFn">
+        @for (option of filteredOptions | async; track option) {
+        <mat-option
+          (onSelectionChange)="selectOnChange($event.source.value.value)"
+          [value]="option"
+          >{{ option.label }}</mat-option
+        >
+        }
+      </mat-autocomplete>
+    </div>
   </div>
 
   <div class="panel-tab">
@@ -38,20 +48,5 @@
         </div>
       </ng-container>
     </div>
-  </div>
-
-  <div #dialog>
-    <p-dialog
-      class="dialog"
-      [(visible)]="visible"
-      [modal]="true"
-      position="center"
-      [maximizable]="true">
-      <ng-template pTemplate="headless">
-        <app-detail-word
-          [item]="itemSelected"
-          (closeEvent)="visible = false"></app-detail-word>
-      </ng-template>
-    </p-dialog>
   </div>
 </ng-container>

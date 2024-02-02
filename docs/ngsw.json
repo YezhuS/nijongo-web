@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706192926131,
+  "timestamp": 1706882523908,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,18 +11,18 @@
         "ignoreVary": true
       },
       "urls": [
-        "/111.6606f49dfc767b84.js",
-        "/314.188d42fe3b8708e6.js",
+        "/128.21029d0f1fc6febf.js",
+        "/314.b87b86dea57fcb49.js",
         "/395.3e9d8c256bed925b.js",
-        "/446.1bc6cc0128768f9f.js",
-        "/520.a6c14fb978e6e406.js",
+        "/520.46e670f785c729d4.js",
+        "/928.3bc0349769cee625.js",
         "/favicon.ico",
         "/index.html",
-        "/main.8af6496b5821f0e2.js",
+        "/main.b272410b899e29dc.js",
         "/manifest.webmanifest",
         "/polyfills.6874488aa68a9513.js",
-        "/runtime.c60a40f6fdeae898.js",
-        "/styles.c12b661262f4b600.css"
+        "/runtime.3682c854c1c2f5ae.js",
+        "/styles.3bbc7ceec89f392c.css"
       ],
       "patterns": []
     },
@@ -64,11 +64,9 @@
         "/assets/data/vocabulary/time.json",
         "/assets/data/vocabulary/transport.json",
         "/assets/data/vocabulary/verbs.json",
-        "/assets/icons/icon-128x128.png",
         "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
         "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-48x48.png",
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
         "/assets/icons/icon-96x96.png"
@@ -78,11 +76,11 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/111.6606f49dfc767b84.js": "7203901d1f46aeda695d296cdb08aeae437b0936",
-    "/314.188d42fe3b8708e6.js": "a848b1e0f1b2b4b5565a8b75be67eaf224c532d4",
+    "/128.21029d0f1fc6febf.js": "146adc111e5fee9de5bf09c4969ad61aae5fc5d5",
+    "/314.b87b86dea57fcb49.js": "8000cfa1c5d356bd6e80550a8f5568fc11075a41",
     "/395.3e9d8c256bed925b.js": "86b55450b94ba5c7024ee4c2ea37154616bea09c",
-    "/446.1bc6cc0128768f9f.js": "4d4d007e0afcbc2abe8b2735384479865418851f",
-    "/520.a6c14fb978e6e406.js": "60c1090083273c9eb83bf2b37fa0c0ffe214784c",
+    "/520.46e670f785c729d4.js": "dbff1badb6b5c6d0947a87dd5e27e4d1822b2808",
+    "/928.3bc0349769cee625.js": "55686efd9286d7fabd92bcace7a1cb4f75d44e53",
     "/assets/data/alphabet/hiragana-diacritico.json": "4945c9ef9b774de2a8a9aa4a9172c8517187fee3",
     "/assets/data/alphabet/hiragana-diptongo.json": "554abeebb5a307834132ab0f1b49a2552a51bf93",
     "/assets/data/alphabet/hiragana.json": "d1cc6b7fb33235e60ed9fdac91253fedfbfd8be2",
@@ -113,21 +111,19 @@
     "/assets/data/vocabulary/time.json": "3ab369005343bab104b53ede7af5af464ce037af",
     "/assets/data/vocabulary/transport.json": "da8663cdd3f19a63996f78ae03196b6e0e2bda88",
     "/assets/data/vocabulary/verbs.json": "d7bd504682bee6f3a862b13e6004ac39187eae88",
-    "/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
-    "/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
-    "/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
-    "/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
-    "/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
-    "/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
-    "/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
-    "/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/assets/icons/icon-144x144.png": "763a296f013f1c29395e6389be1c8ed7e60fcec5",
+    "/assets/icons/icon-192x192.png": "4073fa3a1b94c325c56de2c5b44a1419a3a9a66d",
+    "/assets/icons/icon-48x48.png": "c7b5f52370ae8640b42a0b5b1739ae887b0bbf6c",
+    "/assets/icons/icon-512x512.png": "c8bc6d2ab4e415d0f5f02a7b207e6eec75b660b1",
+    "/assets/icons/icon-72x72.png": "dfc6a43dda90bd59dd19e5d62f9ef0a04eb56700",
+    "/assets/icons/icon-96x96.png": "236ae24da05d2ffaf6cd1cf16232319e4eb5089a",
     "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/index.html": "bb609b14b3c8ba2cafd70225f99147ac74f45c55",
-    "/main.8af6496b5821f0e2.js": "22fd7e665a5d14a3c663569ca99bb6a5246628a2",
+    "/index.html": "feede3d8b7b5a0ff7a66c22d294ccef3fe79e500",
+    "/main.b272410b899e29dc.js": "31956d678e4254e1ede822492dd1d50f37d93957",
     "/manifest.webmanifest": "314fe4eee239a17f4d166405ea1585c75bab6b34",
     "/polyfills.6874488aa68a9513.js": "8a74c07039e45f5e7f8f240ac015db66f58fb1d9",
-    "/runtime.c60a40f6fdeae898.js": "ab5aefc519d12695c89f440390bf74072cb79572",
-    "/styles.c12b661262f4b600.css": "8869cf85aad7dff7dfbd8e886697e9d58dffce13"
+    "/runtime.3682c854c1c2f5ae.js": "00ad65fdd295c927993c74fd86327461b0f0be00",
+    "/styles.3bbc7ceec89f392c.css": "a3b18b9d7b09d2ca24eeab857f3da99768e4d5fd"
   },
   "navigationUrls": [
     {
