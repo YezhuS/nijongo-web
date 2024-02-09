@@ -79,6 +79,24 @@ html {
     flex: 0 1 calc(33% - 8px);
 }
 
+// CDK
+.cdk-overlay-pane {
+    background-color: white;
+}
+// Componentes
+.generic-input {
+    padding: 0.5rem;
+    border: 1px solid blue;
+    border-radius: 0.25rem;
+    &:focus-visible {
+        outline: none;
+    }
+}
+// Material
+.mat-mdc-option:hover {
+    background-color: var(--light-blue) !important;
+}
+
 // Modal - Dialog
 // .cdk-overlay-container {
 //     pointer-events: none;

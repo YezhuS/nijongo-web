@@ -1,6 +1,6 @@
 import {CommonModule} from '@angular/common';
 import {Component, inject} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {LetterActivitySharedComponent} from '../../../../shared/components/letter-activity-shared/letter-activity-shared.component';
@@ -24,6 +24,7 @@ import {MessageFacadeService} from '../../../../core/service/facade/message-faca
 import {SeverityMessageEnum} from '../../../../core/enum/message.enum';
 import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
 import {ButtonSelectComponent} from '../../../../lib/button/button-select/button-select.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @Component({
   selector: 'app-vocabulary-activity',
@@ -31,13 +32,15 @@ import {ButtonSelectComponent} from '../../../../lib/button/button-select/button
   imports: [
     ButtonModule,
     SelectButtonModule,
-    FormsModule,
     CommonModule,
     LetterActivitySharedComponent,
     MultiSelectModule,
     ToastModule,
     ButtonGenericComponent,
     ButtonSelectComponent,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [MessageService, MessageStateService, MessageFacadeService],
   templateUrl: './vocabulary-activity.component.html',
@@ -58,12 +61,22 @@ export class VocabularyActivityComponent {
   protected justLook = false;
   protected firstConditionValue = WordTypeEnum.Kana;
   protected secondConditionValue = TranslationFlow.JP_ES;
-  protected typeValues: OptionsI[] = [];
+  protected typeValues = new FormControl<OptionsI[]>([]);
 
   // Options
   protected firstConditionOptions: OptionsI[] = [];
   protected secondConditionOptions: OptionsI[] = [];
   protected typeOptions: OptionsI[] = [];
+
+  toppings = new FormControl('');
+  toppingList: string[] = [
+    'Extra cheese',
+    'Mushroom',
+    'Onion',
+    'Pepperoni',
+    'Sausage',
+    'Tomato',
+  ];
 
   constructor() {
     this.typeOptions = OptionsVocabularyType;
@@ -100,7 +113,7 @@ export class VocabularyActivityComponent {
     // Check if null
     if (this.typeValues === null) return;
     // Build value to send
-    const answerQuestionsList = this.typeValues.map((option) => {
+    const answerQuestionsList = this.typeValues.value!.map((option) => {
       const valuesOption: WordI[] = option.value;
       return valuesOption.map((value) => {
         const answerQuestionValue: AnswerQuestionI = {
