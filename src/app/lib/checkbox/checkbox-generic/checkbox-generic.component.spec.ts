@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CheckboxGenericComponent } from './checkbox-generic.component';
+import {CheckboxGenericComponent} from './checkbox-generic.component';
 
 describe('CheckboxGenericComponent', () => {
   let component: CheckboxGenericComponent;
@@ -8,10 +8,9 @@ describe('CheckboxGenericComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CheckboxGenericComponent]
-    })
-    .compileComponents();
-    
+      imports: [CheckboxGenericComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CheckboxGenericComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
