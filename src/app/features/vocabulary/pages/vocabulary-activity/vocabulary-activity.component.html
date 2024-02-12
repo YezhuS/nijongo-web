@@ -5,8 +5,9 @@
     </div>
     <div class="activity-body">
       <!-- Cuerpo de la activity -->
-      <div>
+      <div class="select-type">
         <mat-select
+          placeholder="Selecciona un tipo"
           class="generic-input"
           [formControl]="typeValues"
           multiple>
@@ -14,6 +15,11 @@
           <mat-option [value]="option">{{ option.label }}</mat-option>
           }
         </mat-select>
+      </div>
+      <div class="select-all-checkbox">
+        <app-checkbox-generic
+          label="Selecciona todos"
+          (valueChange)="toggleAllSelection($event)"></app-checkbox-generic>
       </div>
       <app-button-select
         [options]="firstConditionOptions"

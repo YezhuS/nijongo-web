@@ -1,8 +1,6 @@
 import {CommonModule} from '@angular/common';
 import {Component, inject} from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {ButtonModule} from 'primeng/button';
-import {SelectButtonModule} from 'primeng/selectbutton';
 import {LetterActivitySharedComponent} from '../../../../shared/components/letter-activity-shared/letter-activity-shared.component';
 import {OptionsI} from '../../../../core/model/core.model';
 import {Router} from '@angular/router';
@@ -12,7 +10,6 @@ import {
   OptionsVocabularyActivityType,
   OptionsVocabularyType,
 } from '../../constants/options.constant';
-import {MultiSelectModule} from 'primeng/multiselect';
 import {ActivityLayout} from '../../../../shared/models/activity.model';
 import {AnswerQuestionI} from '../../../../shared/models/answerQuestion.model';
 import {WordI, WordTypeEnum} from '../../model/word.model';
@@ -25,22 +22,25 @@ import {SeverityMessageEnum} from '../../../../core/enum/message.enum';
 import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
 import {ButtonSelectComponent} from '../../../../lib/button/button-select/button-select.component';
 import {MatSelectModule} from '@angular/material/select';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {CheckboxGenericComponent} from '../../../../lib/checkbox/checkbox-generic/checkbox-generic.component';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-vocabulary-activity',
   standalone: true,
   imports: [
-    ButtonModule,
-    SelectButtonModule,
     CommonModule,
     LetterActivitySharedComponent,
-    MultiSelectModule,
     ToastModule,
     ButtonGenericComponent,
     ButtonSelectComponent,
     MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
+    MatSlideToggleModule,
+    CheckboxGenericComponent,
+    MatSnackBarModule,
   ],
   providers: [MessageService, MessageStateService, MessageFacadeService],
   templateUrl: './vocabulary-activity.component.html',
@@ -49,6 +49,7 @@ import {MatSelectModule} from '@angular/material/select';
 export class VocabularyActivityComponent {
   protected router = inject(Router);
   private messageFacadeService = inject(MessageFacadeService);
+  private snackBar = inject(MatSnackBar);
 
   protected startBtnLabel = 'Empezar';
   protected activityStarted = false;
@@ -68,16 +69,6 @@ export class VocabularyActivityComponent {
   protected secondConditionOptions: OptionsI[] = [];
   protected typeOptions: OptionsI[] = [];
 
-  toppings = new FormControl('');
-  toppingList: string[] = [
-    'Extra cheese',
-    'Mushroom',
-    'Onion',
-    'Pepperoni',
-    'Sausage',
-    'Tomato',
-  ];
-
   constructor() {
     this.typeOptions = OptionsVocabularyType;
     this.firstConditionOptions = OptionsVocabularyActivityType;
@@ -90,11 +81,12 @@ export class VocabularyActivityComponent {
     this.createAnswerQuestionModel();
     // check if any was selected
     if (this.answerQuestionValue.length < 1) {
-      this.messageFacadeService.showToast({
-        severity: SeverityMessageEnum.warn,
-        summary: 'Cuidado',
-        detail: 'Debes seleccionar algún tipo',
-      });
+      // this.messageFacadeService.showToast({
+      //   severity: SeverityMessageEnum.warn,
+      //   summary: 'Cuidado',
+      //   detail: 'Debes seleccionar algún tipo',
+      // });
+      this.openSnackBar('Debes seleccionar algún tipo');
       return;
     }
     // Create object to send
@@ -154,5 +146,18 @@ export class VocabularyActivityComponent {
     else value.push(word.translation);
 
     return value;
+  }
+
+  protected toggleAllSelection(value: boolean) {
+    if (value) this.typeValues.setValue(this.typeOptions);
+    else this.typeValues.setValue([]);
+  }
+
+  // TODO rehacer toast service y toast component
+  private openSnackBar(message: string, action?: string, duration?: number) {
+    this.snackBar.open(message, action, {
+      duration: duration ?? 3000,
+      verticalPosition: 'top',
+    });
   }
 }
