@@ -6,6 +6,7 @@
 body {
     margin: 0;
     height: 100%; 
+    font-family: cursive;
 }
 html {
     height: 100%;
@@ -78,7 +79,7 @@ html {
 // Componentes
 .generic-input {
     padding: 0.5rem;
-    border: 1px solid blue;
+    border: 1px solid var(--primary);
     border-radius: 0.25rem;
     &:focus-visible {
         outline: none;

@@ -55,7 +55,6 @@ Añadir el total?
 `Componentes`  
 Cambiar estilos de los inputs
 Quizás crear un input propio
-Arreglar que al pulsar tras desplegar cualquier modal (snackbar o dialog) tenga el fondo celeste al pulsar. 
 Arreglar en los buttons desplegables que no se cierre el primero si el segundo se ha desplegado también.
 Mejorar el estilo de los resumes
 Estilo del snackbar
