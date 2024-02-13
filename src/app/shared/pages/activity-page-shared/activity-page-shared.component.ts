@@ -1,8 +1,6 @@
 import {Component, Input, OnChanges, inject} from '@angular/core';
-import {ButtonModule} from 'primeng/button';
 import {Activity, ActivityLayout} from '../../models/activity.model';
 import {Router} from '@angular/router';
-import {SelectButtonModule} from 'primeng/selectbutton';
 import {OptionsI} from '../../../core/model/core.model';
 import {FormsModule} from '@angular/forms';
 import {AlphabetEnum} from '../../../features/alphabet/model/alphabet.model';
@@ -19,8 +17,6 @@ import {ButtonSelectComponent} from '../../../lib/button/button-select/button-se
   selector: 'app-activity-page-shared',
   standalone: true,
   imports: [
-    ButtonModule,
-    SelectButtonModule,
     FormsModule,
     CommonModule,
     LetterActivitySharedComponent,

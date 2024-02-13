@@ -1,4 +1,3 @@
-import {MenuItem} from 'primeng/api';
 import {PATH} from './routes.constant';
 import {MenuItemOptions} from '../../lib/model/menuItem.interface';
 

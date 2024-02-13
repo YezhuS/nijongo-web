@@ -1,13 +1,9 @@
 import {CommonModule} from '@angular/common';
 import {Component, inject} from '@angular/core';
-import {ButtonModule} from 'primeng/button';
-import {TabViewModule} from 'primeng/tabview';
 import {TabI} from '../../../../lib/model/tab.model';
-import {DropdownModule} from 'primeng/dropdown';
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {OptionsI} from '../../../../core/model/core.model';
 import {OptionsVocabularyType} from '../../constants/options.constant';
-import {ListboxModule} from 'primeng/listbox';
 import {Router} from '@angular/router';
 import {PATH} from '../../../../core/const/routes.constant';
 import {
@@ -34,12 +30,7 @@ import {Observable, map, of, startWith} from 'rxjs';
   styleUrl: './vocabulary-resume.component.scss',
   imports: [
     CommonModule,
-    TabViewModule,
-    ButtonModule,
-    DropdownModule,
     FormsModule,
-    ButtonModule,
-    ListboxModule,
     DialogModule,
     DetailWordComponent,
     ButtonGenericComponent,

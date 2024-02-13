@@ -1,19 +1,22 @@
 import {Injectable, inject} from '@angular/core';
-import {MessageService} from 'primeng/api';
 import {MessageStateService} from '../state/message-state.service';
-import {MessageToast} from '../../model/message.model';
+import {SnackbarI} from '../../model/snackbar.model';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Injectable()
 export class MessageFacadeService {
-  private messageService = inject(MessageService);
   private messageStateService = inject(MessageStateService);
+  private snackBarService = inject(MatSnackBar);
 
-  public getMessageToast$ = this.messageStateService.getMessageToast$();
-  public setMessageToast(value: MessageToast): void {
-    this.messageStateService.setMessageToast(value);
+  public getSnackbar$ = this.messageStateService.getSnackbar$();
+  public setSnackbar(value: SnackbarI): void {
+    this.messageStateService.setSnackbar(value);
   }
 
-  public showToast(value: MessageToast): void {
-    this.messageService.add(value);
+  public showSnackbar(value: SnackbarI): void {
+    this.snackBarService.open(value.message, value.action, {
+      duration: value.duration ?? 3000,
+      verticalPosition: 'top',
+    });
   }
 }

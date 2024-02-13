@@ -14,17 +14,13 @@ import {ActivityLayout} from '../../../../shared/models/activity.model';
 import {AnswerQuestionI} from '../../../../shared/models/answerQuestion.model';
 import {WordI, WordTypeEnum} from '../../model/word.model';
 import {TranslationFlow} from '../../model/translation.model';
-import {ToastModule} from 'primeng/toast';
-import {MessageService} from 'primeng/api';
 import {MessageStateService} from '../../../../core/service/state/message-state.service';
 import {MessageFacadeService} from '../../../../core/service/facade/message-facade.service';
-import {SeverityMessageEnum} from '../../../../core/enum/message.enum';
 import {ButtonGenericComponent} from '../../../../lib/button/button-generic/button-generic.component';
 import {ButtonSelectComponent} from '../../../../lib/button/button-select/button-select.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {CheckboxGenericComponent} from '../../../../lib/checkbox/checkbox-generic/checkbox-generic.component';
-import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-vocabulary-activity',
@@ -32,7 +28,6 @@ import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
   imports: [
     CommonModule,
     LetterActivitySharedComponent,
-    ToastModule,
     ButtonGenericComponent,
     ButtonSelectComponent,
     MatSelectModule,
@@ -40,16 +35,14 @@ import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
     ReactiveFormsModule,
     MatSlideToggleModule,
     CheckboxGenericComponent,
-    MatSnackBarModule,
   ],
-  providers: [MessageService, MessageStateService, MessageFacadeService],
+  providers: [MessageStateService, MessageFacadeService],
   templateUrl: './vocabulary-activity.component.html',
   styleUrl: './vocabulary-activity.component.scss',
 })
 export class VocabularyActivityComponent {
   protected router = inject(Router);
   private messageFacadeService = inject(MessageFacadeService);
-  private snackBar = inject(MatSnackBar);
 
   protected startBtnLabel = 'Empezar';
   protected activityStarted = false;
@@ -81,11 +74,6 @@ export class VocabularyActivityComponent {
     this.createAnswerQuestionModel();
     // check if any was selected
     if (this.answerQuestionValue.length < 1) {
-      // this.messageFacadeService.showToast({
-      //   severity: SeverityMessageEnum.warn,
-      //   summary: 'Cuidado',
-      //   detail: 'Debes seleccionar algún tipo',
-      // });
       this.openSnackBar('Debes seleccionar algún tipo');
       return;
     }
@@ -153,11 +141,7 @@ export class VocabularyActivityComponent {
     else this.typeValues.setValue([]);
   }
 
-  // TODO rehacer toast service y toast component
   private openSnackBar(message: string, action?: string, duration?: number) {
-    this.snackBar.open(message, action, {
-      duration: duration ?? 3000,
-      verticalPosition: 'top',
-    });
+    this.messageFacadeService.showSnackbar({message, action, duration});
   }
 }

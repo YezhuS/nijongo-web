@@ -52,6 +52,17 @@ Introducir un modo de ejercicio donde te den 10 kanjis diferentes y debes adivin
 Añadir toda la información de la letra/palabra para mostrar con el botón i
 Añadir el total?
 
+`Componentes`  
+Cambiar estilos de los inputs
+Quizás crear un input propio
+Arreglar que al pulsar tras desplegar cualquier modal (snackbar o dialog) tenga el fondo celeste al pulsar. 
+Arreglar en los buttons desplegables que no se cierre el primero si el segundo se ha desplegado también.
+Mejorar el estilo de los resumes
+
+`Base de datos`  
+Actualizar los katakanas e introducir los kanjis
+Añadir el nuevo vocabulario
+
 `Partículas`  
   
 `Pasar a aplicación móvil`  

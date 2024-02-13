@@ -8,18 +8,10 @@ import {
 } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Router} from '@angular/router';
-import {ButtonModule} from 'primeng/button';
-import {InputTextModule} from 'primeng/inputtext';
 import {CommonModule} from '@angular/common';
 import {AnswerQuestionI} from '../../models/answerQuestion.model';
 import {ActivityLayout} from '../../models/activity.model';
-import {ToastModule} from 'primeng/toast';
-import {MessageService} from 'primeng/api';
 import {MessageFacadeService} from '../../../core/service/facade/message-facade.service';
-import {
-  LifeMessageEnum,
-  SeverityMessageEnum,
-} from '../../../core/enum/message.enum';
 import {MessageStateService} from '../../../core/service/state/message-state.service';
 import {shuffle} from '../../../core/utils/lists.utils';
 import {removeAccents} from '../../../core/utils/strings.utils';
@@ -28,15 +20,8 @@ import {ButtonGenericComponent} from '../../../lib/button/button-generic/button-
 @Component({
   selector: 'app-letter-activity-shared',
   standalone: true,
-  imports: [
-    ButtonModule,
-    InputTextModule,
-    FormsModule,
-    CommonModule,
-    ToastModule,
-    ButtonGenericComponent,
-  ],
-  providers: [MessageService, MessageStateService, MessageFacadeService],
+  imports: [FormsModule, CommonModule, ButtonGenericComponent],
+  providers: [MessageStateService, MessageFacadeService],
   templateUrl: './letter-activity-shared.component.html',
   styleUrl: './letter-activity-shared.component.scss',
 })
@@ -83,32 +68,18 @@ export class LetterActivitySharedComponent implements OnChanges {
 
     // Show end of list
     if (this.questionNumber > this.answerQuestionInput.length - 1) {
-      this.messageFacadeService.showToast({
-        severity: SeverityMessageEnum.warn,
-        summary: 'Fin de la lista',
-        detail: 'Llegaste al final',
-      });
+      this.openSnackBar('Llegaste al final de la lista');
       return;
     }
     this.setValues();
   }
 
   private showMistake(): void {
-    this.messageFacadeService.showToast({
-      severity: SeverityMessageEnum.error,
-      summary: 'Respuesta incorrecta',
-      detail: '',
-      life: LifeMessageEnum.short,
-    });
+    this.openSnackBar('Respuesta incorrecta');
   }
 
   private showCorrect(): void {
-    this.messageFacadeService.showToast({
-      severity: SeverityMessageEnum.success,
-      summary: 'Respuesta correcta',
-      detail: '',
-      life: LifeMessageEnum.short,
-    });
+    this.openSnackBar('Respuesta correcta');
     this.nextQuestion();
   }
 
@@ -116,5 +87,9 @@ export class LetterActivitySharedComponent implements OnChanges {
     this.answerValue = '';
     this.questionValue = this.answerQuestionInput[this.questionNumber].question;
     this.answers = this.answerQuestionInput[this.questionNumber].answer;
+  }
+
+  private openSnackBar(message: string, action?: string, duration?: number) {
+    this.messageFacadeService.showSnackbar({message, action, duration});
   }
 }

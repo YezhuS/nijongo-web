@@ -29,7 +29,6 @@
           *ngIf="!activityLayoutInput.justLook"
           class="input-answer">
           <input
-            pInputText
             id="answerInput"
             [(ngModel)]="answerValue" />
           <small id="answer-input-help">{{ answerHelpText }}</small>
@@ -44,5 +43,3 @@
     </div>
   </div>
 </ng-container>
-<!-- Toast -->
-<p-toast class="toast"></p-toast>
